@@ -10,6 +10,7 @@
 _site
 vendor
 Gemfile.lock
+.jekyll-cache
 
 # rubygem
 *.gem
