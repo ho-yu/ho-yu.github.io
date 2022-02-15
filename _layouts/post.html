@@ -63,7 +63,22 @@ layout: default
       <div class="post-content">
 
         {% if page.image %}
-        <img src="{{ page.image }}" class="post-preview-img">
+        <!-- <img src="{{ page.image }}" class="post-preview-img"> -->
+        <img src="{{ page.image.src }}" class="preview-img {{ bg | strip }}"
+            alt="{{ page.image.alt | default: 'Preview Image' }}"
+            style="border:1px solid #eaeaea; border-radius: 7px; padding: 0px;"
+
+            {% if page.image.width %}
+              width="{{ page.image.width }}"
+            {% elsif page.image.w %}
+              width="{{ page.image.w }}"
+            {% endif %}
+
+            {% if page.image.height %}
+              height="{{ page.image.height }}"
+            {% elsif page.image.h %}
+              height="{{ page.image.h }}"
+            {% endif %}>
         {% endif %}
 
         <!-- Using lozad. See: <https://github.com/ApoorvSaxena/lozad.js#usage> -->

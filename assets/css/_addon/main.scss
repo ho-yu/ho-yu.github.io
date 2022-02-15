@@ -103,6 +103,8 @@ $sidebar-display: "sidebar-display";
     line-height: 1.2rem;
     word-spacing: 1px;
     margin: .5rem 1.5rem 2rem 1.5rem;
+    min-height: 3rem;
+    user-select: none;
   }
 
   .sidebar-bottom {
