@@ -7,7 +7,6 @@
 !.travis.yml
 
 # bundler cache
-_site
 vendor
 .jekyll-cache
 
