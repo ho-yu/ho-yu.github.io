@@ -63,22 +63,7 @@ layout: default
       <div class="post-content">
 
         {% if page.image %}
-        <!-- <img src="{{ page.image }}" class="post-preview-img"> -->
-        <img src="{{ page.image.src }}" class="preview-img {{ bg | strip }}"
-            alt="{{ page.image.alt | default: 'Preview Image' }}"
-            style="border:1px solid #eaeaea; border-radius: 7px; padding: 0px;"
-
-            {% if page.image.width %}
-              width="{{ page.image.width }}"
-            {% elsif page.image.w %}
-              width="{{ page.image.w }}"
-            {% endif %}
-
-            {% if page.image.height %}
-              height="{{ page.image.height }}"
-            {% elsif page.image.h %}
-              height="{{ page.image.h }}"
-            {% endif %}>
+        <img src="{{ page.image }}" class="post-preview-img">
         {% endif %}
 
         <!-- Using lozad. See: <https://github.com/ApoorvSaxena/lozad.js#usage> -->
@@ -156,7 +141,7 @@ layout: default
     {% endif %} -->
 
     <script src="https://utteranc.es/client.js"
-        repo="ho-yu/ho-yu.github.io"
+        repo="da-nyee/da-nyee-comments"
         issue-term="pathname"
         theme="preferred-color-scheme"
         crossorigin="anonymous"
