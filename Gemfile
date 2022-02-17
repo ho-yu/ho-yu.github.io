@@ -16,5 +16,5 @@ group :test do
 end
 
 gem "webrick", "~> 1.7"
-
+gem 'jekyll-sitemap'
 gem 'wdm', '>= 0.1.0'
