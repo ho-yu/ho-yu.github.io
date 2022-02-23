@@ -17,4 +17,20 @@
 
     </url>
   
+    <url>
+      <loc>http://localhost:4000/posts/git-git/</loc>
+      
+        <lastmod>2022-02-23T06:12:00+00:00</lastmod>
+      
+
+      
+        <changefreq>weekly</changefreq>
+      
+
+      
+          <priority>0.5</priority>
+      
+
+    </url>
+  
 </urlset>
