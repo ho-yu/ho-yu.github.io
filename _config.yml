@@ -10,10 +10,10 @@
 
 title: Ho                              # the main title
 
-tagline: 기록의 습관화         # it will display as the sub-title
+tagline:  Slow & Steady ✨        # it will display as the sub-title
 
 description: >-                        # used by seo meta and the atom feed
-  기록의 습관화
+  Slow & Steady ✨
 
 # Replace with the website url, e.g. 'https://username.github.io'
 url: 'https://ho-yu.github.io'
