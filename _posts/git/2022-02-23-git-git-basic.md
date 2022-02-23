@@ -1,8 +1,8 @@
 ---
-title: '[Git] '
+title: '[Git] Git (1) '
 author: ho-yu
-date: 2022-02-23 15:12 +0900
-categories: [Git]
+date: 2022-02-23 18:15:21 +0900
+categories: [Study, Git]
 tags: [git, sourcetree]
 ---
 
@@ -24,7 +24,17 @@ RPG 게임을 예를 들면, 한 캐릭터로 게임을 진행하다가 게임�
 
 버전관리 툴은 `GitHub`, `GitLab`, `BitBucket` 등이 있다.
 
-
+### 💡 기본적인 용어
+    1. 워킹트리 (working tree) ⇒ 
+        - 커밋을 체크아웃하면 생성되는 파일과 디렉토리.
+            (작업폴더에서 [.git]폴더 (로컬저장소) 를 제외한 나머지 부분.
+        - 사용자가 파일과 하위 폴더를 만들고 작업 결과물을 저장하는 곳
+    2. 로컬저장소 (local repository) ⇒
+        - Git init 명령으로 생성되는 [.git] 폴더가 로컬저장소이다.
+    3. 원격저장소 (remote repository) ⇒
+        - 로컬저장소를 업로드하는 곳. (GitHub, BitBucket 등)
+    4. Git 저장소 ⇒
+        - 일반적으로 Git 명령으로 관리할 수 있는 폴더 전체를 뜻한다.
 
 
 
