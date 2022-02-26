@@ -77,7 +77,10 @@ $sidebar-display: "sidebar-display";
   overflow-y: auto;
   width: $sidebar-width-medium;
   z-index: 99;
-  background: var(--sidebar-bg);
+  //background: var(--sidebar-bg);
+  background: url('/assets/img/background/beach.jpg');
+  background-size: 100% 100%;
+  background-position: center;
   a {
     @include sidebar-links;
   }

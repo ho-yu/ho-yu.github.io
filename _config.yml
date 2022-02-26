@@ -18,7 +18,7 @@ url: 'https://ho-yu.github.io'
 
 author: ho-yu                             # change to your full name
 
-avatar: #/assets/img/profile/da-nyee.jpg     # support internet resources
+avatar: /assets/img/profile/ho-yu.jpg     # support internet resources
 
 github:
   username: ho-yu                         # change to your github username
