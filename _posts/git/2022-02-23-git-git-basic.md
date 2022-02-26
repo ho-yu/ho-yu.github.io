@@ -6,7 +6,9 @@ categories: [Study, Git]
 tags: [git, sourcetree]
 ---
 
-## Introduction
+![git](https://user-images.githubusercontent.com/64628448/155834033-6e1dbb9a-3531-47c9-805f-6ed3ffa34702.png){: width="50%" height="10%"}
+
+# 📚 Introduction
 들어가기전에 버전관리가 무엇인지 알아보자.
 
 RPG 게임을 예를 들면, 한 캐릭터로 게임을 진행하다가 게임을 종료하기 전에 지금까지 진행한 게임데이터를 저장을 한다. 그리고 나중에 저장한 데이터를 불러와서 이어서 게임을 할수가 있다.
@@ -24,7 +26,7 @@ RPG 게임을 예를 들면, 한 캐릭터로 게임을 진행하다가 게임�
 
 버전관리 툴은 `GitHub`, `GitLab`, `BitBucket` 등이 있다.
 
-## 💡 기본적인 용어
+# 💥 기본적인 용어
     1. 워킹트리 (working tree) ⇒ 
         - 커밋을 체크아웃하면 생성되는 파일과 디렉토리.
             (작업폴더에서 [.git]폴더 (로컬저장소) 를 제외한 나머지 부분.
@@ -36,9 +38,7 @@ RPG 게임을 예를 들면, 한 캐릭터로 게임을 진행하다가 게임�
     4. Git 저장소 ⇒
         - 일반적으로 Git 명령으로 관리할 수 있는 폴더 전체를 뜻한다.
 
-## 계정정보인증
-
-#### Git 계정정보인증관련 명령어이다.
+# 💥 계정정보인증
 
 주로 <br>
 1.  Github에서 비밀번호를 변경했는데, local git에 저장된 인증정보를 수정하지 않은 경우.
@@ -46,7 +46,7 @@ RPG 게임을 예를 들면, 한 캐릭터로 게임을 진행하다가 게임�
 
 등의 원인으로 발생하는 오류를 해결할 때 도움이 되었어서 추가정리를 해봤다. 😊
 
-### 💡 인증관련 명령어
+## 💥 인증관련 명령어
 - `git config --local credential.helper`
 - `git config --global credential.helper`
 - `git config --system credential.helper`
@@ -61,7 +61,7 @@ RPG 게임을 예를 들면, 한 캐릭터로 게임을 진행하다가 게임�
 - `rm ~/.git-credentials`
     - 인증파일 삭제.
 
-### 💡 옵션설정관련 명령어
+## 💥 옵션설정관련 명령어
     코드의 { }, [ ] 등과 같은 괄호들은 구분이 용이하도록 작성한 것 이므로, 괄호는 제거하고 입력해야한다.  
 
 - `git config --global {옵션명}`
