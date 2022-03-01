@@ -6,7 +6,7 @@ categories: [Study, Git]
 tags: [git, sourcetree]
 ---
 
-![git](https://user-images.githubusercontent.com/64628448/155834033-6e1dbb9a-3531-47c9-805f-6ed3ffa34702.png){: width="50%" height="10%"}
+![git](https://user-images.githubusercontent.com/64628448/155834033-6e1dbb9a-3531-47c9-805f-6ed3ffa34702.png){: width="75%"}
 
 # 📚 Introduction
 
