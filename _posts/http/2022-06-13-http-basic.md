@@ -1,5 +1,5 @@
 ---
-title: '[Spring] Spring(1) '
+title: '[Spring] Spring - HTTP(1) '
 author: ho-yu
 date: 2022-06-13 22:48:51 +0900
 categories: [Study, Http, Spring]
