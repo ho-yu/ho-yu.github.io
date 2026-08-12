@@ -112,6 +112,11 @@ tags: [logistic-regression, scikit-learn]
 | `pin: true`     | 홈 상단 고정                          |
 | `image:`        | 대표 이미지 (`path`, `alt`)           |
 
+## Writing Guide
+
+사용자용 글 작성 가이드는 `docs/WRITING-GUIDE.md`에 있다 (사이트 빌드에서 제외됨).
+Front Matter 규칙이나 영역별 작성법을 바꿀 때는 이 문서도 함께 갱신한다.
+
 ## Templates
 
 문서 형식은 `templates/`의 템플릿을 기준으로 한다.

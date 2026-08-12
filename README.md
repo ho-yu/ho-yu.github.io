@@ -38,6 +38,13 @@ Learn
 → Reflect
 ```
 
+## Writing Guide
+
+글을 처음 쓴다면 **[docs/WRITING-GUIDE.md](docs/WRITING-GUIDE.md)** 를 먼저 본다.
+파일 이름 규칙부터 Front Matter, 4개 영역별 작성법, 이미지, 배포, 문제 해결까지 순서대로 정리되어 있다.
+
+아래는 요약이다.
+
 ## Writing Convention
 
 모든 공개 게시물의 단일 원본은 `_posts/` 하나다.
@@ -103,6 +110,7 @@ assets/img/posts/<post-slug>/              # 글이 이미지를 여러 개 쓸 
 ```text
 ho-yu.github.io/
 ├── .github/workflows/pages-deploy.yml   # GitHub Actions 배포 워크플로
+├── docs/WRITING-GUIDE.md                # 글 작성 가이드 (사이트 빌드에서 제외)
 ├── _data/
 │   ├── contact.yml                      # 사이드바 연락처 / 링크
 │   ├── share.yml                        # 게시물 공유 버튼
