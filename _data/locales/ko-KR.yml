@@ -1,0 +1,19 @@
+# Site-level additions to Chirpy's ko-KR locale.
+#
+# Jekyll deep-merges this file over the theme's `_data/locales/ko-KR.yml`,
+# so only the keys below are overridden — every other Korean string still
+# comes from the theme and keeps updating with it.
+#
+# Why this file exists:
+#   Chirpy builds the <title> of a tab page from `locales[lang].tabs[<filename>]`
+#   without falling back to the page's own title. Custom tabs that the theme's
+#   locale doesn't know about would otherwise render an empty <title>.
+#
+# Add one line here whenever a new tab is added under `_tabs/`.
+
+tabs:
+  # format: <filename_without_extension>: <value>
+  notes: Notes
+  projects: Projects
+  troubleshooting: Troubleshooting
+  retrospectives: Retrospectives

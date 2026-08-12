@@ -1,0 +1,29 @@
+{% comment %}
+  Renders the posts of one top-level category, grouped by their sub-category.
+
+  Usage (from a tab page):
+    {% raw %}{% include section-post-list.html category="Notes" %}{% endraw %}
+
+  This is an additive include; it does not override any theme file.
+  NOTE: emitted HTML must stay unindented, otherwise kramdown renders it as a code block.
+{% endcomment %}
+
+{%- assign section = include.category -%}
+{%- assign section_posts = site.posts | where_exp: 'post', 'post.categories contains section' -%}
+
+{% if section_posts.size == 0 %}
+<p class="text-muted">아직 작성된 글이 없습니다.</p>
+{% else %}
+{%- assign subgroups = section_posts | group_by_exp: 'post', 'post.categories[1]' | sort: 'name' -%}
+{%- assign section_slug = section | slugify -%}
+{%- capture section_url %}/categories/{{ section_slug }}/{% endcapture -%}
+{% for subgroup in subgroups %}
+<h2 id="{{ subgroup.name | default: 'general' | slugify }}">{{ subgroup.name | default: 'General' }} <span class="text-muted small">{{ subgroup.items.size }}</span></h2>
+<ul class="list-unstyled ps-0">
+{%- for post in subgroup.items %}
+<li class="d-flex justify-content-between align-items-baseline mb-2"><a href="{{ post.url | relative_url }}">{{ post.title }}</a> <span class="text-muted small text-nowrap ms-3">{{ post.date | date: '%Y-%m-%d' }}</span></li>
+{%- endfor %}
+</ul>
+{% endfor %}
+<p class="text-muted small">전체 {{ section_posts.size }}개 · <a href="{{ section_url | relative_url }}">{{ section }} 카테고리 페이지</a></p>
+{% endif %}
