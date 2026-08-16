@@ -92,6 +92,11 @@ Tag:
 
 문서 형식은 `templates/`의 템플릿을 복사해서 사용한다. 모든 항목을 억지로 채울 필요는 없다.
 
+직접 초고를 작성할 때는 `workspace/draft-01.md`부터 `draft-05.md`까지 제공되는
+5개 작업 슬롯 중 하나에서 작업한다. 이 폴더는 Git으로 동기화되지만 사이트 빌드에서는
+제외된다. 작성이 끝나면 `작성완료 workspace/draft-번호.md`라고 요청한다.
+발행일은 요청한 당일로 확정하고, 발행한 슬롯은 공통 템플릿으로 다시 초기화한다.
+
 ## Images
 
 ```text
@@ -135,6 +140,9 @@ ho-yu.github.io/
 │   ├── project-template.md
 │   ├── troubleshooting-template.md
 │   └── retrospective-template.md
+├── workspace/                           # 여러 PC에서 동기화하는 초고 (사이트 빌드에서 제외)
+│   ├── common-template.md               # 형식에 얽매이지 않는 공통 초고 템플릿
+│   └── draft-01.md ... draft-05.md       # 동시에 사용할 수 있는 기본 작업 슬롯 5개
 ├── _config.yml
 ├── Gemfile
 ├── index.html

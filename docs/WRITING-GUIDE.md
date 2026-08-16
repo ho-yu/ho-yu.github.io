@@ -690,27 +690,37 @@ Regenerating: 1 file(s) changed at 2026-08-13 21:35:02
 - [ ] 왼쪽 메뉴에서 **Notes/Projects/Troubleshooting/Retrospectives** 중 해당 페이지에 글이 올라왔는가
 - [ ] **카테고리·태그**를 눌러 이동이 되는가
 
-### 11-6. 아직 공개하기 싫은 글은 `_drafts`에
+### 11-6. 여러 컴퓨터에서 초고 작성하기
 
-글을 쓰다 말았는데 저장은 해두고 싶을 때 쓴다. `_drafts` 폴더에 넣으면 **평소에는 사이트에 나오지 않는다.**
+`workspace/`는 작성 중인 글을 저장하고 Git으로 동기화하는 작업 폴더다.
+GitHub에는 커밋되지만 Jekyll 빌드에서는 제외되므로 블로그 사이트에는 나타나지 않는다.
+현재 저장소가 공개 저장소이므로 **GitHub에서 초고 원문은 누구나 볼 수 있다.**
 
-```bash
-mkdir -p _drafts
+기본 작업본은 5개가 준비되어 있다.
+
+```text
+workspace/draft-01.md
+workspace/draft-02.md
+workspace/draft-03.md
+workspace/draft-04.md
+workspace/draft-05.md
 ```
 
-초안은 파일 이름에 **날짜를 안 붙여도 된다.** (`_drafts/logistic-regression.md`)
+여러 글을 동시에 작성할 때 작업본을 하나씩 사용한다. 작성 중에도 평소처럼 commit하고
+push하면 다른 컴퓨터에서 pull해 이어서 쓸 수 있다. 템플릿의 `published: false`는
+작성 중임을 나타내는 표시이자 추가 안전장치다.
 
-초안까지 포함해서 미리 보려면 이렇게 실행한다.
+글이 완성되면 파일 경로와 함께 요청한다.
 
-```bash
-export PATH="$(brew --prefix ruby@3.4)/bin:$PATH" && bundle exec jekyll serve --drafts --livereload
+```text
+작성완료 workspace/draft-03.md
 ```
 
-글이 완성되면 `_posts/`로 옮기면서 파일 이름 앞에 날짜를 붙이고 `date`를 채우면 된다.
-
-```bash
-mv _drafts/logistic-regression.md _posts/2026-08-13-logistic-regression.md
-```
+이때 완료 요청을 받은 한국 시간 기준 당일을 발행일로 사용한다. 제목, 카테고리,
+태그와 영문 파일명을 확정하고 `_posts/YYYY-MM-DD-title.md`에 발행본을 만든 뒤
+`published: false`를 제거하고 빌드를 검사한다. 발행한 작업 슬롯은
+`common-template.md` 내용으로 초기화해 기본 작업본 5개를 항상 유지한다.
+나머지 작업 슬롯은 변경하지 않는다. commit과 push는 별도로 요청해야 한다.
 
 ### 11-7. (선택) 올리기 전 최종 검사
 

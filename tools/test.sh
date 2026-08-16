@@ -49,6 +49,15 @@ read_baseurl() {
 }
 
 main() {
+  # five reusable draft slots must always be available
+  bash tools/test-workspace-slots.sh
+
+  # regression check: the privacy test must honor custom Jekyll configs
+  bash tools/test-workspace-privacy-config.sh
+
+  # workspace drafts must never be collected into the generated site
+  bash tools/test-workspace-privacy.sh "$_config"
+
   # clean up
   if [[ -d $SITE_DIR ]]; then
     rm -rf "$SITE_DIR"

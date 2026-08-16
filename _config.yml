@@ -218,6 +218,7 @@ exclude:
   - docs
   - tools
   - templates # writing templates, kept for the repository only (not published)
+  - workspace # synced drafts, visible in GitHub but never published to the site
   - README.md
   - CLAUDE.md
   - LICENSE
