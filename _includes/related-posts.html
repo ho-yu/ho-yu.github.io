@@ -1,0 +1,123 @@
+<!-- Recommend up to 3 posts by shared tags, then by the same second-level category. -->
+
+{% assign TOTAL_SIZE = 3 %}
+{% assign current_subcategory = page.categories[1] %}
+{% assign related_posts = '' | split: '' %}
+
+<!--
+  site.posts is newest-first. Iterating shared-tag counts from high to low gives us:
+  1. more shared tags
+  2. same second-level category for equal tag counts
+  3. newer post for every remaining tie
+-->
+{% if page.tags.size > 0 %}
+  {% for shared_tag_target in (1..page.tags.size) reversed %}
+    {% if related_posts.size >= TOTAL_SIZE %}
+      {% break %}
+    {% endif %}
+
+    <!-- Prefer the same second-level category when the shared-tag count ties. -->
+    {% if current_subcategory %}
+      {% for post in site.posts %}
+        {% if related_posts.size >= TOTAL_SIZE %}
+          {% break %}
+        {% endif %}
+        {% if post.url == page.url or post.categories[1] != current_subcategory %}
+          {% continue %}
+        {% endif %}
+
+        {% assign shared_tag_count = 0 %}
+        {% for tag in post.tags %}
+          {% if page.tags contains tag %}
+            {% assign shared_tag_count = shared_tag_count | plus: 1 %}
+          {% endif %}
+        {% endfor %}
+
+        {% if shared_tag_count == shared_tag_target %}
+          {% assign related_posts = related_posts | push: post %}
+        {% endif %}
+      {% endfor %}
+    {% endif %}
+
+    <!-- Then take posts from other fields with the same shared-tag count. -->
+    {% for post in site.posts %}
+      {% if related_posts.size >= TOTAL_SIZE %}
+        {% break %}
+      {% endif %}
+      {% if post.url == page.url or post.categories[1] == current_subcategory %}
+        {% continue %}
+      {% endif %}
+
+      {% assign shared_tag_count = 0 %}
+      {% for tag in post.tags %}
+        {% if page.tags contains tag %}
+          {% assign shared_tag_count = shared_tag_count | plus: 1 %}
+        {% endif %}
+      {% endfor %}
+
+      {% if shared_tag_count == shared_tag_target %}
+        {% assign related_posts = related_posts | push: post %}
+      {% endif %}
+    {% endfor %}
+  {% endfor %}
+{% endif %}
+
+<!-- Fill remaining cards from the same field only when there are no shared tags. -->
+{% if related_posts.size < TOTAL_SIZE and current_subcategory %}
+  {% for post in site.posts %}
+    {% if related_posts.size >= TOTAL_SIZE %}
+      {% break %}
+    {% endif %}
+    {% if post.url == page.url or post.categories[1] != current_subcategory %}
+      {% continue %}
+    {% endif %}
+
+    {% assign shared_tag_count = 0 %}
+    {% for tag in post.tags %}
+      {% if page.tags contains tag %}
+        {% assign shared_tag_count = shared_tag_count | plus: 1 %}
+      {% endif %}
+    {% endfor %}
+
+    {% if shared_tag_count == 0 %}
+      {% assign related_posts = related_posts | push: post %}
+    {% endif %}
+  {% endfor %}
+{% endif %}
+
+{% if related_posts.size > 0 %}
+  <aside id="related-posts" aria-labelledby="related-label">
+    <h3 class="mb-4" id="related-label">
+      {{- site.data.locales[include.lang].post.relate_posts -}}
+    </h3>
+    <nav aria-labelledby="related-label" class="row row-cols-1 row-cols-md-2 row-cols-xl-3 g-4 mb-4">
+      {% for post in related_posts %}
+        {% assign common_tags = '' | split: '' %}
+        {% for tag in post.tags %}
+          {% if page.tags contains tag %}
+            {% assign common_tags = common_tags | push: tag %}
+          {% endif %}
+        {% endfor %}
+
+        <article class="col">
+          <a href="{{ post.url | relative_url | escape }}" class="post-preview card h-100">
+            <div class="card-body">
+              {% include datetime.html date=post.date lang=include.lang %}
+              <h4 class="pt-0 my-2">{{ post.title | escape }}</h4>
+              <div class="small text-muted mb-2">
+                {% if common_tags.size > 0 %}
+                  공통 주제 · {{ common_tags | join: ', ' | escape }}
+                {% else %}
+                  같은 분야 · {{ current_subcategory | escape }}
+                {% endif %}
+              </div>
+              <div class="text-muted">
+                <p>{% include post-summary.html %}</p>
+              </div>
+            </div>
+          </a>
+        </article>
+      {% endfor %}
+    </nav>
+  </aside>
+{% endif %}

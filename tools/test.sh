@@ -72,6 +72,9 @@ main() {
   JEKYLL_ENV=production bundle exec jekyll b \
     -d "$SITE_DIR$_baseurl" -c "$_config"
 
+  # broad top-level categories must not create unrelated recommendations
+  bash tools/test-related-posts.sh "$SITE_DIR$_baseurl"
+
   # test
   bundle exec htmlproofer "$SITE_DIR" \
     --disable-external \

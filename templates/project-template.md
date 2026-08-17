@@ -74,3 +74,9 @@ tags: [tag]
 ## 11. 🔗 관련 링크
 
 - GitHub Repository:
+
+---
+
+## 12. 🔗 관련 글
+
+- [게시물 제목](/posts/post-slug/)
