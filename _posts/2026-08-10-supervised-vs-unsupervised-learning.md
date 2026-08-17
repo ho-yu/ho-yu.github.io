@@ -1,6 +1,6 @@
 ---
 title: "지도 학습과 비지도 학습 모델 비교"
-date: 2026-08-17 16:39:53 +0900
+date: 2026-08-10 16:39:53 +0900
 categories: [Notes, Machine Learning]
 tags: [supervised-learning, unsupervised-learning, knn, decision-tree, k-means]
 ---
