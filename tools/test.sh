@@ -49,6 +49,9 @@ read_baseurl() {
 }
 
 main() {
+  # macOS Finder launcher must remain executable and delegate correctly
+  bash tools/test-macos-launcher.sh
+
   # five reusable draft slots must always be available
   bash tools/test-workspace-slots.sh
 

@@ -171,6 +171,14 @@ bundle install
 bundle exec jekyll serve
 ```
 
+macOS Finder에서는 `serve.command`를 더블클릭하면 된다. 터미널에서 직접 실행하려면:
+
+```bash
+./serve.sh
+```
+
+처음 실행할 때 macOS가 차단하면 파일을 Control-클릭한 뒤 **열기**를 선택한다.
+
 프로덕션 빌드 + 링크 검사 (GitHub Actions와 동일):
 
 ```bash

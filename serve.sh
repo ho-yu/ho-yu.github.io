@@ -1,6 +1,7 @@
 #!/usr/bin/env bash
 # ho-yu.github.io 로컬 미리보기 서버 실행 (macOS / Linux)
-# 실행: ./serve.sh
+# 터미널 실행: ./serve.sh
+# macOS 더블클릭 실행: serve.command
 # 종료: 이 터미널에서 Ctrl+C
 
 set -e
