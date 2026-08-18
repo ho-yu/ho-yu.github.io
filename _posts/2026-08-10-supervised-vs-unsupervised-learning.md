@@ -77,6 +77,51 @@ tags: [supervised-learning, unsupervised-learning, regression, classification, c
 
 ---
 
-## 5. 🔗 관련 글
+## 5. 🧪 코드 / 실습
 
-- [지도·비지도 5개 모델 비교와 선택 기준](/posts/supervised-vs-unsupervised-learning/)
+```python
+.fit(X_train, y_train)
+```
+```text
+학습 -> 배운다
+```
+
+```python
+.predict(X_valid)
+```
+```text
+예측 -> 배운 것으로 예측한다
+```
+
+```python
+y_train.mean()
+```
+```text
+train의 정답값 평균을 계산한다
+```
+
+```python
+np.full(개수, 채울 값)
+np.full(4, 120) = array([120, 120, 120, 120])
+```
+```text
+같은 숫자를 원하는 개수만큼 반복한 배열을 만든다
+```
+
+```python
+assert model_rmse < baseline_rmse
+```
+```text
+LinearRegression의 오차가 평균만 예측하는 baseline보다 반드시 작아야 한다를 자동으로 검사
+(RMSE는 작을수록 좋은 지표)
+```
+
+```text
+MAE·RMSE는 ↓ 작을수록 좋고, R²는 ↑ 클수록 좋다
+```
+
+---
+
+## 6. 🔗 관련 글
+
+- [지도·비지도 5개 모델 비교와 선택 기준](/posts/model-selection-linear-knn-tree-kmeans-pca/)
