@@ -1,5 +1,6 @@
 {% comment %}
-  Renders the posts of one top-level category, grouped by their sub-category.
+  Renders the posts of one top-level category, grouped by their sub-category,
+  with a quick jump nav, excerpt, reading time and tags per item.
 
   Usage (from a tab page):
     {% raw %}{% include section-post-list.html category="Notes" %}{% endraw %}
@@ -8,22 +9,34 @@
   NOTE: emitted HTML must stay unindented, otherwise kramdown renders it as a code block.
 {% endcomment %}
 
+{% include lang.html %}
 {%- assign section = include.category -%}
 {%- assign section_posts = site.posts | where_exp: 'post', 'post.categories contains section' -%}
 
 {% if section_posts.size == 0 %}
-<p class="text-muted">아직 작성된 글이 없습니다.</p>
+<p class="home-empty">아직 작성된 글이 없습니다. 곧 채워질 예정입니다.</p>
 {% else %}
+<div data-section="{{ section }}">
 {%- assign subgroups = section_posts | group_by_exp: 'post', 'post.categories[1]' | sort: 'name' -%}
 {%- assign section_slug = section | slugify -%}
 {%- capture section_url %}/categories/{{ section_slug }}/{% endcapture -%}
+{% if subgroups.size > 1 %}
+<nav class="section-list-nav" aria-label="{{ section }} 하위 주제 바로가기">
+{%- for subgroup in subgroups %}
+<a href="#{{ subgroup.name | default: 'general' | slugify }}">{{ subgroup.name | default: 'General' }} <span class="text-muted">{{ subgroup.items.size }}</span></a>
+{%- endfor %}
+</nav>
+{% endif %}
 {% for subgroup in subgroups %}
-<h2 id="{{ subgroup.name | default: 'general' | slugify }}">{{ subgroup.name | default: 'General' }} <span class="text-muted small">{{ subgroup.items.size }}</span></h2>
-<ul class="list-unstyled ps-0">
+<div class="section-list-group">
+<h2 id="{{ subgroup.name | default: 'general' | slugify }}"><span class="dot"></span>{{ subgroup.name | default: 'General' }} <span class="text-muted small">{{ subgroup.items.size }}</span></h2>
+<ul class="section-list-items">
 {%- for post in subgroup.items %}
-<li class="d-flex justify-content-between align-items-baseline mb-2"><a href="{{ post.url | relative_url }}">{{ post.title }}</a> <span class="text-muted small text-nowrap ms-3">{{ post.date | date: '%Y-%m-%d' }}</span></li>
+<li><div class="row-top"><a class="title" href="{{ post.url | relative_url }}">{{ post.title }}</a><span class="meta">{{ post.date | date: '%Y-%m-%d' }} · {% include read-time.html content=post.content lang=lang %}</span></div><span class="excerpt">{% include post-summary.html max_length=90 %}</span>{% if post.tags.size > 0 %}<div class="tags">{%- for tag in post.tags -%}<a href="{{ site.baseurl }}/tags/{{ tag | slugify | url_encode }}/" class="post-tag no-text-decoration">{{- tag -}}</a>{%- endfor -%}</div>{% endif %}</li>
 {%- endfor %}
 </ul>
+</div>
 {% endfor %}
 <p class="text-muted small">전체 {{ section_posts.size }}개 · <a href="{{ section_url | relative_url }}">{{ section }} 카테고리 페이지</a></p>
+</div>
 {% endif %}

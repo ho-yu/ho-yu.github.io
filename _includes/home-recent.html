@@ -1,0 +1,26 @@
+{% comment %}
+  Renders up to `include.limit` (default 3) most recent posts for one
+  top-level category, for the Home page's curated preview sections.
+  Falls back to a plain empty-state message when the category has no
+  posts yet — never fabricated content.
+
+  Usage:
+    {% raw %}{% include home-recent.html category="Notes" limit=3 %}{% endraw %}
+
+  This is an additive include; it does not override any theme file.
+{% endcomment %}
+
+{% include lang.html %}
+{%- assign section = include.category -%}
+{%- assign post_limit = include.limit | default: 3 -%}
+{%- assign section_posts = site.posts | where_exp: 'post', 'post.categories contains section' -%}
+
+{% if section_posts.size == 0 %}
+<p class="home-empty">아직 작성된 {{ section }} 글이 없습니다. 곧 채워질 예정입니다.</p>
+{% else %}
+<ul class="home-recent-list">
+{%- for post in section_posts limit: post_limit -%}
+<li><div class="row-top d-flex justify-content-between align-items-baseline flex-wrap gap-2"><a class="title" href="{{ post.url | relative_url }}">{{ post.title }}</a><span class="meta text-muted small text-nowrap">{{ post.date | date: '%Y-%m-%d' }}</span></div><span class="excerpt">{% include post-summary.html max_length=80 %}</span></li>
+{%- endfor -%}
+</ul>
+{% endif %}

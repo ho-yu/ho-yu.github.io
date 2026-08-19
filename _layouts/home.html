@@ -1,0 +1,217 @@
+---
+layout: default
+---
+
+{% comment %}
+  Overrides the theme's home layout to turn Home into a content-exploration
+  hub (hero + section quick-nav + curated recent-by-category previews) on
+  top of the theme's original pinned/paginated post list, which is kept
+  verbatim below. The hub only renders on the first page so page 2+ stays a
+  plain archive continuation.
+{% endcomment %}
+
+{% include lang.html %}
+
+{% if paginator.page == 1 %}
+  {%- assign notes_count = site.posts | where_exp: 'p', 'p.categories contains "Notes"' | size -%}
+  {%- assign projects_count = site.posts | where_exp: 'p', 'p.categories contains "Projects"' | size -%}
+  {%- assign trouble_count = site.posts | where_exp: 'p', 'p.categories contains "Troubleshooting"' | size -%}
+  {%- assign retro_count = site.posts | where_exp: 'p', 'p.categories contains "Retrospectives"' | size -%}
+
+  <section class="home-hero">
+    <p class="home-hero-eyebrow">Developer Learning Log</p>
+    <p class="home-hero-title">이론을 이해하고, 코드로 확인하고,<br>문제를 해결하며, 프로젝트로 확장하는 과정을 기록합니다.</p>
+    <ol class="home-hero-flow" aria-label="기록 흐름">
+      <li>Learn</li>
+      <li>Understand</li>
+      <li>Practice</li>
+      <li>Solve</li>
+      <li>Build</li>
+      <li>Reflect</li>
+    </ol>
+  </section>
+
+  <nav class="home-sections" aria-label="콘텐츠 영역 바로가기">
+    <a class="home-section-card" data-section="Notes" href="{{ '/notes/' | relative_url }}">
+      <div class="title"><i class="fas fa-book fa-fw"></i> Notes<span class="count">{% if notes_count > 0 %}{{ notes_count }}개 글{% else %}준비 중{% endif %}</span></div>
+      <span class="desc">개념을 이해하고 코드로 확인한 기록</span>
+    </a>
+    <a class="home-section-card" data-section="Projects" href="{{ '/projects/' | relative_url }}">
+      <div class="title"><i class="fas fa-laptop-code fa-fw"></i> Projects<span class="count">{% if projects_count > 0 %}{{ projects_count }}개 글{% else %}준비 중{% endif %}</span></div>
+      <span class="desc">문제 정의부터 결과물 구현까지</span>
+    </a>
+    <a class="home-section-card" data-section="Troubleshooting" href="{{ '/troubleshooting/' | relative_url }}">
+      <div class="title"><i class="fas fa-bug fa-fw"></i> Troubleshooting<span class="count">{% if trouble_count > 0 %}{{ trouble_count }}개 글{% else %}준비 중{% endif %}</span></div>
+      <span class="desc">오류의 원인 분석과 해결 과정</span>
+    </a>
+    <a class="home-section-card" data-section="Retrospectives" href="{{ '/retrospectives/' | relative_url }}">
+      <div class="title"><i class="fas fa-clock-rotate-left fa-fw"></i> Retrospectives<span class="count">{% if retro_count > 0 %}{{ retro_count }}개 글{% else %}준비 중{% endif %}</span></div>
+      <span class="desc">학습과 프로젝트를 돌아본 회고</span>
+    </a>
+  </nav>
+
+  <section class="home-recent-section" data-section="Notes">
+    <div class="home-recent-header">
+      <h2><span class="dot"></span>Recent Notes</h2>
+      {% if notes_count > 0 %}<a href="{{ '/notes/' | relative_url }}">모두 보기 →</a>{% endif %}
+    </div>
+    {% include home-recent.html category="Notes" limit=3 %}
+  </section>
+
+  <section class="home-recent-section" data-section="Projects">
+    <div class="home-recent-header">
+      <h2><span class="dot"></span>Recent Projects</h2>
+      {% if projects_count > 0 %}<a href="{{ '/projects/' | relative_url }}">모두 보기 →</a>{% endif %}
+    </div>
+    {% include home-recent.html category="Projects" limit=3 %}
+  </section>
+
+  <section class="home-recent-section" data-section="Troubleshooting">
+    <div class="home-recent-header">
+      <h2><span class="dot"></span>Recent Troubleshooting</h2>
+      {% if trouble_count > 0 %}<a href="{{ '/troubleshooting/' | relative_url }}">모두 보기 →</a>{% endif %}
+    </div>
+    {% include home-recent.html category="Troubleshooting" limit=3 %}
+  </section>
+{% endif %}
+
+{% assign all_pinned = site.posts | where: 'pin', 'true' %}
+{% assign all_normal = site.posts | where_exp: 'item', 'item.pin != true and item.hidden != true' %}
+
+{% assign posts = '' | split: '' %}
+
+<!-- Get pinned posts on current page -->
+
+{% assign visible_start = paginator.page | minus: 1 | times: paginator.per_page %}
+{% assign visible_end = visible_start | plus: paginator.per_page %}
+
+{% if all_pinned.size > visible_start %}
+  {% if all_pinned.size > visible_end %}
+    {% assign pinned_size = paginator.per_page %}
+  {% else %}
+    {% assign pinned_size = all_pinned.size | minus: visible_start %}
+  {% endif %}
+
+  {% for i in (visible_start..all_pinned.size) limit: pinned_size %}
+    {% assign posts = posts | push: all_pinned[i] %}
+  {% endfor %}
+{% else %}
+  {% assign pinned_size = 0 %}
+{% endif %}
+
+<!-- Get normal posts on current page -->
+
+{% assign normal_size = paginator.posts | size | minus: pinned_size %}
+
+{% if normal_size > 0 %}
+  {% if pinned_size > 0 %}
+    {% assign normal_start = 0 %}
+  {% else %}
+    {% assign normal_start = visible_start | minus: all_pinned.size %}
+  {% endif %}
+
+  {% assign normal_end = normal_start | plus: normal_size | minus: 1 %}
+
+  {% for i in (normal_start..normal_end) %}
+    {% assign posts = posts | push: all_normal[i] %}
+  {% endfor %}
+{% endif %}
+
+{% if posts.size > 0 %}
+  <div class="home-all-posts-header">
+    <h2>전체 글</h2>
+  </div>
+{% endif %}
+
+<div id="post-list" class="flex-grow-1 px-xl-1">
+  {% for post in posts %}
+    <article class="card-wrapper card">
+      <a href="{{ post.url | relative_url }}" class="post-preview row g-0 flex-md-row-reverse">
+        {% assign card_body_col = '12' %}
+
+        {% if post.image %}
+          {% assign src = post.image.path | default: post.image %}
+
+          {% if post.media_subpath %}
+            {% unless src contains '://' %}
+              {% assign src = post.media_subpath
+                | append: '/'
+                | append: src
+                | replace: '///', '/'
+                | replace: '//', '/'
+              %}
+            {% endunless %}
+          {% endif %}
+
+          {% if post.image.lqip %}
+            {% assign lqip = post.image.lqip %}
+
+            {% if post.media_subpath %}
+              {% unless lqip contains 'data:' %}
+                {% assign lqip = post.media_subpath
+                  | append: '/'
+                  | append: lqip
+                  | replace: '///', '/'
+                  | replace: '//', '/'
+                %}
+              {% endunless %}
+            {% endif %}
+
+            {% assign lqip_attr = 'lqip="' | append: lqip | append: '"' %}
+          {% endif %}
+
+          {% assign alt = post.image.alt | xml_escape | default: 'Preview Image' %}
+
+          <div class="col-md-5">
+            <img src="{{ src }}" alt="{{ alt }}" {{ lqip_attr }}>
+          </div>
+
+          {% assign card_body_col = '7' %}
+        {% endif %}
+
+        <div class="col-md-{{ card_body_col }}">
+          <div class="card-body d-flex flex-column">
+            <h1 class="card-title my-2 mt-md-0">{{ post.title }}</h1>
+
+            <div class="card-text content mt-0 mb-3">
+              <p>{% include post-summary.html %}</p>
+            </div>
+
+            <div class="post-meta flex-grow-1 d-flex align-items-end">
+              <div class="me-auto">
+                <!-- posted date -->
+                <i class="far fa-calendar fa-fw me-1"></i>
+                {% include datetime.html date=post.date lang=lang %}
+
+                <!-- categories -->
+                {% if post.categories.size > 0 %}
+                  <i class="far fa-folder-open fa-fw me-1"></i>
+                  <span class="categories">
+                    {% for category in post.categories %}
+                      {{ category }}
+                      {%- unless forloop.last -%},{%- endunless -%}
+                    {% endfor %}
+                  </span>
+                {% endif %}
+              </div>
+
+              {% if post.pin %}
+                <div class="pin ms-1">
+                  <i class="fas fa-thumbtack fa-fw"></i>
+                  <span>{{ site.data.locales[lang].post.pin_prompt }}</span>
+                </div>
+              {% endif %}
+            </div>
+            <!-- .post-meta -->
+          </div>
+          <!-- .card-body -->
+        </div>
+      </a>
+    </article>
+  {% endfor %}
+</div>
+<!-- #post-list -->
+
+{% if paginator.total_pages > 1 %}
+  {% include post-paginator.html %}
+{% endif %}

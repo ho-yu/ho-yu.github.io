@@ -1,0 +1,351 @@
+---
+---
+
+@use 'abstracts/variables' with (
+  $theme: '{{ site.theme_mode }}',
+  $font-family-base: (
+    'Pretendard Variable', Pretendard, -apple-system, BlinkMacSystemFont, 'Segoe UI',
+    'Source Sans Pro', 'Malgun Gothic', 'Apple SD Gothic Neo', Roboto, sans-serif
+  ),
+  $font-family-heading: (
+    'Pretendard Variable', Pretendard, -apple-system, BlinkMacSystemFont, 'Segoe UI', Lato,
+    'Malgun Gothic', 'Apple SD Gothic Neo', Roboto, sans-serif
+  )
+);
+
+/* prettier-ignore */
+@use 'main
+{%- if jekyll.environment == 'production' -%}
+  .bundle
+{%- endif -%}
+';
+
+/* append your custom style below */
+
+/* ===================================================================
+   Design tokens — restrained category accents.
+   Used only for small dots/icons (badges), never for full-page color.
+   =================================================================== */
+
+:root {
+  --accent-notes: #2f6feb;
+  --accent-projects: #8b5cf6;
+  --accent-troubleshooting: #d97706;
+  --accent-retrospectives: #059669;
+}
+
+:root[data-bs-theme='dark'] {
+  --accent-notes: #6ea8fe;
+  --accent-projects: #b197fc;
+  --accent-troubleshooting: #f0a828;
+  --accent-retrospectives: #34d399;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-bs-theme='light']) {
+    --accent-notes: #6ea8fe;
+    --accent-projects: #b197fc;
+    --accent-troubleshooting: #f0a828;
+    --accent-retrospectives: #34d399;
+  }
+}
+
+[data-section='Notes'] {
+  --accent-card: var(--accent-notes);
+}
+
+[data-section='Projects'] {
+  --accent-card: var(--accent-projects);
+}
+
+[data-section='Troubleshooting'] {
+  --accent-card: var(--accent-troubleshooting);
+}
+
+[data-section='Retrospectives'] {
+  --accent-card: var(--accent-retrospectives);
+}
+
+.dot {
+  display: inline-block;
+  width: 0.5rem;
+  height: 0.5rem;
+  margin-right: 0.5rem;
+  border-radius: 50%;
+  background: var(--accent-card, var(--link-color));
+  vertical-align: middle;
+}
+
+/* ===================================================================
+   Readable measure for long-form posts.
+   Scoped to `article[data-toc]`, which only the post layout renders —
+   tabs/about pages keep their default width.
+   =================================================================== */
+
+article[data-toc] {
+  max-width: 46rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* ===================================================================
+   Home — hero
+   =================================================================== */
+
+.home-hero {
+  padding: 1.5rem 0 1.75rem;
+  margin-bottom: 2rem;
+  border-bottom: 1px solid var(--main-border-color);
+}
+
+.home-hero-eyebrow {
+  margin-bottom: 0.5rem;
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--text-muted-color);
+}
+
+.home-hero-title {
+  max-width: 38rem;
+  margin-bottom: 1.25rem;
+  font-size: 1.4rem;
+  line-height: 1.6;
+  font-weight: 600;
+  color: var(--heading-color);
+}
+
+.home-hero-flow {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-size: 0.8rem;
+  color: var(--text-muted-color);
+}
+
+.home-hero-flow li {
+  display: flex;
+  align-items: center;
+}
+
+.home-hero-flow li:not(:last-child)::after {
+  content: '\2192';
+  margin: 0 0.6rem;
+  color: var(--btn-border-color);
+}
+
+/* ===================================================================
+   Home — quick section nav
+   =================================================================== */
+
+.home-sections {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0.75rem;
+  margin: 0 0 2.5rem;
+  padding: 0;
+  list-style: none;
+}
+
+@media (min-width: 576px) {
+  .home-sections {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+.home-section-card {
+  display: block;
+  padding: 1rem 1.1rem;
+  border: 1px solid var(--btn-border-color);
+  border-radius: 10px;
+  background: var(--card-bg);
+  transition:
+    border-color 0.2s ease-in-out,
+    background-color 0.2s ease-in-out;
+}
+
+.home-section-card:hover {
+  border-color: var(--accent-card, var(--link-color));
+  background: var(--card-hover-bg);
+  text-decoration: none;
+}
+
+.home-section-card .title {
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: var(--heading-color);
+}
+
+.home-section-card .count {
+  margin-left: 0.4rem;
+  font-size: 0.78rem;
+  font-weight: 400;
+  color: var(--text-muted-color);
+}
+
+.home-section-card .desc {
+  display: block;
+  margin-top: 0.4rem;
+  font-size: 0.8rem;
+  line-height: 1.4;
+  color: var(--text-muted-color);
+}
+
+/* ===================================================================
+   Home — curated recent sections
+   =================================================================== */
+
+.home-recent-section {
+  margin-bottom: 2.25rem;
+}
+
+.home-recent-header {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-bottom: 0.75rem;
+}
+
+.home-recent-header h2 {
+  margin: 0;
+  font-size: 1.05rem;
+  display: flex;
+  align-items: center;
+}
+
+.home-recent-header a {
+  font-size: 0.8rem;
+  white-space: nowrap;
+}
+
+.home-recent-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.home-recent-list li {
+  padding: 0.6rem 0;
+  border-bottom: 1px dashed var(--main-border-color);
+}
+
+.home-recent-list li:last-child {
+  border-bottom: 0;
+}
+
+.home-recent-list .title {
+  font-weight: 500;
+  color: var(--heading-color);
+}
+
+.home-recent-list .excerpt {
+  display: block;
+  margin-top: 0.15rem;
+  font-size: 0.85rem;
+  color: var(--text-muted-color);
+}
+
+.home-empty {
+  padding: 1.25rem;
+  border: 1px dashed var(--main-border-color);
+  border-radius: 10px;
+  color: var(--text-muted-color);
+  font-size: 0.85rem;
+  text-align: center;
+}
+
+.home-all-posts-header {
+  padding-top: 1rem;
+  margin-bottom: 0.5rem;
+  border-top: 1px solid var(--main-border-color);
+}
+
+/* ===================================================================
+   Section list (Notes / Projects / Troubleshooting / Retrospectives tabs)
+   =================================================================== */
+
+.section-list-nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.section-list-nav a {
+  display: inline-block;
+  padding: 0.3rem 0.75rem;
+  border: 1px solid var(--btn-border-color);
+  border-radius: 999px;
+  font-size: 0.8rem;
+  color: var(--text-muted-color);
+}
+
+.section-list-nav a:hover {
+  border-color: var(--link-color);
+  color: var(--link-color);
+  text-decoration: none;
+}
+
+.section-list-group h2 {
+  font-size: 1.15rem;
+}
+
+.section-list-items {
+  margin: 0 0 1.5rem;
+  padding: 0;
+  list-style: none;
+}
+
+.section-list-items li {
+  padding: 0.9rem 0;
+  border-bottom: 1px solid var(--main-border-color);
+}
+
+.section-list-items li:first-child {
+  padding-top: 0;
+}
+
+.section-list-items .row-top {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 0.25rem 1rem;
+}
+
+.section-list-items .title {
+  font-weight: 500;
+  color: var(--heading-color);
+}
+
+.section-list-items .meta {
+  white-space: nowrap;
+  font-size: 0.8rem;
+  color: var(--text-muted-color);
+}
+
+.section-list-items .excerpt {
+  display: block;
+  margin-top: 0.3rem;
+  font-size: 0.88rem;
+  line-height: 1.5;
+  color: var(--text-muted-color);
+}
+
+.section-list-items .tags {
+  margin-top: 0.5rem;
+}
+
+/* ===================================================================
+   Accessibility — visible focus ring beyond the browser default
+   =================================================================== */
+
+.home-section-card:focus-visible,
+.section-list-nav a:focus-visible {
+  outline: 2px solid var(--link-color);
+  outline-offset: 2px;
+}
