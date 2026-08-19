@@ -95,7 +95,10 @@ Tag:
 직접 초고를 작성할 때는 `workspace/draft-01.md`부터 `draft-05.md`까지 제공되는
 5개 작업 슬롯 중 하나에서 작업한다. 이 폴더는 Git으로 동기화되지만 사이트 빌드에서는
 제외된다. 작성이 끝나면 `작성완료 workspace/draft-번호.md`라고 요청한다.
-발행일은 요청한 당일로 확정한다. 발행 후에도 `workspace/`는 그대로 두며,
+
+초고 Front Matter는 `title` / `published` / `date` 세 필드를 쓴다. `date`에
+`YYYY-MM-DD`를 적어두면 그 날짜를 발행일로 쓴다(시각은 09:00:00 +0900을 붙인다).
+비워두면 작성완료를 요청한 당일로 확정한다. 발행 후에도 `workspace/`는 그대로 두며,
 그 안의 파일에 대한 수정·commit·push는 사용자가 별도로 요청할 때만 한다.
 
 ## Images

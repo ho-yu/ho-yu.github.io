@@ -249,6 +249,9 @@ tags: [classification, precision, recall]
 
 - `date`는 실제 작성 시각(`date "+%Y-%m-%d %H:%M:%S +0900"`). **미래 날짜 금지.**
 - 사용자가 날짜를 지정하면 그것을 우선한다.
+- `workspace/` 초고의 Front Matter에 `date: YYYY-MM-DD`가 적혀 있으면 그 값이
+  "사용자가 지정한 날짜"다 — 시각은 `09:00:00 +0900`을 붙여 발행일로 확정한다.
+  초고에 `date`가 비어 있으면 작성완료를 요청한 당일 실제 시각을 쓴다.
 - 기존 글을 단순 수정할 때 원래 `date`를 바꾸지 않는다.
 - `math: true`는 `$$` 수식이 있을 때만, `mermaid: true`는 다이어그램이 있을 때만 넣는다.
 - `pin`, `image`는 사용자가 요청할 때만 넣는다.
