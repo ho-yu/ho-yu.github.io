@@ -69,11 +69,92 @@ X_temp, X_test, y_temp, y_test = train_test_split(
 
 - **성립 조건:** Precision과 Recall은 서로 트레이드오프 관계다 — 양성 판정 기준(임계값)을 엄격히 하면 Precision은 오르고 Recall은 내려간다.
 
+```text
+TP(True Positive) : 실제가 1이고, 예측도 1 => 양성을 맞힘
+TN(True Negative) : 실제가 0이고, 예측도 0 => 음성을 맞힘
+```
+
+```text
+Precision(정밀도) : 모델이 1이라고 예측한 것을 기준으로 봄
+Precision이 높다 = 모델이 Positive라고 말할 때 믿을만 하다.
+```
+```text
+Recall(재현율) : 실제가 1인 것을 기준으로 봄
+Recall이 높다 = 실제 Positive를 거의 놓이지 않는다.
+```
+
+
+즉, 
+
+```text
+Precision -> 내가 1이라고 예측한 것 중 얼마나 맞았나?
+
+Recall -> 실제 1인 것 중 얼마나 찾아냈나?
+
+예를 들어 도둑을 잡는 경찰이라고 생각하면,
+
+Precision → 경찰이 잡은 사람 중 진짜 도둑의 비율
+Recall → 실제 도둑 전체 중 경찰이 잡아낸 도둑의 비율
+```
+
+```text
+한 줄 요약:
+Precision은 잡은 것의 정확성, Recall은 놓치지 않고 얼마나 많이 잡았는지입니다.
+```
+
+
+
+
 > ⚠️ **값의 방향** · 이탈 고객 100명 중 1명만 있는 데이터에서 "전부 유지"라고 예측해도 Accuracy는 99%지만, 실제 양성은 한 명도 못 찾는다(Recall 0). Accuracy 하나만으로는 이 실패를 볼 수 없다.
 {: .prompt-warning }
 
 > 💡 **한 줄 요약** · Accuracy는 전체 정답률, Precision은 예측한 양성이 얼마나 정확한지, Recall은 실제 양성을 얼마나 놓치지 않고 찾았는지를 보는 지표이다.
 {: .prompt-info }
+
+---
+
+- 코드
+
+```python
+model.predict_proba(X_valid)
+```
+
+```text
+모델이 단순히 0/1을 결정하기 전에 각 클래스일 가능성이 얼마나 되는지 확인하는 함수
+```
+
+```python
+model.predict_proba(X_valid)[:, 1]
+```
+
+```text
+양성(1) 클래스 확률을 가져온다
+여기서 [양성/음성, 0/1]은 표현상의 약속이고, 정해진 문법은 아니다
+```
+
+
+
+
+```text
+Accuracy  → 전체적으로 얼마나 맞혔는가
+Precision → 1이라고 예측한 것 중 실제 1 비율
+Recall    → 실제 1 중에서 얼마나 찾아냈는가
+F1        → Precision과 Recall의 균형
+
+ROC-AUC   → 확률 순위 성능
+AP        → 양성 탐지 순위를 Precision-Recall 관점에서 평가
+```
+
+```text
+Threshold(임계값) : 예측 확률을 0과 1로 최종 결정하는 기준선
+Probability(확률) : 어떤 일이 일어날 가능성을 0 ~ 1 사이의 숫자로 표현한 것
+```
+
+
+
+
+
+
 
 ---
 

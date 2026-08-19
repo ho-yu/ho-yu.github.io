@@ -1,6 +1,6 @@
 ---
 title: "선형모델 — Linear Regression과 Logistic Regression"
-date: 2026-08-19 09:00:00 +0900
+date: 2026-08-13 09:00:00 +0900
 categories: [Notes, Machine Learning]
 tags: [linear-model, linear-regression, logistic-regression, regression, classification]
 ---
