@@ -50,29 +50,51 @@ layout: default
     </a>
   </nav>
 
-  <section class="home-recent-section" data-section="Notes">
-    <div class="home-recent-header">
-      <h2><span class="dot"></span>Recent Notes</h2>
-      {% if notes_count > 0 %}<a href="{{ '/notes/' | relative_url }}">모두 보기 →</a>{% endif %}
-    </div>
-    {% include home-recent.html category="Notes" limit=3 %}
-  </section>
+  {%- comment -%}
+    The per-area "Recent" previews earn their place by surfacing posts that the
+    chronological list below would bury. They only do that once more than one
+    area has posts — while everything lives in a single area, the list below
+    already _is_ that area's recent list, so showing both just prints the same
+    posts twice. Empty areas are skipped entirely; their card above already
+    reads "준비 중".
+  {%- endcomment -%}
+  {%- assign populated_areas = 0 -%}
+  {%- if notes_count > 0 %}{% assign populated_areas = populated_areas | plus: 1 %}{% endif -%}
+  {%- if projects_count > 0 %}{% assign populated_areas = populated_areas | plus: 1 %}{% endif -%}
+  {%- if trouble_count > 0 %}{% assign populated_areas = populated_areas | plus: 1 %}{% endif -%}
+  {%- if retro_count > 0 %}{% assign populated_areas = populated_areas | plus: 1 %}{% endif -%}
 
-  <section class="home-recent-section" data-section="Projects">
-    <div class="home-recent-header">
-      <h2><span class="dot"></span>Recent Projects</h2>
-      {% if projects_count > 0 %}<a href="{{ '/projects/' | relative_url }}">모두 보기 →</a>{% endif %}
-    </div>
-    {% include home-recent.html category="Projects" limit=3 %}
-  </section>
+  {% if populated_areas > 1 %}
+    {% if notes_count > 0 %}
+      <section class="home-recent-section" data-section="Notes">
+        <div class="home-recent-header">
+          <h2><span class="dot"></span>Recent Notes</h2>
+          <a href="{{ '/notes/' | relative_url }}">모두 보기 →</a>
+        </div>
+        {% include home-recent.html category="Notes" limit=3 %}
+      </section>
+    {% endif %}
 
-  <section class="home-recent-section" data-section="Troubleshooting">
-    <div class="home-recent-header">
-      <h2><span class="dot"></span>Recent Troubleshooting</h2>
-      {% if trouble_count > 0 %}<a href="{{ '/troubleshooting/' | relative_url }}">모두 보기 →</a>{% endif %}
-    </div>
-    {% include home-recent.html category="Troubleshooting" limit=3 %}
-  </section>
+    {% if projects_count > 0 %}
+      <section class="home-recent-section" data-section="Projects">
+        <div class="home-recent-header">
+          <h2><span class="dot"></span>Recent Projects</h2>
+          <a href="{{ '/projects/' | relative_url }}">모두 보기 →</a>
+        </div>
+        {% include home-recent.html category="Projects" limit=3 %}
+      </section>
+    {% endif %}
+
+    {% if trouble_count > 0 %}
+      <section class="home-recent-section" data-section="Troubleshooting">
+        <div class="home-recent-header">
+          <h2><span class="dot"></span>Recent Troubleshooting</h2>
+          <a href="{{ '/troubleshooting/' | relative_url }}">모두 보기 →</a>
+        </div>
+        {% include home-recent.html category="Troubleshooting" limit=3 %}
+      </section>
+    {% endif %}
+  {% endif %}
 {% endif %}
 
 {% assign all_pinned = site.posts | where: 'pin', 'true' %}
@@ -174,7 +196,7 @@ layout: default
             <h1 class="card-title my-2 mt-md-0">{{ post.title }}</h1>
 
             <div class="card-text content mt-0 mb-3">
-              <p>{% include post-summary.html %}</p>
+              <p>{% include post-excerpt.html %}</p>
             </div>
 
             <div class="post-meta flex-grow-1 d-flex align-items-end">

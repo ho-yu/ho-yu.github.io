@@ -20,7 +20,7 @@
 {% else %}
 <ul class="home-recent-list">
 {%- for post in section_posts limit: post_limit -%}
-<li><div class="row-top d-flex justify-content-between align-items-baseline flex-wrap gap-2"><a class="title" href="{{ post.url | relative_url }}">{{ post.title }}</a><span class="meta text-muted small text-nowrap">{{ post.date | date: '%Y-%m-%d' }}</span></div><span class="excerpt">{% include post-summary.html max_length=80 %}</span></li>
+<li><div class="row-top d-flex justify-content-between align-items-baseline flex-wrap gap-2"><a class="title" href="{{ post.url | relative_url }}">{{ post.title }}</a><span class="meta text-muted small text-nowrap">{{ post.date | date: '%Y-%m-%d' }}</span></div><span class="excerpt">{% include post-excerpt.html max_length=90 %}</span></li>
 {%- endfor -%}
 </ul>
 {% endif %}

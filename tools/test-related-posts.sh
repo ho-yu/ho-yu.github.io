@@ -36,6 +36,8 @@ trap cleanup EXIT
 
 mkdir -p "$fixture_source/_includes" "$fixture_source/_posts"
 cp "$repo_root/_includes/related-posts.html" "$fixture_source/_includes/related-posts.html"
+# related-posts.html renders each card's summary through our own excerpt include
+cp "$repo_root/_includes/post-excerpt.html" "$fixture_source/_includes/post-excerpt.html"
 
 printf '%s\n' \
   'theme: jekyll-theme-chirpy' \

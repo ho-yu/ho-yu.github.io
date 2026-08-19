@@ -77,6 +77,29 @@
 }
 
 /* ===================================================================
+   Page titles.
+   Chirpy renders every heading at weight 400. With Pretendard — lighter
+   at 400 than the theme's original Lato — a post title ends up reading at
+   almost the same weight as an H2 two sizes down, so the top of the
+   hierarchy goes soft. Lift the page-level title only; H2/H3 keep the
+   theme's calm 400.
+   =================================================================== */
+
+article > header > h1,
+h1.dynamic-title {
+  font-weight: 600;
+  letter-spacing: -0.015em;
+  line-height: 1.3;
+}
+
+/* matches Chirpy's `lg` breakpoint */
+@media all and (min-width: 850px) {
+  article[data-toc] > header > h1 {
+    font-size: 2.25rem;
+  }
+}
+
+/* ===================================================================
    Readable measure for long-form posts.
    Scoped to `article[data-toc]`, which only the post layout renders —
    tabs/about pages keep their default width.

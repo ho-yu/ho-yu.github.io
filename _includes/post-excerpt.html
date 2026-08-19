@@ -1,0 +1,60 @@
+{%- comment -%}
+  Post excerpt for listing screens.
+
+  Same job as the theme's `post-summary.html`, with one addition: every post in
+  this repository opens with a `.prompt-info` box that restates the category and
+  tags (see `templates/*.md`). Listing screens already show that metadata in
+  their own columns, so summarising from the raw content spent the entire
+  excerpt repeating it — on the section tabs all 91 characters were metadata and
+  none described the post. This drops that leading box before summarising.
+
+  Only a prompt box at the very start is removed; prompt boxes further down the
+  article are left alone.
+
+  NOTE ON ORDERING: `post.content` is raw Markdown for a post Jekyll has not
+  rendered yet and HTML for one it has, so which form we get depends on render
+  order. Everything below therefore runs *after* `markdownify`, which normalises
+  both forms to HTML — checking for the blockquote before that made the excerpt
+  come out differently on different pages for the same post.
+
+  Arguments:
+    max_length: maximum length of the returned text. Default is 200.
+
+  Reads the ambient `post` variable, like `post-summary.html` does.
+{%- endcomment -%}
+
+{%- if post.description -%}
+  {{- post.description -}}
+{%- else -%}
+  {%- assign _html = post.content | markdownify | strip -%}
+
+  {%- comment -%} Drop a leading category/tag prompt box. {%- endcomment -%}
+  {%- assign _opening = _html | slice: 0, 26 -%}
+  {%- if _opening == '<blockquote class="prompt-' -%}
+    {%- assign _pieces = _html | split: '</blockquote>' -%}
+    {%- if _pieces.size > 1 -%}
+      {%- assign _html = _pieces | slice: 1, 9999 | join: '</blockquote>' -%}
+    {%- endif -%}
+  {%- endif -%}
+
+  {%- comment -%} Remove the line numbers from code snippets. {%- endcomment -%}
+  {%- if _html contains '<td class="rouge-gutter gl"><pre class="lineno">' -%}
+    {%- assign _html = _html
+      | replace: '<td class="rouge-gutter gl"><pre class="lineno">',
+        '<!-- <td class="rouge-gutter gl"><pre class="lineno">'
+    -%}
+    {%- assign _html = _html | replace: '</td><td class="rouge-code">', '</td> --><td class="rouge-code">' -%}
+  {%- endif -%}
+
+  {%- assign _text = _html
+    | strip_html
+    | newline_to_br
+    | replace: '<br />', ' '
+    | strip_newlines
+    | replace: '  ', ' '
+    | strip
+  -%}
+
+  {%- assign _max_length = include.max_length | default: 200 -%}
+  {{- _text | truncate: _max_length -}}
+{%- endif -%}

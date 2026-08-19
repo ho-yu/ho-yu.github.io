@@ -32,7 +32,7 @@
 <h2 id="{{ subgroup.name | default: 'general' | slugify }}"><span class="dot"></span>{{ subgroup.name | default: 'General' }} <span class="text-muted small">{{ subgroup.items.size }}</span></h2>
 <ul class="section-list-items">
 {%- for post in subgroup.items %}
-<li><div class="row-top"><a class="title" href="{{ post.url | relative_url }}">{{ post.title }}</a><span class="meta">{{ post.date | date: '%Y-%m-%d' }} · {% include read-time.html content=post.content lang=lang %}</span></div><span class="excerpt">{% include post-summary.html max_length=90 %}</span>{% if post.tags.size > 0 %}<div class="tags">{%- for tag in post.tags -%}<a href="{{ site.baseurl }}/tags/{{ tag | slugify | url_encode }}/" class="post-tag no-text-decoration">{{- tag -}}</a>{%- endfor -%}</div>{% endif %}</li>
+<li><div class="row-top"><a class="title" href="{{ post.url | relative_url }}">{{ post.title }}</a><span class="meta">{{ post.date | date: '%Y-%m-%d' }} · {% include read-time.html content=post.content lang=lang %}</span></div><span class="excerpt">{% include post-excerpt.html max_length=110 %}</span>{% if post.tags.size > 0 %}<div class="tags">{%- for tag in post.tags -%}<a href="{{ site.baseurl }}/tags/{{ tag | slugify | url_encode }}/" class="post-tag no-text-decoration">{{- tag -}}</a>{%- endfor -%}</div>{% endif %}</li>
 {%- endfor %}
 </ul>
 </div>
