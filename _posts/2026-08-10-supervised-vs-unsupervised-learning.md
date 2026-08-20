@@ -3,6 +3,7 @@ title: "지도학습과 비지도학습"
 date: 2026-08-10 09:00:00 +0900
 categories: [Notes, Machine Learning]
 tags: [supervised-learning, unsupervised-learning, regression, classification, clustering]
+mermaid: true
 ---
 
 > 🗂️ **Notes · Machine Learning** — `supervised-learning` `unsupervised-learning` `regression` `classification` `clustering`
@@ -53,6 +54,18 @@ tags: [supervised-learning, unsupervised-learning, regression, classification, c
 - 모델을 고르기 전에 문제 유형(정답 `y`의 존재 여부와 출력 형태)부터 판별한다.
 - 같은 데이터라도 목적에 따라 지도학습/비지도학습 문제로 나뉜다.
 - `y`가 "있다"는 것은 단순 존재가 아니라, 신뢰할 수 있고 배포 시점에도 구할 수 있어야 한다는 뜻이다.
+
+아래 그림처럼 정리하면:
+
+```mermaid
+flowchart TD
+    A["정답 y가 있는가?"] -->|있음| B["예측값이<br/>연속값인가, 범주인가?"]
+    A -->|없음| C["데이터를 묶고 싶은가,<br/>특성을 줄이고 싶은가?"]
+    B -->|연속값| D["회귀<br/>(지도학습)"]
+    B -->|범주| E["분류<br/>(지도학습)"]
+    C -->|묶고 싶음| F["군집화<br/>(비지도학습)"]
+    C -->|줄이고 싶음| G["차원축소<br/>(비지도학습)"]
+```
 
 ---
 
