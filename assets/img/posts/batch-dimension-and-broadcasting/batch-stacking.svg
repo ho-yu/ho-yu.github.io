@@ -1,0 +1,54 @@
+<svg width="440" height="200" viewBox="0 0 440 200" xmlns="http://www.w3.org/2000/svg" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif">
+  <rect x="0" y="0" width="440" height="200" fill="#f6f8fa" rx="10"/>
+
+  <text x="210" y="70" font-size="24" fill="#6e7781" text-anchor="middle" font-weight="bold">&#8594;</text>
+  <text x="210" y="94" font-size="11" fill="#57606a" text-anchor="middle">쌓기</text>
+
+  <!-- left: 3 individual samples, each shape (4,) -->
+  <g transform="translate(20,15)">
+    <text x="80" y="14" font-size="14" font-weight="700" fill="#24292f" text-anchor="middle">샘플 3개 · 각 shape (4,)</text>
+
+    <text x="0" y="52" font-size="11" fill="#57606a" font-family="ui-monospace, monospace">s1</text>
+    <rect x="18" y="38" width="26" height="26" rx="4" fill="#ffffff" stroke="#d0d7de" stroke-width="1.5"/>
+    <rect x="47" y="38" width="26" height="26" rx="4" fill="#ffffff" stroke="#d0d7de" stroke-width="1.5"/>
+    <rect x="76" y="38" width="26" height="26" rx="4" fill="#ffffff" stroke="#d0d7de" stroke-width="1.5"/>
+    <rect x="105" y="38" width="26" height="26" rx="4" fill="#ffffff" stroke="#d0d7de" stroke-width="1.5"/>
+
+    <text x="0" y="86" font-size="11" fill="#57606a" font-family="ui-monospace, monospace">s2</text>
+    <rect x="18" y="72" width="26" height="26" rx="4" fill="#ffffff" stroke="#d0d7de" stroke-width="1.5"/>
+    <rect x="47" y="72" width="26" height="26" rx="4" fill="#ffffff" stroke="#d0d7de" stroke-width="1.5"/>
+    <rect x="76" y="72" width="26" height="26" rx="4" fill="#ffffff" stroke="#d0d7de" stroke-width="1.5"/>
+    <rect x="105" y="72" width="26" height="26" rx="4" fill="#ffffff" stroke="#d0d7de" stroke-width="1.5"/>
+
+    <text x="0" y="120" font-size="11" fill="#57606a" font-family="ui-monospace, monospace">s3</text>
+    <rect x="18" y="106" width="26" height="26" rx="4" fill="#ffffff" stroke="#d0d7de" stroke-width="1.5"/>
+    <rect x="47" y="106" width="26" height="26" rx="4" fill="#ffffff" stroke="#d0d7de" stroke-width="1.5"/>
+    <rect x="76" y="106" width="26" height="26" rx="4" fill="#ffffff" stroke="#d0d7de" stroke-width="1.5"/>
+    <rect x="105" y="106" width="26" height="26" rx="4" fill="#ffffff" stroke="#d0d7de" stroke-width="1.5"/>
+
+    <text x="80" y="168" font-size="11.5" fill="#0969da" text-anchor="middle" font-family="ui-monospace, monospace">4개의 feature</text>
+  </g>
+
+  <!-- right: stacked into one batch tensor, shape (3, 4) -->
+  <g transform="translate(250,15)">
+    <text x="70" y="14" font-size="14" font-weight="700" fill="#24292f" text-anchor="middle">batch: shape (3, 4)</text>
+
+    <rect x="18" y="38" width="26" height="26" rx="4" fill="#ffffff" stroke="#d0d7de" stroke-width="1.5"/>
+    <rect x="47" y="38" width="26" height="26" rx="4" fill="#ffffff" stroke="#d0d7de" stroke-width="1.5"/>
+    <rect x="76" y="38" width="26" height="26" rx="4" fill="#ffffff" stroke="#d0d7de" stroke-width="1.5"/>
+    <rect x="105" y="38" width="26" height="26" rx="4" fill="#ffffff" stroke="#d0d7de" stroke-width="1.5"/>
+
+    <rect x="18" y="67" width="26" height="26" rx="4" fill="#ffffff" stroke="#d0d7de" stroke-width="1.5"/>
+    <rect x="47" y="67" width="26" height="26" rx="4" fill="#ffffff" stroke="#d0d7de" stroke-width="1.5"/>
+    <rect x="76" y="67" width="26" height="26" rx="4" fill="#ffffff" stroke="#d0d7de" stroke-width="1.5"/>
+    <rect x="105" y="67" width="26" height="26" rx="4" fill="#ffffff" stroke="#d0d7de" stroke-width="1.5"/>
+
+    <rect x="18" y="96" width="26" height="26" rx="4" fill="#ffffff" stroke="#d0d7de" stroke-width="1.5"/>
+    <rect x="47" y="96" width="26" height="26" rx="4" fill="#ffffff" stroke="#d0d7de" stroke-width="1.5"/>
+    <rect x="76" y="96" width="26" height="26" rx="4" fill="#ffffff" stroke="#d0d7de" stroke-width="1.5"/>
+    <rect x="105" y="96" width="26" height="26" rx="4" fill="#ffffff" stroke="#d0d7de" stroke-width="1.5"/>
+
+    <text x="70" y="140" font-size="11.5" fill="#0969da" text-anchor="middle" font-family="ui-monospace, monospace">(batch_size, feature_dim)</text>
+    <text x="70" y="168" font-size="11.5" fill="#57606a" text-anchor="middle">batch dimension = 샘플 개수</text>
+  </g>
+</svg>

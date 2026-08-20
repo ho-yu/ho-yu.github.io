@@ -19,6 +19,10 @@ tags: [pytorch, tensor, broadcasting, unsqueeze, squeeze]
 > 💡 **중요** · 딥러닝에서 2차원 입력 tensor는 보통 `(batch_size, features)` 형태다.
 {: .prompt-info }
 
+아래 그림처럼 feature 4개짜리 샘플 여러 개를 쌓으면, 그 개수가 곧 batch dimension이 된다.
+
+![feature 4개짜리 샘플 3개가 각각 shape (4,)인 상태에서 쌓여서 shape (3, 4)의 batch tensor가 되는 과정, batch dimension은 샘플 개수를 나타낸다](/assets/img/posts/batch-dimension-and-broadcasting/batch-stacking.svg){: w="440" h="200" }
+
 ---
 
 ## 2. 🔍 이해하기
