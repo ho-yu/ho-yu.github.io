@@ -3,6 +3,7 @@ title: "PyTorch 코드 기본 구조"
 date: 2026-08-19 13:00:00 +0900
 categories: [Notes, Deep Learning]
 tags: [pytorch, neural-network, training-loop, dataloader, checkpoint]
+mermaid: true
 ---
 
 > 🗂️ **Notes · Deep Learning** — `pytorch` `neural-network` `training-loop` `dataloader` `checkpoint`
@@ -12,20 +13,22 @@ tags: [pytorch, neural-network, training-loop, dataloader, checkpoint]
 
 ## 1. 💡 핵심 개념
 
-PyTorch 학습 스크립트는 보통 아래 10단계로 구성된다.
+PyTorch 학습 스크립트는 보통 아래 10단계로 구성된다. 아래 "코드 / 실습"의 주석
+번호(`# 1.` ~ `# 10.`)가 이 순서를 그대로 따른다.
 
-```text
-1. import
-2. config / hyperparameter
-3. dataset / dataloader
-4. model
-5. loss function
-6. optimizer
-7. train loop
-8. validation loop
-9. metric
-10. checkpoint / logging
+```mermaid
+flowchart TD
+    A["1. import"] --> B["2. config / hyperparameter"] --> C["3. data<br/>(dataset / dataloader)"]
+    C --> D["4. device"] --> E["5. model"] --> F["6. loss / optimizer"]
+    F --> G["7. train 함수"] --> H["8. validate 함수"]
+    H --> I["9. epoch 반복 / logging"] --> J["10. checkpoint"]
 ```
+
+> 💡 **왜 이 순서인가** · 뒤 단계가 앞 단계의 결과를 입력으로 쓰기 때문이다. 데이터가
+> 있어야 모델의 입출력 shape을 정할 수 있고, 모델과 loss가 있어야 optimizer가 무엇을
+> 최적화할지 정해지며, train/validate 함수가 있어야 epoch을 반복하며 성능을 비교하고
+> 마지막에 저장할 수 있다.
+{: .prompt-info }
 
 ---
 
@@ -155,6 +158,15 @@ model = nn.Sequential(
 )
 ```
 
+이 모델에 `(batch_size, 4)` 입력을 넣으면 shape이 이렇게 바뀐다:
+
+```mermaid
+flowchart LR
+    A["입력<br/>(batch_size, 4)"] --> B["nn.Linear(4, 16)"] --> C["(batch_size, 16)"]
+    C --> D["nn.ReLU()"] --> E["(batch_size, 16)"]
+    E --> F["nn.Linear(16, 1)"] --> G["출력<br/>(batch_size, 1)"]
+```
+
 ```python
 for batch_x, batch_y in dataloader:
     optimizer.zero_grad()
@@ -164,23 +176,25 @@ for batch_x, batch_y in dataloader:
     optimizer.step()
 ```
 
-```text
-데이터를 batch 단위로 가져옴
-  ↓
-기울기 초기화 (이전 batch에서 계산된 gradient를 초기화)
-  ↓
-모델이 예측
-  ↓
-오차 계산 (예측과 정답의 차이)
-  ↓
-Gradient 계산 (Loss를 기준으로 각 Weight의 gradient를 계산)
-  ↓
-Weight 수정 (gradient를 이용해서 Weight를 실제로 수정)
+```mermaid
+flowchart TD
+    A[데이터를 batch 단위로 가져옴] --> B["기울기 초기화<br/>(이전 batch의 gradient를 초기화)"]
+    B --> C[모델이 예측]
+    C --> D["오차 계산<br/>(예측과 정답의 차이)"]
+    D --> E["Gradient 계산<br/>(Loss 기준으로 각 Weight의 gradient를 계산)"]
+    E --> F["Weight 수정<br/>(gradient로 Weight를 실제로 수정)"]
 ```
+
+> 💡 **왜 `loss.item() * batch_x.size(0)`을 곱하는가** · `nn.MSELoss()`는 기본값이
+> batch 내 평균이다. batch마다 (평균 loss × 그 batch의 샘플 수)를 더한 뒤 마지막에
+> `len(dataloader.dataset)`으로 나누면, 마지막 batch 크기가 다르게 끝나더라도 전체
+> 데이터셋 기준의 정확한 평균 loss가 나온다.
+{: .prompt-info }
 
 ### 구성 요소별 역할
 
 ```text
+device    -> 연산을 수행할 위치(CPU/GPU) 지정
 model     -> 신경망 정의
 loss_fn   -> 틀린 정도 계산
 optimizer -> weight 수정
@@ -192,8 +206,8 @@ validate  -> 성능 확인
 
 ## 4. ✅ 핵심 정리
 
-- **PyTorch 학습 스크립트** : import → config → data → model → loss/optimizer →
-  train → validate → epoch 반복 → 로깅 → checkpoint의 10단계로 구성된다
+- **PyTorch 학습 스크립트** : import → config → data → device → model → loss/optimizer →
+  train → validate → epoch 반복/로깅 → checkpoint의 10단계로 구성된다
 - **한 batch 학습** : `zero_grad → 예측 → loss 계산 → backward → step` 순서로 진행된다
 - **구성 요소** : `model`은 신경망 정의, `loss_fn`은 틀린 정도 계산,
   `optimizer`는 weight 수정을 담당한다
