@@ -3,6 +3,7 @@ title: "딥러닝 문제 유형과 입출력 구조 설계"
 date: 2026-08-19 12:00:00 +0900
 categories: [Notes, Deep Learning]
 tags: [deep-learning, pytorch, regression, classification, tensor-shape]
+mermaid: true
 ---
 
 > 🗂️ **Notes · Deep Learning** — `deep-learning` `pytorch` `regression` `classification` `tensor-shape`
@@ -20,6 +21,17 @@ tags: [deep-learning, pytorch, regression, classification, tensor-shape]
 ---
 
 ## 2. 💡 핵심 개념
+
+입력에서 모델을 거쳐 출력이 나오는 흐름은 같지만, 아래 그림처럼 문제 유형에 따라
+출력의 형태와 그에 맞는 loss 함수가 달라진다.
+
+```mermaid
+flowchart LR
+    X[입력 x] --> M[모델] --> O{"출력 형태는?"}
+    O -->|회귀| R["숫자 1개<br/>nn.MSELoss()"]
+    O -->|이진 분류| B["logit 1개<br/>nn.BCEWithLogitsLoss()"]
+    O -->|다중 분류| C["class 개수만큼 logits<br/>nn.CrossEntropyLoss()"]
+```
 
 ### 회귀 문제
 
@@ -71,6 +83,12 @@ logits.shape = [batch_size, 4]
 ```
 
 `loss_fn = nn.CrossEntropyLoss()`
+
+> 💡 **정답(y) shape이 문제 유형마다 다른 이유** · 회귀와 이진 분류는 출력이 숫자/로짓
+> 1개라서 정답도 `[batch_size, 1]`로 맞춘다. 다중 분류는 `nn.CrossEntropyLoss`가 정답을
+> 클래스 인덱스로 직접 받기 때문에 `[batch_size]`로 준다 — one-hot이나 `[batch_size, 1]`이
+> 아니다.
+{: .prompt-info }
 
 ---
 
