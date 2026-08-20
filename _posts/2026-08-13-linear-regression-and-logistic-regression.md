@@ -3,6 +3,7 @@ title: "선형모델 — Linear Regression과 Logistic Regression"
 date: 2026-08-13 09:00:00 +0900
 categories: [Notes, Machine Learning]
 tags: [linear-model, linear-regression, logistic-regression, regression, classification]
+mermaid: true
 ---
 
 > 🗂️ **Notes · Machine Learning** — `linear-model` `linear-regression` `logistic-regression` `regression` `classification`
@@ -27,6 +28,15 @@ tags: [linear-model, linear-regression, logistic-regression, regression, classif
 **Linear Regression**은 이 값을 그대로 연속값 예측(회귀)에 쓰고, **Logistic Regression**은
 이 선형결합으로 양성의 **로그 오즈(log-odds)**를 모델링한 뒤 로지스틱 함수로 0~1 사이의
 확률로 바꿔 분류에 쓴다.
+
+같은 가중합 하나가 이후 처리 방식에 따라 둘로 갈린다:
+
+```mermaid
+flowchart LR
+    X["입력 x₁...xₙ"] --> W["가중합 + 절편<br/>w₁x₁+...+wₙxₙ+b"]
+    W -->|그대로 사용| LR["연속값 예측<br/>(Linear Regression)"]
+    W -->|로지스틱 함수 적용| LG["0~1 확률<br/>(Logistic Regression)"]
+```
 
 ---
 
