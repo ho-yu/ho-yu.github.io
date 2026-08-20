@@ -3,6 +3,7 @@ title: "지도·비지도 5개 모델 비교와 선택 기준"
 date: 2026-08-11 21:31:04 +0900
 categories: [Notes, Machine Learning]
 tags: [model-selection, linear-model, knn, decision-tree, k-means]
+mermaid: true
 ---
 
 > 🗂️ **Notes · Machine Learning** — `model-selection` `linear-model` `knn` `decision-tree` `k-means`
@@ -52,12 +53,12 @@ tags: [model-selection, linear-model, knn, decision-tree, k-means]
 | K-means | 비슷한 것끼리 몇 그룹으로 묶을까? | 비지도 군집화 |
 | PCA | 많은 특성을 어떻게 줄일까? | 비지도 차원축소 |
 
-```text
-예측 근거 설명이 중요한가?
-├─ 예  → 선형모델·결정트리
-└─ 아니오 → 데이터가 비선형인가?
-            ├─ 예  → 결정트리·KNN
-            └─ 아니오 → 선형모델
+```mermaid
+flowchart TD
+    A["예측 근거 설명이<br/>중요한가?"] -->|예| B["선형모델 · 결정트리"]
+    A -->|아니오| C["데이터가<br/>비선형인가?"]
+    C -->|예| D["결정트리 · KNN"]
+    C -->|아니오| E["선형모델"]
 ```
 
 | 고려 요소 | 이런 상황이면 | 우선 후보 |
