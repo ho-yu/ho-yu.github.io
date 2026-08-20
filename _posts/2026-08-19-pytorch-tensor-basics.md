@@ -36,6 +36,12 @@ PyTorch에서 숫자 데이터를 담는 기본 그릇이 **Tensor**다.
 
 ## 3. 🧪 코드 / 실습
 
+아래 그림처럼 Tensor는 0차원(scalar)에서 시작해 차원이 하나씩 늘어난다. 값 하나 →
+값이 한 줄로 늘어선 vector → 행/열을 가진 matrix → matrix가 여러 개 쌓인 3차원
+tensor 순이며, `shape`의 원소 개수가 곧 차원(ndim) 수다.
+
+![Tensor가 scalar(0차원)에서 vector(1차원), matrix(2차원), 3차원 tensor로 차원이 하나씩 늘어나는 과정과 각 단계의 shape](/assets/img/posts/pytorch-tensor-basics/tensor-dimensions.svg){: w="960" h="300" }
+
 ### 0차원 Tensor: Scalar
 
 ```python
@@ -107,16 +113,16 @@ import torch
 x = torch.randn(3, 4)
 
 # shape: Tensor의 모양입니다.
-print("shape:", x.shape)
+print("shape:", x.shape)   # torch.Size([3, 4])
 
 # ndim: Tensor가 몇 차원인지 알려줍니다.
-print("ndim:", x.ndim)
+print("ndim:", x.ndim)     # 2
 
 # dtype: Tensor 안에 들어 있는 값의 자료형입니다.
-print("dtype:", x.dtype)
+print("dtype:", x.dtype)   # torch.float32 (dtype을 지정하지 않으면 기본값)
 
 # device: Tensor가 CPU에 있는지 GPU에 있는지 알려줍니다.
-print("device:", x.device)
+print("device:", x.device) # cpu (device를 지정하지 않으면 기본값)
 ```
 
 ---
