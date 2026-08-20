@@ -3,6 +3,7 @@ title: "머신러닝과 딥러닝의 차이, 딥러닝의 기본 개념"
 date: 2026-08-19 10:00:00 +0900
 categories: [Notes, Deep Learning]
 tags: [deep-learning, neural-network, pytorch, dataloader, training-loop]
+mermaid: true
 ---
 
 > 🗂️ **Notes · Deep Learning** — `deep-learning` `neural-network` `pytorch` `dataloader` `training-loop`
@@ -14,9 +15,18 @@ tags: [deep-learning, neural-network, pytorch, dataloader, training-loop]
 
 ### 머신러닝 vs 딥러닝
 
-```text
-머신러닝 : 입력 데이터 → 사람이 설계한 특징 → 머신러닝 모델 → 예측 결과
-딥러닝   : 입력 데이터 → 신경망 모델 → 내부 표현 학습 → 예측 결과
+아래 그림처럼 두 흐름 모두 "입력 → ... → 예측"으로 이어지지만, 가운데 단계가 다르다.
+
+```mermaid
+flowchart LR
+    subgraph ML["머신러닝"]
+        direction LR
+        mi[입력 데이터] --> mf[사람이 설계한 특징] --> mm[머신러닝 모델] --> mo[예측 결과]
+    end
+    subgraph DL["딥러닝"]
+        direction LR
+        di[입력 데이터] --> dn[신경망 모델] --> dr[내부 표현 학습] --> do[예측 결과]
+    end
 ```
 
 두 흐름의 차이는 "특징(feature)을 누가 설계하느냐"다. 머신러닝은 사람이 특징을 설계하고
@@ -29,10 +39,11 @@ tags: [deep-learning, neural-network, pytorch, dataloader, training-loop]
 
 ### 딥러닝 프로젝트 흐름
 
-```text
-문제 정의 → 데이터 준비 → 입력과 정답 구성 → 모델 설계
-→ 손실 함수 선택 → 옵티마이저 선택 → 학습 loop 실행
-→ 검증 loop 실행 → 성능 기록 → 모델 저장 → 추론
+```mermaid
+flowchart TD
+    A[문제 정의] --> B[데이터 준비] --> C[입력과 정답 구성] --> D[모델 설계]
+    D --> E[손실 함수 선택] --> F[옵티마이저 선택] --> G[학습 loop 실행]
+    G --> H[검증 loop 실행] --> I[성능 기록] --> J[모델 저장] --> K[추론]
 ```
 
 > 📌 **집중할 점** · 흐름을 읽자 — 데이터 → 모델 → 손실 → 최적화 → 평가. 처음에는 전체
@@ -52,10 +63,13 @@ tags: [deep-learning, neural-network, pytorch, dataloader, training-loop]
 
 먼저 흐름부터 보면:
 
-```text
-데이터를 꺼낸다 → 모델에 넣어 예측값을 만든다 → 예측값과 정답의 차이를 loss로 계산한다
-→ loss를 기준으로 gradient를 계산한다 → optimizer가 parameter를 업데이트한다
-→ validation 데이터로 성능을 확인한다
+```mermaid
+flowchart LR
+    A[데이터를 꺼낸다] --> B[모델에 넣어<br/>예측값을 만든다]
+    B --> C[예측값과 정답의 차이를<br/>loss로 계산한다]
+    C --> D[loss를 기준으로<br/>gradient를 계산한다]
+    D --> E[optimizer가 parameter를<br/>업데이트한다]
+    E --> F[validation 데이터로<br/>성능을 확인한다]
 ```
 
 이를 코드로 옮기면:
@@ -126,8 +140,8 @@ loss_fn으로 loss 계산 → loss.backward() → optimizer.step() → validatio
 손실값이 클수록 예측이 많이 틀렸고, 작을수록 실제값에 가깝다는 뜻이다.
 
 **Q. 손실이 작아지는 방향으로 파라미터는 어떻게 바뀌나요?**
-Gradient(기울기)를 계산해 손실이 줄어드는 방향을 찾는다. 이후 옵티마이저가 가중치를
-조금씩 수정하며 손실을 최소화한다.
+Gradient(기울기)를 계산하면 손실이 커지는 방향을 알 수 있다. 옵티마이저는 그 반대
+방향(음의 gradient 방향)으로 가중치를 조금씩 수정해 손실을 최소화한다.
 
 **Q. 학습 데이터와 검증 데이터는 왜 나누나요?**
 학습 데이터는 모델이 규칙을 배우는 데 사용하고, 검증 데이터는 처음 보는 데이터에서도
