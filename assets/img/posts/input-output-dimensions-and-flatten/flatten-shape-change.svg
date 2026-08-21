@@ -1,0 +1,53 @@
+<svg width="500" height="340" viewBox="0 0 500 340" xmlns="http://www.w3.org/2000/svg" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif">
+  <defs>
+    <marker id="fdown" markerWidth="9" markerHeight="9" refX="3" refY="7" orient="auto">
+      <path d="M0,0 L6,0 L3,7 Z" fill="#57606a"/>
+    </marker>
+  </defs>
+
+  <rect x="0" y="0" width="500" height="340" fill="#f6f8fa" rx="10"/>
+  <text x="250" y="26" font-size="14.5" font-weight="700" fill="#24292f" text-anchor="middle">flatten — batch 차원은 유지하고 나머지 차원만 펼친다</text>
+
+  <!-- ===== before: (batch_size, channels, height, width) ===== -->
+  <text x="250" y="58" font-size="12" fill="#57606a" text-anchor="middle">이미지 batch 형태 — (batch_size, channels, height, width)</text>
+
+  <rect x="119" y="70" width="60" height="44" rx="6" fill="#dbeafe" stroke="#1d4ed8" stroke-width="1.6"/>
+  <text x="149" y="98" font-size="15" font-weight="700" fill="#1d4ed8" text-anchor="middle" font-family="ui-monospace, monospace">32</text>
+
+  <rect x="187" y="70" width="50" height="44" rx="6" fill="#fde7c7" stroke="#b45309" stroke-width="1.6"/>
+  <text x="212" y="98" font-size="15" font-weight="700" fill="#b45309" text-anchor="middle" font-family="ui-monospace, monospace">3</text>
+
+  <rect x="245" y="70" width="64" height="44" rx="6" fill="#fde7c7" stroke="#b45309" stroke-width="1.6"/>
+  <text x="277" y="98" font-size="15" font-weight="700" fill="#b45309" text-anchor="middle" font-family="ui-monospace, monospace">224</text>
+
+  <rect x="317" y="70" width="64" height="44" rx="6" fill="#fde7c7" stroke="#b45309" stroke-width="1.6"/>
+  <text x="349" y="98" font-size="15" font-weight="700" fill="#b45309" text-anchor="middle" font-family="ui-monospace, monospace">224</text>
+
+  <text x="149" y="130" font-size="10.5" fill="#57606a" text-anchor="middle">batch_size</text>
+  <text x="212" y="130" font-size="10.5" fill="#57606a" text-anchor="middle">channels</text>
+  <text x="277" y="130" font-size="10.5" fill="#57606a" text-anchor="middle">height</text>
+  <text x="349" y="130" font-size="10.5" fill="#57606a" text-anchor="middle">width</text>
+
+  <!-- bracket grouping the three dims that get flattened -->
+  <path d="M187,140 L187,147 L381,147 L381,140" fill="none" stroke="#b45309" stroke-width="1.4"/>
+  <path d="M284,147 L284,153" fill="none" stroke="#b45309" stroke-width="1.4"/>
+  <text x="284" y="167" font-size="11.5" fill="#b45309" text-anchor="middle">이 3개를 하나로 합친다</text>
+
+  <!-- arrow -->
+  <line x1="250" y1="180" x2="250" y2="212" stroke="#57606a" stroke-width="1.8" marker-end="url(#fdown)"/>
+  <text x="262" y="201" font-size="11.5" fill="#24292f" font-family="ui-monospace, monospace">torch.flatten(x, start_dim=1)</text>
+
+  <!-- ===== after: (batch_size, features) ===== -->
+  <text x="250" y="234" font-size="12" fill="#57606a" text-anchor="middle">MLP 입력 기본 형태 — (batch_size, features)</text>
+
+  <rect x="161" y="246" width="60" height="44" rx="6" fill="#dbeafe" stroke="#1d4ed8" stroke-width="1.6"/>
+  <text x="191" y="274" font-size="15" font-weight="700" fill="#1d4ed8" text-anchor="middle" font-family="ui-monospace, monospace">32</text>
+
+  <rect x="229" y="246" width="110" height="44" rx="6" fill="#fde7c7" stroke="#b45309" stroke-width="1.6"/>
+  <text x="284" y="274" font-size="15" font-weight="700" fill="#b45309" text-anchor="middle" font-family="ui-monospace, monospace">150528</text>
+
+  <text x="191" y="306" font-size="10.5" fill="#57606a" text-anchor="middle">batch_size</text>
+  <text x="284" y="306" font-size="10.5" fill="#57606a" text-anchor="middle">features</text>
+
+  <text x="250" y="330" font-size="11.5" fill="#57606a" text-anchor="middle" font-family="ui-monospace, monospace">3 × 224 × 224 = 150528</text>
+</svg>
