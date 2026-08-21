@@ -1,7 +1,7 @@
 ---
-title: "입출력 차원 계산과 flatten"
+title: "작성 중: 제목"
 published: false
-date: 26-08-20
+date:
 ---
 
 <!--
@@ -27,27 +27,7 @@ date: 26-08-20
 
 ## 본문
 
-
-MLP 입력 기본 형태: (batch_size, features)
-
-이미지 batch 형태: (batch_size, channels, height, width)
-
-
-이미지를 MLP에 넣으려면 채널, 높이, 너비 차원을 하나의 긴 feature 차원으로 펼쳐야 합니다. 이 과정을 flatten이라고 부름.
-
-
-- flatten이 필요한 이유
-
-
-
-
-
-
-
-
-
-
-
+형식에 얽매이지 않고 자신의 말로 작성한다.
 
 ## 코드 / 예시
 
@@ -55,11 +35,7 @@ MLP 입력 기본 형태: (batch_size, features)
 
 ## 기억할 내용
 
-- MLP는 보통 `(batch_size, features)` 입력을 기대합니다.
-- 이미지 데이터는 `(batch_size, channels, height, width)` 형태입니다.
-- 이미지를 MLP에 넣으려면 batch 차원을 유지한 채 나머지 차원을 flatten해야 합니다.
-- `torch.flatten(x, start_dim=1)`은 batch 차원을 유지하는 안전한 방법입니다.
-- 첫 번째 `nn.Linear`의 `in_features`는 flatten 후 feature 수와 같아야 합니다.
+-
 
 ## 참고 자료
 
