@@ -1,6 +1,6 @@
 ---
 title: "PyTorch argmax() 이해하기"
-date: 2026-08-24 18:16:34 +0900
+date: 2026-08-24 09:00:00 +0900
 categories: [Notes, Deep Learning]
 tags: [pytorch, argmax, dim, classification, accuracy]
 mermaid: true
