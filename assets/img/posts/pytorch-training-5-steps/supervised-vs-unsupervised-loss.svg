@@ -1,0 +1,52 @@
+<svg width="680" height="330" viewBox="0 0 680 330" xmlns="http://www.w3.org/2000/svg" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif">
+  <rect x="0" y="0" width="680" height="330" fill="#f6f8fa" rx="10"/>
+  <defs>
+    <marker id="a-57606a" markerWidth="8" markerHeight="8" refX="6.4" refY="3" orient="auto"><path d="M0,0 L6.4,3 L0,6 z" fill="#57606a"/></marker>
+    <marker id="a-0969da" markerWidth="8" markerHeight="8" refX="6.4" refY="3" orient="auto"><path d="M0,0 L6.4,3 L0,6 z" fill="#0969da"/></marker>
+    <marker id="a-1a7f37" markerWidth="8" markerHeight="8" refX="6.4" refY="3" orient="auto"><path d="M0,0 L6.4,3 L0,6 z" fill="#1a7f37"/></marker>
+  </defs>
+  <text x="340.0" y="26.0" font-size="14" fill="#24292f" text-anchor="middle" font-weight="700">Loss의 기준을 무엇으로 만드는가</text>
+  <rect x="10" y="44" width="320" height="238" rx="10" fill="#ffffff" stroke="#d0d7de" stroke-width="1.5"/>
+  <text x="170.0" y="68.0" font-size="12.5" fill="#0969da" text-anchor="middle" font-weight="700">지도학습</text>
+  <rect x="52" y="84" width="92" height="36" rx="6" fill="#ffffff" stroke="#d0d7de" stroke-width="1.8"/>
+  <text x="98.0" y="106.5" font-size="12" fill="#24292f" text-anchor="middle" font-weight="600">입력</text>
+  <line x1="98.0" y1="120.0" x2="98.0" y2="140.0" stroke="#57606a" stroke-width="1.8" marker-end="url(#a-57606a)"/>
+  <rect x="52" y="142" width="92" height="36" rx="6" fill="#ffffff" stroke="#0969da" stroke-width="1.8"/>
+  <text x="98.0" y="164.5" font-size="12" fill="#0969da" text-anchor="middle" font-weight="600">Model</text>
+  <line x1="98.0" y1="178.0" x2="98.0" y2="198.0" stroke="#57606a" stroke-width="1.8" marker-end="url(#a-57606a)"/>
+  <rect x="40" y="200" width="116" height="36" rx="6" fill="#ffffff" stroke="#d0d7de" stroke-width="1.8"/>
+  <text x="98.0" y="222.5" font-size="12" fill="#24292f" text-anchor="middle" font-weight="600">예측</text>
+  <rect x="196" y="142" width="118" height="52" rx="6" fill="#ffffff" stroke="#0969da" stroke-width="1.8"/>
+  <text x="255.0" y="172.5" font-size="12" fill="#24292f" text-anchor="middle" font-weight="600"></text>
+  <text x="255.0" y="163.0" font-size="10.5" fill="#0969da" text-anchor="middle" font-weight="700">정답(Target)</text>
+  <text x="255.0" y="179.0" font-size="10.5" fill="#0969da" text-anchor="middle" font-weight="700">과 비교</text>
+  <line x1="156.0" y1="218.0" x2="255.0" y2="218.0" stroke="#57606a" stroke-width="1.8" marker-end="url(#a-57606a)"/>
+  <path d="M 255 218 L 255 200" fill="none" stroke="#57606a" stroke-width="1.8"/>
+  <line x1="255.0" y1="200.0" x2="255.0" y2="196.0" stroke="#57606a" stroke-width="1.8" marker-end="url(#a-57606a)"/>
+  <line x1="255.0" y1="142.0" x2="255.0" y2="124.0" stroke="#57606a" stroke-width="1.8" marker-end="url(#a-57606a)"/>
+  <rect x="210" y="84" width="90" height="36" rx="6" fill="#ffffff" stroke="#1a7f37" stroke-width="1.8"/>
+  <text x="255.0" y="106.5" font-size="12" fill="#1a7f37" text-anchor="middle" font-weight="600">Loss</text>
+  <text x="170.0" y="262.0" font-size="11" fill="#57606a" text-anchor="middle" font-weight="400">정답이 있는 데이터로 학습한다</text>
+  <rect x="350" y="44" width="320" height="238" rx="10" fill="#ffffff" stroke="#d0d7de" stroke-width="1.5"/>
+  <text x="510.0" y="68.0" font-size="12.5" fill="#1a7f37" text-anchor="middle" font-weight="700">비지도학습 · Autoencoder</text>
+  <rect x="392" y="84" width="92" height="36" rx="6" fill="#ffffff" stroke="#d0d7de" stroke-width="1.8"/>
+  <text x="438.0" y="106.5" font-size="12" fill="#24292f" text-anchor="middle" font-weight="600">입력</text>
+  <line x1="438.0" y1="120.0" x2="438.0" y2="140.0" stroke="#57606a" stroke-width="1.8" marker-end="url(#a-57606a)"/>
+  <rect x="392" y="142" width="92" height="36" rx="6" fill="#ffffff" stroke="#1a7f37" stroke-width="1.8"/>
+  <text x="438.0" y="164.5" font-size="12" fill="#1a7f37" text-anchor="middle" font-weight="600">Model</text>
+  <line x1="438.0" y1="178.0" x2="438.0" y2="198.0" stroke="#57606a" stroke-width="1.8" marker-end="url(#a-57606a)"/>
+  <rect x="380" y="200" width="116" height="36" rx="6" fill="#ffffff" stroke="#d0d7de" stroke-width="1.8"/>
+  <text x="438.0" y="222.5" font-size="12" fill="#24292f" text-anchor="middle" font-weight="600">복원 데이터</text>
+  <rect x="536" y="142" width="118" height="52" rx="6" fill="#ffffff" stroke="#1a7f37" stroke-width="1.8"/>
+  <text x="595.0" y="172.5" font-size="12" fill="#24292f" text-anchor="middle" font-weight="600"></text>
+  <text x="595.0" y="163.0" font-size="10.5" fill="#1a7f37" text-anchor="middle" font-weight="700">원래 입력</text>
+  <text x="595.0" y="179.0" font-size="10.5" fill="#1a7f37" text-anchor="middle" font-weight="700">과 비교</text>
+  <line x1="496.0" y1="218.0" x2="595.0" y2="218.0" stroke="#57606a" stroke-width="1.8" marker-end="url(#a-57606a)"/>
+  <path d="M 595 218 L 595 200" fill="none" stroke="#57606a" stroke-width="1.8"/>
+  <line x1="595.0" y1="200.0" x2="595.0" y2="196.0" stroke="#57606a" stroke-width="1.8" marker-end="url(#a-57606a)"/>
+  <line x1="595.0" y1="142.0" x2="595.0" y2="124.0" stroke="#57606a" stroke-width="1.8" marker-end="url(#a-57606a)"/>
+  <rect x="550" y="84" width="90" height="36" rx="6" fill="#ffffff" stroke="#1a7f37" stroke-width="1.8"/>
+  <text x="595.0" y="106.5" font-size="12" fill="#1a7f37" text-anchor="middle" font-weight="600">Loss</text>
+  <text x="510.0" y="262.0" font-size="11" fill="#57606a" text-anchor="middle" font-weight="400">정답 라벨 없이 학습 기준을 만든다</text>
+  <text x="340.0" y="312.0" font-size="11.5" fill="#57606a" text-anchor="middle" font-weight="700">두 경우 모두 Loss → backward() → optimizer.step() 구조를 사용할 수 있다</text>
+</svg>

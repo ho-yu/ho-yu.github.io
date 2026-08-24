@@ -1,0 +1,45 @@
+<svg width="700" height="350" viewBox="0 0 700 350" xmlns="http://www.w3.org/2000/svg" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif">
+  <rect x="0" y="0" width="700" height="350" fill="#f6f8fa" rx="10"/>
+  <defs>
+    <marker id="a-57606a" markerWidth="8" markerHeight="8" refX="6.4" refY="3" orient="auto"><path d="M0,0 L6.4,3 L0,6 z" fill="#57606a"/></marker>
+    <marker id="a-0969da" markerWidth="8" markerHeight="8" refX="6.4" refY="3" orient="auto"><path d="M0,0 L6.4,3 L0,6 z" fill="#0969da"/></marker>
+    <marker id="a-cf222e" markerWidth="8" markerHeight="8" refX="6.4" refY="3" orient="auto"><path d="M0,0 L6.4,3 L0,6 z" fill="#cf222e"/></marker>
+    <marker id="a-1a7f37" markerWidth="8" markerHeight="8" refX="6.4" refY="3" orient="auto"><path d="M0,0 L6.4,3 L0,6 z" fill="#1a7f37"/></marker>
+  </defs>
+  <text x="350.0" y="26.0" font-size="14" fill="#24292f" text-anchor="middle" font-weight="700">한 Batch를 학습하는 5단계</text>
+  <rect x="30" y="44" width="640" height="40" rx="8" fill="#ffffff" stroke="#8250df" stroke-width="1.8"/>
+  <text x="140.0" y="69.0" font-size="12" fill="#8250df" text-anchor="middle" font-weight="700" font-family="ui-monospace, monospace">① optimizer.zero_grad()</text>
+  <text x="272.0" y="69.0" font-size="12" fill="#57606a" text-anchor="middle" font-weight="400">·</text>
+  <text x="285.0" y="69.0" font-size="11.5" fill="#57606a" text-anchor="start" font-weight="400">이전 Gradient 초기화 — PyTorch는 Gradient를 누적하므로 매번 초기화한다</text>
+  <text x="232.0" y="116.0" font-size="11.5" fill="#0969da" text-anchor="middle" font-weight="700">② 순전파 (Forward)</text>
+  <text x="556.0" y="116.0" font-size="11.5" fill="#1a7f37" text-anchor="middle" font-weight="700">③ Loss 계산</text>
+  <rect x="40" y="130" width="84" height="42" rx="6" fill="#ffffff" stroke="#d0d7de" stroke-width="1.8"/>
+  <text x="82.0" y="155.5" font-size="12" fill="#24292f" text-anchor="middle" font-weight="600">입력</text>
+  <rect x="174" y="130" width="108" height="42" rx="6" fill="#ffffff" stroke="#0969da" stroke-width="1.8"/>
+  <text x="228.0" y="155.5" font-size="12" fill="#0969da" text-anchor="middle" font-weight="600">Model</text>
+  <rect x="332" y="130" width="92" height="42" rx="6" fill="#ffffff" stroke="#d0d7de" stroke-width="1.8"/>
+  <text x="378.0" y="155.5" font-size="12" fill="#24292f" text-anchor="middle" font-weight="600">예측값</text>
+  <rect x="332" y="192" width="92" height="42" rx="6" fill="#ffffff" stroke="#d0d7de" stroke-width="1.8"/>
+  <text x="378.0" y="217.5" font-size="12" fill="#24292f" text-anchor="middle" font-weight="600">정답값</text>
+  <rect x="470" y="160" width="92" height="42" rx="6" fill="#ffffff" stroke="#1a7f37" stroke-width="1.8"/>
+  <text x="516.0" y="185.5" font-size="12" fill="#1a7f37" text-anchor="middle" font-weight="600">Loss</text>
+  <line x1="124.0" y1="151.0" x2="170.0" y2="151.0" stroke="#0969da" stroke-width="1.8" marker-end="url(#a-0969da)"/>
+  <line x1="282.0" y1="151.0" x2="328.0" y2="151.0" stroke="#0969da" stroke-width="1.8" marker-end="url(#a-0969da)"/>
+  <line x1="424.0" y1="151.0" x2="466.0" y2="172.0" stroke="#1a7f37" stroke-width="1.8" marker-end="url(#a-1a7f37)"/>
+  <line x1="424.0" y1="213.0" x2="466.0" y2="192.0" stroke="#1a7f37" stroke-width="1.8" marker-end="url(#a-1a7f37)"/>
+  <path d="M 516 202 L 516 262" fill="none" stroke="#cf222e" stroke-width="1.8"/>
+  <line x1="516.0" y1="262.0" x2="464.0" y2="262.0" stroke="#cf222e" stroke-width="1.8" marker-end="url(#a-cf222e)"/>
+  <rect x="300" y="241" width="160" height="42" rx="6" fill="#ffffff" stroke="#cf222e" stroke-width="1.8"/>
+  <text x="380.0" y="266.5" font-size="12" fill="#24292f" text-anchor="middle" font-weight="600"></text>
+  <text x="380.0" y="258.0" font-size="11.5" fill="#cf222e" text-anchor="middle" font-weight="700" font-family="ui-monospace, monospace">④ loss.backward()</text>
+  <text x="380.0" y="274.0" font-size="10.5" fill="#cf222e" text-anchor="middle" font-weight="400">각 Weight의 Gradient 계산</text>
+  <line x1="300.0" y1="262.0" x2="262.0" y2="262.0" stroke="#57606a" stroke-width="1.8" marker-end="url(#a-57606a)"/>
+  <rect x="96" y="241" width="160" height="42" rx="6" fill="#ffffff" stroke="#24292f" stroke-width="1.8"/>
+  <text x="176.0" y="266.5" font-size="12" fill="#24292f" text-anchor="middle" font-weight="600"></text>
+  <text x="176.0" y="258.0" font-size="11.5" fill="#24292f" text-anchor="middle" font-weight="700" font-family="ui-monospace, monospace">⑤ optimizer.step()</text>
+  <text x="176.0" y="274.0" font-size="10.5" fill="#57606a" text-anchor="middle" font-weight="400">실제 Weight 수정</text>
+  <path d="M 176 241 L 176 206" fill="none" stroke="#57606a" stroke-width="1.8"/>
+  <line x1="176.0" y1="206.0" x2="176.0" y2="176.0" stroke="#57606a" stroke-width="1.8" marker-end="url(#a-57606a)"/>
+  <text x="120.0" y="226.0" font-size="10.5" fill="#57606a" text-anchor="start" font-weight="400">수정된 Weight로 다음 Batch</text>
+  <text x="350.0" y="334.0" font-size="11.5" fill="#57606a" text-anchor="middle" font-weight="400">④ backward()는 Gradient 계산까지만 한다 — Weight를 바꾸는 것은 ⑤ optimizer.step()</text>
+</svg>
