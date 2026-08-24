@@ -713,6 +713,18 @@ workspace/notes/note-01.md ... note-10.md              # 일반 학습 기록 10
 workspace/projects/project-01.md ... project-05.md     # 프로젝트 기록 5개
 ```
 
+두 폴더에는 각각 `common-template.md`가 함께 들어 있다. 학습 기록용은 형식에 얽매이지
+않는 자유 양식이고, 프로젝트용은 `무엇을 만들었나 / 왜 만들었나 / 기술 스택 / 구조 /
+고민한 선택 / 막혔던 문제 / 실행 결과`처럼 프로젝트 기록에 필요한 항목으로 구성되어 있다.
+작업본이 모자라면 이 파일을 복사해서 새 슬롯을 만들면 된다.
+
+초고에 넣을 이미지는 초고와 같은 종류의 폴더에 초고 파일명을 딴 이름으로 올려둔다.
+
+```text
+workspace/images/notes/note01_1.png          # note-01.md 에서 쓸 이미지
+workspace/images/projects/project01_1.png    # project-01.md 에서 쓸 이미지
+```
+
 여러 글을 동시에 작성할 때 작업본을 하나씩 사용한다. 작성 중에도 평소처럼 commit하고
 push하면 다른 컴퓨터에서 pull해 이어서 쓸 수 있다. 템플릿의 `published: false`는
 작성 중임을 나타내는 표시이자 추가 안전장치다.

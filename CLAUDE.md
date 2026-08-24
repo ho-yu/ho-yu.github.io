@@ -573,6 +573,14 @@ templates/retrospective-template.md
   - 이론 중심: 개요 → 핵심 개념 → 직관적 이해 → 수식 / 예제 → 핵심 정리 → 핵심 기억 카드
   - 코드 중심: 개요 → 핵심 개념 → 입력 / 출력 구조 → 코드 → 실행 결과 → 실험 → 핵심 정리 → 핵심 기억 카드
 
+위 `templates/`는 **발행본**의 형식이다. 사용자가 초고를 쓰는 단계에서는 종류별 초고
+템플릿을 쓴다. 초고 슬롯을 초기화할 때는 같은 폴더의 `common-template.md`를 복사한다.
+
+```text
+workspace/notes/common-template.md       # 학습 기록 초고 (자유 형식)
+workspace/projects/common-template.md    # 프로젝트 초고 (프로젝트 항목 중심)
+```
+
 ## Images
 
 ```text
@@ -585,11 +593,16 @@ assets/img/posts/<post-slug>/    # 글이 이미지를 여러 개 쓸 때
 
 ### 초고 작성 중 이미지 첨부
 
-사용자는 초고 작성 중 이미지를 `workspace/images/`에 `초고파일명_넘버링` 형식(예:
-`workspace/notes/note-01.md`용 이미지는 `note01_1.png`, `note01_2.png`,
-`workspace/projects/project-01.md`용 이미지는 `project01_1.png`)으로 직접 올려둔다.
+사용자는 초고 작성 중 이미지를 초고와 같은 종류의 폴더에 `초고파일명_넘버링` 형식으로
+직접 올려둔다.
+
+```text
+workspace/images/notes/       # note-01.md 용 이미지 → note01_1.png, note01_2.png
+workspace/images/projects/    # project-01.md 용 이미지 → project01_1.png
+```
+
 `작성완료 workspace/<폴더>/<파일명>.md`를 처리할 때 그 초고 파일명과 일치하는 이미지를
-`workspace/images/`에서 찾아 `assets/img/posts/<post-slug>/`로 옮기고, 최종 파일명은
+같은 종류의 이미지 폴더에서 찾아 `assets/img/posts/<post-slug>/`로 옮기고, 최종 파일명은
 내용에 맞게 간단한 영문 kebab-case로 정리한다(예: `note01_1.png` → `flow.png`). 원본은
 `workspace/images/`에 남기지 않고 이동시킨다.
 
