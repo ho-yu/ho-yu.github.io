@@ -1,0 +1,36 @@
+<svg width="500" height="320" viewBox="0 0 500 320" xmlns="http://www.w3.org/2000/svg" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif">
+  <rect x="0" y="0" width="500" height="320" fill="#f6f8fa" rx="10"/>
+  <text x="250.0" y="28" font-size="14" fill="#24292f" text-anchor="middle" font-weight="700">Epoch 단위 Loss — 한 번 올라가도 추세는 감소</text>
+  <line x1="62" y1="250" x2="430" y2="250" stroke="#57606a" stroke-width="1.5"/>
+  <line x1="62" y1="250" x2="62" y2="56" stroke="#57606a" stroke-width="1.5"/>
+  <text x="430" y="280" font-size="11.5" fill="#57606a" text-anchor="end" font-weight="400">Epoch</text>
+  <text x="56" y="44" font-size="11.5" fill="#57606a" text-anchor="middle" font-weight="400">Loss</text>
+  <line x1="62" y1="217.7" x2="430" y2="217.7" stroke="#d0d7de" stroke-width="1" stroke-dasharray="3 3"/>
+  <text x="54" y="221.66666666666666" font-size="10.5" fill="#57606a" text-anchor="end" font-weight="400" font-family="ui-monospace, monospace">0.4</text>
+  <line x1="62" y1="153.0" x2="430" y2="153.0" stroke="#d0d7de" stroke-width="1" stroke-dasharray="3 3"/>
+  <text x="54" y="157.00000000000003" font-size="10.5" fill="#57606a" text-anchor="end" font-weight="400" font-family="ui-monospace, monospace">0.6</text>
+  <line x1="62" y1="88.3" x2="430" y2="88.3" stroke="#d0d7de" stroke-width="1" stroke-dasharray="3 3"/>
+  <text x="54" y="92.33333333333334" font-size="10.5" fill="#57606a" text-anchor="end" font-weight="400" font-family="ui-monospace, monospace">0.8</text>
+  <polyline points="62.0,81.9 154.0,149.8 246.0,191.8 338.0,182.1 430.0,220.9" fill="none" stroke="#0969da" stroke-width="2.5"/>
+  <circle cx="62.0" cy="81.9" r="5" fill="#0969da"/>
+  <text x="62.0" y="67.86666666666667" font-size="11" fill="#0969da" text-anchor="middle" font-weight="700" font-family="ui-monospace, monospace">0.82</text>
+  <text x="62.0" y="270" font-size="10.5" fill="#57606a" text-anchor="middle" font-weight="400" font-family="ui-monospace, monospace">1</text>
+  <circle cx="154.0" cy="149.8" r="5" fill="#0969da"/>
+  <text x="154.0" y="135.76666666666668" font-size="11" fill="#0969da" text-anchor="middle" font-weight="700" font-family="ui-monospace, monospace">0.61</text>
+  <text x="154.0" y="270" font-size="10.5" fill="#57606a" text-anchor="middle" font-weight="400" font-family="ui-monospace, monospace">2</text>
+  <circle cx="246.0" cy="191.8" r="5" fill="#0969da"/>
+  <text x="246.0" y="177.8" font-size="11" fill="#0969da" text-anchor="middle" font-weight="700" font-family="ui-monospace, monospace">0.48</text>
+  <text x="246.0" y="270" font-size="10.5" fill="#57606a" text-anchor="middle" font-weight="400" font-family="ui-monospace, monospace">3</text>
+  <circle cx="338.0" cy="182.1" r="5" fill="#cf222e"/>
+  <text x="338.0" y="168.10000000000002" font-size="11" fill="#cf222e" text-anchor="middle" font-weight="700" font-family="ui-monospace, monospace">0.51</text>
+  <text x="338.0" y="270" font-size="10.5" fill="#57606a" text-anchor="middle" font-weight="400" font-family="ui-monospace, monospace">4</text>
+  <circle cx="430.0" cy="220.9" r="5" fill="#0969da"/>
+  <text x="410.0" y="224.9" font-size="11" fill="#0969da" text-anchor="middle" font-weight="700" font-family="ui-monospace, monospace">0.39</text>
+  <text x="430.0" y="270" font-size="10.5" fill="#57606a" text-anchor="middle" font-weight="400" font-family="ui-monospace, monospace">5</text>
+  <text x="338.0" y="216.10000000000002" font-size="11" fill="#cf222e" text-anchor="middle" font-weight="700" font-family="ui-monospace, monospace">0.48 → 0.51</text>
+  <text x="338.0" y="232.10000000000002" font-size="11" fill="#cf222e" text-anchor="middle" font-weight="400">잠깐 증가</text>
+  <defs><marker id="ar" markerWidth="9" markerHeight="9" refX="7" refY="3.2" orient="auto"><path d="M0,0 L7,3.2 L0,6.4 z" fill="#1a7f37"/></marker></defs>
+  <line x1="62.0" y1="88.3" x2="407.0" y2="199.9" stroke="#1a7f37" stroke-width="2" stroke-dasharray="6 4" marker-end="url(#ar)" opacity="0.85"/>
+  <text x="286.0" y="121.13333333333334" font-size="11.5" fill="#1a7f37" text-anchor="middle" font-weight="700">전체 추세는 감소</text>
+  <text x="250.0" y="306" font-size="11.5" fill="#57606a" text-anchor="middle" font-weight="400">각 Batch·Epoch Loss가 매번 내려가는지보다 전체 흐름이 내려가는지가 중요하다</text>
+</svg>
