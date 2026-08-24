@@ -585,12 +585,13 @@ assets/img/posts/<post-slug>/    # 글이 이미지를 여러 개 쓸 때
 
 ### 초고 작성 중 이미지 첨부
 
-사용자는 초고 작성 중 이미지를 `workspace/images/`에 `draft파일번호_넘버링` 형식(예:
-`draft01_1.png`, `draft01_2.png`)으로 직접 올려둔다. `작성완료 workspace/draft-번호.md`를
-처리할 때 그 draft 번호와 일치하는 이미지를 `workspace/images/`에서 찾아
-`assets/img/posts/<post-slug>/`로 옮기고, 최종 파일명은 내용에 맞게 간단한 영문
-kebab-case로 정리한다(예: `draft01_1.png` → `flow.png`). 원본은 `workspace/images/`에
-남기지 않고 이동시킨다.
+사용자는 초고 작성 중 이미지를 `workspace/images/`에 `초고파일명_넘버링` 형식(예:
+`workspace/notes/note-01.md`용 이미지는 `note01_1.png`, `note01_2.png`,
+`workspace/projects/project-01.md`용 이미지는 `project01_1.png`)으로 직접 올려둔다.
+`작성완료 workspace/<폴더>/<파일명>.md`를 처리할 때 그 초고 파일명과 일치하는 이미지를
+`workspace/images/`에서 찾아 `assets/img/posts/<post-slug>/`로 옮기고, 최종 파일명은
+내용에 맞게 간단한 영문 kebab-case로 정리한다(예: `note01_1.png` → `flow.png`). 원본은
+`workspace/images/`에 남기지 않고 이동시킨다.
 
 ## Writing Principle
 

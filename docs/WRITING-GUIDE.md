@@ -706,14 +706,11 @@ Regenerating: 1 file(s) changed at 2026-08-13 21:35:02
 GitHub에는 커밋되지만 Jekyll 빌드에서는 제외되므로 블로그 사이트에는 나타나지 않는다.
 현재 저장소가 공개 저장소이므로 **GitHub에서 초고 원문은 누구나 볼 수 있다.**
 
-기본 작업본은 5개가 준비되어 있다.
+기본 작업본은 글 종류별 폴더에 준비되어 있다.
 
 ```text
-workspace/draft-01.md
-workspace/draft-02.md
-workspace/draft-03.md
-workspace/draft-04.md
-workspace/draft-05.md
+workspace/notes/note-01.md ... note-10.md              # 일반 학습 기록 10개
+workspace/projects/project-01.md ... project-05.md     # 프로젝트 기록 5개
 ```
 
 여러 글을 동시에 작성할 때 작업본을 하나씩 사용한다. 작성 중에도 평소처럼 commit하고
@@ -723,7 +720,7 @@ push하면 다른 컴퓨터에서 pull해 이어서 쓸 수 있다. 템플릿의
 글이 완성되면 파일 경로와 함께 요청한다.
 
 ```text
-작성완료 workspace/draft-03.md
+작성완료 workspace/notes/note-03.md
 ```
 
 이때 완료 요청을 받은 한국 시간 기준 당일을 발행일로 사용한다. 제목, 카테고리,

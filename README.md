@@ -92,9 +92,11 @@ Tag:
 
 문서 형식은 `templates/`의 템플릿을 복사해서 사용한다. 모든 항목을 억지로 채울 필요는 없다.
 
-직접 초고를 작성할 때는 `workspace/draft-01.md`부터 `draft-10.md`까지 제공되는
-10개 작업 슬롯 중 하나에서 작업한다. 이 폴더는 Git으로 동기화되지만 사이트 빌드에서는
-제외된다. 작성이 끝나면 `작성완료 workspace/draft-번호.md`라고 요청한다.
+직접 초고를 작성할 때는 글 종류에 맞는 작업 슬롯에서 작업한다 — 일반 학습 기록은
+`workspace/notes/note-01.md`부터 `note-10.md`까지 10개, 프로젝트 기록은
+`workspace/projects/project-01.md`부터 `project-05.md`까지 5개가 제공된다. 이 폴더는
+Git으로 동기화되지만 사이트 빌드에서는 제외된다. 작성이 끝나면
+`작성완료 workspace/notes/note-번호.md`처럼 경로와 함께 요청한다.
 
 초고 Front Matter는 `title` / `published` / `date` 세 필드를 쓴다. `date`에
 `YYYY-MM-DD`를 적어두면 그 날짜를 발행일로 쓴다(시각은 09:00:00 +0900을 붙인다).
@@ -146,7 +148,8 @@ ho-yu.github.io/
 │   └── retrospective-template.md
 ├── workspace/                           # 여러 PC에서 동기화하는 초고 (사이트 빌드에서 제외)
 │   ├── common-template.md               # 형식에 얽매이지 않는 공통 초고 템플릿
-│   └── draft-01.md ... draft-10.md       # 동시에 사용할 수 있는 기본 작업 슬롯 10개
+│   ├── notes/note-01.md ... note-10.md   # 일반 학습 기록용 작업 슬롯 10개
+│   └── projects/project-01.md ... project-05.md  # 프로젝트 기록용 작업 슬롯 5개
 ├── _config.yml
 ├── Gemfile
 ├── index.html

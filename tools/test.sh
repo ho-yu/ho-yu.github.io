@@ -52,7 +52,7 @@ main() {
   # macOS Finder launcher must remain executable and delegate correctly
   bash tools/test-macos-launcher.sh
 
-  # ten reusable draft slots must always be available
+  # reusable note and project draft slots must always be available
   bash tools/test-workspace-slots.sh
 
   # regression check: the privacy test must honor custom Jekyll configs
