@@ -1,0 +1,36 @@
+<svg width="600" height="290" viewBox="0 0 600 290" xmlns="http://www.w3.org/2000/svg" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif">
+  <rect x="0" y="0" width="600" height="290" fill="#f6f8fa" rx="10"/>
+  <text x="300.0" y="28" font-size="14" fill="#24292f" text-anchor="middle" font-weight="700">reduction — 개별 Loss를 최종적으로 어떻게 처리할까</text>
+  <text x="94" y="62" font-size="11.5" fill="#57606a" text-anchor="middle" font-weight="400">Batch의 개별 Loss</text>
+  <rect x="34" y="76" width="36" height="36" rx="5" fill="#ffffff" stroke="#d0d7de" stroke-width="1.5"/>
+  <text x="52" y="100" font-size="14" fill="#24292f" text-anchor="middle" font-weight="700" font-family="ui-monospace, monospace">4</text>
+  <rect x="76" y="76" width="36" height="36" rx="5" fill="#ffffff" stroke="#d0d7de" stroke-width="1.5"/>
+  <text x="94" y="100" font-size="14" fill="#24292f" text-anchor="middle" font-weight="700" font-family="ui-monospace, monospace">1</text>
+  <rect x="118" y="76" width="36" height="36" rx="5" fill="#ffffff" stroke="#d0d7de" stroke-width="1.5"/>
+  <text x="136" y="100" font-size="14" fill="#24292f" text-anchor="middle" font-weight="700" font-family="ui-monospace, monospace">9</text>
+  <text x="94" y="132" font-size="12" fill="#0969da" text-anchor="middle" font-weight="700" font-family="ui-monospace, monospace">[4, 1, 9]</text>
+  <path d="M 166 100 C 202 100, 202 94, 234 94" fill="none" stroke="#1a7f37" stroke-width="2"/>
+  <text x="206" y="88" font-size="10.5" fill="#1a7f37" text-anchor="middle" font-weight="700">평균</text>
+  <rect x="234" y="74" width="126" height="40" rx="6" fill="#ffffff" stroke="#1a7f37" stroke-width="1.8"/>
+  <text x="297" y="91" font-size="11" fill="#1a7f37" text-anchor="middle" font-weight="700" font-family="ui-monospace, monospace">reduction="mean"</text>
+  <text x="297" y="106" font-size="10" fill="#57606a" text-anchor="middle" font-weight="400" font-family="ui-monospace, monospace">(4 + 1 + 9) / 3 = 4.67</text>
+  <text x="378" y="99" font-size="13" fill="#57606a" text-anchor="start" font-weight="400">→</text>
+  <text x="406" y="92" font-size="13" fill="#24292f" text-anchor="start" font-weight="700" font-family="ui-monospace, monospace">4.67</text>
+  <text x="406" y="108" font-size="10" fill="#57606a" text-anchor="start" font-weight="400">일반적인 모델 학습</text>
+  <path d="M 166 100 C 202 100, 202 156, 234 156" fill="none" stroke="#8250df" stroke-width="2"/>
+  <text x="206" y="150" font-size="10.5" fill="#8250df" text-anchor="middle" font-weight="700">합계</text>
+  <rect x="234" y="136" width="126" height="40" rx="6" fill="#ffffff" stroke="#8250df" stroke-width="1.8"/>
+  <text x="297" y="153" font-size="11" fill="#8250df" text-anchor="middle" font-weight="700" font-family="ui-monospace, monospace">reduction="sum"</text>
+  <text x="297" y="168" font-size="10" fill="#57606a" text-anchor="middle" font-weight="400" font-family="ui-monospace, monospace">4 + 1 + 9 = 14</text>
+  <text x="378" y="161" font-size="13" fill="#57606a" text-anchor="start" font-weight="400">→</text>
+  <text x="406" y="154" font-size="13" fill="#24292f" text-anchor="start" font-weight="700" font-family="ui-monospace, monospace">14</text>
+  <text x="406" y="170" font-size="10" fill="#57606a" text-anchor="start" font-weight="400">전체 오차량이 중요할 때</text>
+  <path d="M 166 100 C 202 100, 202 218, 234 218" fill="none" stroke="#0969da" stroke-width="2"/>
+  <text x="206" y="212" font-size="10.5" fill="#0969da" text-anchor="middle" font-weight="700">그대로</text>
+  <rect x="234" y="198" width="126" height="40" rx="6" fill="#ffffff" stroke="#0969da" stroke-width="1.8"/>
+  <text x="297" y="215" font-size="11" fill="#0969da" text-anchor="middle" font-weight="700" font-family="ui-monospace, monospace">reduction="none"</text>
+  <text x="297" y="230" font-size="10" fill="#57606a" text-anchor="middle" font-weight="400" font-family="ui-monospace, monospace">합치지 않는다</text>
+  <text x="378" y="223" font-size="13" fill="#57606a" text-anchor="start" font-weight="400">→</text>
+  <text x="406" y="216" font-size="13" fill="#24292f" text-anchor="start" font-weight="700" font-family="ui-monospace, monospace">[4, 1, 9]</text>
+  <text x="406" y="232" font-size="10" fill="#57606a" text-anchor="start" font-weight="400">분석 · 가중치 · Custom Loss</text>
+</svg>
