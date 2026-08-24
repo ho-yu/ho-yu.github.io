@@ -1,0 +1,46 @@
+<svg width="640" height="300" viewBox="0 0 640 300" xmlns="http://www.w3.org/2000/svg" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif">
+  <rect x="0" y="0" width="640" height="300" fill="#f6f8fa" rx="10"/>
+  <text x="320.0" y="26.0" font-size="14" fill="#24292f" text-anchor="middle" font-weight="700">정답 클래스의 Logit이 상대적으로 높을수록 Loss가 작아진다</text>
+  <rect x="10" y="44" width="200" height="238" rx="10" fill="#ffffff" stroke="#d0d7de" stroke-width="1.5"/>
+  <text x="110.0" y="66.0" font-size="12" fill="#24292f" text-anchor="middle" font-weight="700">정답을 확실하게 예측</text>
+  <line x1="32" y1="214" x2="188" y2="214" stroke="#57606a" stroke-width="1.5"/>
+  <rect x="44" y="98.0" width="34" height="116.0" rx="3" fill="#0969da"/>
+  <text x="61.0" y="91.0" font-size="11" fill="#0969da" text-anchor="middle" font-weight="700" font-family="ui-monospace, monospace">5.0</text>
+  <text x="61.0" y="230.0" font-size="10.5" fill="#57606a" text-anchor="middle" font-weight="400" font-family="ui-monospace, monospace">0</text>
+  <rect x="92" y="190.8" width="34" height="23.2" rx="3" fill="#c9d1d9"/>
+  <text x="109.0" y="183.8" font-size="11" fill="#57606a" text-anchor="middle" font-weight="700" font-family="ui-monospace, monospace">1.0</text>
+  <text x="109.0" y="230.0" font-size="10.5" fill="#57606a" text-anchor="middle" font-weight="400" font-family="ui-monospace, monospace">1</text>
+  <rect x="140" y="209.4" width="34" height="4.6" rx="3" fill="#c9d1d9"/>
+  <text x="157.0" y="202.4" font-size="11" fill="#57606a" text-anchor="middle" font-weight="700" font-family="ui-monospace, monospace">0.2</text>
+  <text x="157.0" y="230.0" font-size="10.5" fill="#57606a" text-anchor="middle" font-weight="400" font-family="ui-monospace, monospace">2</text>
+  <text x="61.0" y="246.0" font-size="10.5" fill="#0969da" text-anchor="middle" font-weight="700">↑ 정답</text>
+  <text x="110.0" y="270.0" font-size="12" fill="#1a7f37" text-anchor="middle" font-weight="700">Loss 작음</text>
+  <rect x="216" y="44" width="200" height="238" rx="10" fill="#ffffff" stroke="#d0d7de" stroke-width="1.5"/>
+  <text x="316.0" y="66.0" font-size="12" fill="#24292f" text-anchor="middle" font-weight="700">정답을 애매하게 예측</text>
+  <line x1="238" y1="214" x2="394" y2="214" stroke="#57606a" stroke-width="1.5"/>
+  <rect x="250" y="188.5" width="34" height="25.5" rx="3" fill="#0969da"/>
+  <text x="267.0" y="181.5" font-size="11" fill="#0969da" text-anchor="middle" font-weight="700" font-family="ui-monospace, monospace">1.1</text>
+  <text x="267.0" y="230.0" font-size="10.5" fill="#57606a" text-anchor="middle" font-weight="400" font-family="ui-monospace, monospace">0</text>
+  <rect x="298" y="190.8" width="34" height="23.2" rx="3" fill="#c9d1d9"/>
+  <text x="315.0" y="183.8" font-size="11" fill="#57606a" text-anchor="middle" font-weight="700" font-family="ui-monospace, monospace">1.0</text>
+  <text x="315.0" y="230.0" font-size="10.5" fill="#57606a" text-anchor="middle" font-weight="400" font-family="ui-monospace, monospace">1</text>
+  <rect x="346" y="193.1" width="34" height="20.9" rx="3" fill="#c9d1d9"/>
+  <text x="363.0" y="186.1" font-size="11" fill="#57606a" text-anchor="middle" font-weight="700" font-family="ui-monospace, monospace">0.9</text>
+  <text x="363.0" y="230.0" font-size="10.5" fill="#57606a" text-anchor="middle" font-weight="400" font-family="ui-monospace, monospace">2</text>
+  <text x="267.0" y="246.0" font-size="10.5" fill="#0969da" text-anchor="middle" font-weight="700">↑ 정답</text>
+  <text x="316.0" y="270.0" font-size="12" fill="#bc4c00" text-anchor="middle" font-weight="700">Loss가 상대적으로 큼</text>
+  <rect x="422" y="44" width="200" height="238" rx="10" fill="#ffffff" stroke="#d0d7de" stroke-width="1.5"/>
+  <text x="522.0" y="66.0" font-size="12" fill="#24292f" text-anchor="middle" font-weight="700">잘못된 클래스를 확신</text>
+  <line x1="444" y1="214" x2="600" y2="214" stroke="#57606a" stroke-width="1.5"/>
+  <rect x="456" y="209.4" width="34" height="4.6" rx="3" fill="#0969da"/>
+  <text x="473.0" y="202.4" font-size="11" fill="#0969da" text-anchor="middle" font-weight="700" font-family="ui-monospace, monospace">0.2</text>
+  <text x="473.0" y="230.0" font-size="10.5" fill="#57606a" text-anchor="middle" font-weight="400" font-family="ui-monospace, monospace">0</text>
+  <rect x="504" y="121.2" width="34" height="92.8" rx="3" fill="#c9d1d9"/>
+  <text x="521.0" y="114.2" font-size="11" fill="#57606a" text-anchor="middle" font-weight="700" font-family="ui-monospace, monospace">4.0</text>
+  <text x="521.0" y="230.0" font-size="10.5" fill="#57606a" text-anchor="middle" font-weight="400" font-family="ui-monospace, monospace">1</text>
+  <rect x="552" y="190.8" width="34" height="23.2" rx="3" fill="#c9d1d9"/>
+  <text x="569.0" y="183.8" font-size="11" fill="#57606a" text-anchor="middle" font-weight="700" font-family="ui-monospace, monospace">1.0</text>
+  <text x="569.0" y="230.0" font-size="10.5" fill="#57606a" text-anchor="middle" font-weight="400" font-family="ui-monospace, monospace">2</text>
+  <text x="473.0" y="246.0" font-size="10.5" fill="#0969da" text-anchor="middle" font-weight="700">↑ 정답</text>
+  <text x="522.0" y="270.0" font-size="12" fill="#cf222e" text-anchor="middle" font-weight="700">Loss 매우 큼</text>
+</svg>
