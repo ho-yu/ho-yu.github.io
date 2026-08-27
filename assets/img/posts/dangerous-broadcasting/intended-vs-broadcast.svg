@@ -1,0 +1,73 @@
+<svg width="700" height="372" viewBox="0 0 700 372" xmlns="http://www.w3.org/2000/svg" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif">
+  <rect x="0" y="0" width="700" height="372" fill="#f6f8fa" rx="10"/>
+  <text x="350.0" y="26.0" font-size="14" fill="#24292f" text-anchor="middle" font-weight="700">Shape이 다르면 에러 없이 다른 계산이 된다</text>
+  <rect x="10" y="44" width="326" height="286" rx="10" fill="#ffffff" stroke="#d0d7de" stroke-width="1.5"/>
+  <text x="173.0" y="70.0" font-size="12.5" fill="#1a7f37" text-anchor="middle" font-weight="700">의도한 계산</text>
+  <text x="173.0" y="92.0" font-size="11.5" fill="#57606a" text-anchor="middle" font-weight="700" font-family="ui-monospace, monospace">pred [4, 1]   ↔   target [4, 1]</text>
+  <rect x="46" y="116" width="88" height="30" rx="5" fill="#ffffff" stroke="#0969da" stroke-width="1.6"/>
+  <text x="90.0" y="136.0" font-size="11.5" fill="#0969da" text-anchor="middle" font-weight="700" font-family="ui-monospace, monospace">pred1</text>
+  <text x="173.0" y="137.0" font-size="15" fill="#1a7f37" text-anchor="middle" font-weight="700">↔</text>
+  <rect x="212" y="116" width="88" height="30" rx="5" fill="#ffffff" stroke="#d0d7de" stroke-width="1.6"/>
+  <text x="256.0" y="136.0" font-size="11.5" fill="#24292f" text-anchor="middle" font-weight="700" font-family="ui-monospace, monospace">target1</text>
+  <rect x="46" y="160" width="88" height="30" rx="5" fill="#ffffff" stroke="#0969da" stroke-width="1.6"/>
+  <text x="90.0" y="180.0" font-size="11.5" fill="#0969da" text-anchor="middle" font-weight="700" font-family="ui-monospace, monospace">pred2</text>
+  <text x="173.0" y="181.0" font-size="15" fill="#1a7f37" text-anchor="middle" font-weight="700">↔</text>
+  <rect x="212" y="160" width="88" height="30" rx="5" fill="#ffffff" stroke="#d0d7de" stroke-width="1.6"/>
+  <text x="256.0" y="180.0" font-size="11.5" fill="#24292f" text-anchor="middle" font-weight="700" font-family="ui-monospace, monospace">target2</text>
+  <rect x="46" y="204" width="88" height="30" rx="5" fill="#ffffff" stroke="#0969da" stroke-width="1.6"/>
+  <text x="90.0" y="224.0" font-size="11.5" fill="#0969da" text-anchor="middle" font-weight="700" font-family="ui-monospace, monospace">pred3</text>
+  <text x="173.0" y="225.0" font-size="15" fill="#1a7f37" text-anchor="middle" font-weight="700">↔</text>
+  <rect x="212" y="204" width="88" height="30" rx="5" fill="#ffffff" stroke="#d0d7de" stroke-width="1.6"/>
+  <text x="256.0" y="224.0" font-size="11.5" fill="#24292f" text-anchor="middle" font-weight="700" font-family="ui-monospace, monospace">target3</text>
+  <rect x="46" y="248" width="88" height="30" rx="5" fill="#ffffff" stroke="#0969da" stroke-width="1.6"/>
+  <text x="90.0" y="268.0" font-size="11.5" fill="#0969da" text-anchor="middle" font-weight="700" font-family="ui-monospace, monospace">pred4</text>
+  <text x="173.0" y="269.0" font-size="15" fill="#1a7f37" text-anchor="middle" font-weight="700">↔</text>
+  <rect x="212" y="248" width="88" height="30" rx="5" fill="#ffffff" stroke="#d0d7de" stroke-width="1.6"/>
+  <text x="256.0" y="268.0" font-size="11.5" fill="#24292f" text-anchor="middle" font-weight="700" font-family="ui-monospace, monospace">target4</text>
+  <text x="173.0" y="312.0" font-size="11.5" fill="#1a7f37" text-anchor="middle" font-weight="700">샘플끼리 1:1 비교 — 4쌍</text>
+  <rect x="356" y="44" width="334" height="286" rx="10" fill="#ffffff" stroke="#d0d7de" stroke-width="1.5"/>
+  <text x="523.0" y="70.0" font-size="12.5" fill="#cf222e" text-anchor="middle" font-weight="700">Broadcasting이 만든 계산</text>
+  <text x="523.0" y="92.0" font-size="11.5" fill="#57606a" text-anchor="middle" font-weight="700" font-family="ui-monospace, monospace">pred [4, 1]   +   target [4]</text>
+  <text x="474.0" y="122.0" font-size="9.5" fill="#57606a" text-anchor="middle" font-weight="400" font-family="ui-monospace, monospace">target1</text>
+  <text x="524.0" y="122.0" font-size="9.5" fill="#57606a" text-anchor="middle" font-weight="400" font-family="ui-monospace, monospace">target2</text>
+  <text x="574.0" y="122.0" font-size="9.5" fill="#57606a" text-anchor="middle" font-weight="400" font-family="ui-monospace, monospace">target3</text>
+  <text x="624.0" y="122.0" font-size="9.5" fill="#57606a" text-anchor="middle" font-weight="400" font-family="ui-monospace, monospace">target4</text>
+  <text x="442.0" y="150.0" font-size="10.5" fill="#0969da" text-anchor="end" font-weight="700" font-family="ui-monospace, monospace">pred1</text>
+  <rect x="452" y="130" width="44" height="30" rx="4" fill="#ffffff" stroke="#cf222e" stroke-width="1.4"/>
+  <text x="474.0" y="150.0" font-size="10.5" fill="#cf222e" text-anchor="middle" font-weight="600">계산</text>
+  <rect x="502" y="130" width="44" height="30" rx="4" fill="#ffffff" stroke="#cf222e" stroke-width="1.4"/>
+  <text x="524.0" y="150.0" font-size="10.5" fill="#cf222e" text-anchor="middle" font-weight="600">계산</text>
+  <rect x="552" y="130" width="44" height="30" rx="4" fill="#ffffff" stroke="#cf222e" stroke-width="1.4"/>
+  <text x="574.0" y="150.0" font-size="10.5" fill="#cf222e" text-anchor="middle" font-weight="600">계산</text>
+  <rect x="602" y="130" width="44" height="30" rx="4" fill="#ffffff" stroke="#cf222e" stroke-width="1.4"/>
+  <text x="624.0" y="150.0" font-size="10.5" fill="#cf222e" text-anchor="middle" font-weight="600">계산</text>
+  <text x="442.0" y="186.0" font-size="10.5" fill="#0969da" text-anchor="end" font-weight="700" font-family="ui-monospace, monospace">pred2</text>
+  <rect x="452" y="166" width="44" height="30" rx="4" fill="#ffffff" stroke="#cf222e" stroke-width="1.4"/>
+  <text x="474.0" y="186.0" font-size="10.5" fill="#cf222e" text-anchor="middle" font-weight="600">계산</text>
+  <rect x="502" y="166" width="44" height="30" rx="4" fill="#ffffff" stroke="#cf222e" stroke-width="1.4"/>
+  <text x="524.0" y="186.0" font-size="10.5" fill="#cf222e" text-anchor="middle" font-weight="600">계산</text>
+  <rect x="552" y="166" width="44" height="30" rx="4" fill="#ffffff" stroke="#cf222e" stroke-width="1.4"/>
+  <text x="574.0" y="186.0" font-size="10.5" fill="#cf222e" text-anchor="middle" font-weight="600">계산</text>
+  <rect x="602" y="166" width="44" height="30" rx="4" fill="#ffffff" stroke="#cf222e" stroke-width="1.4"/>
+  <text x="624.0" y="186.0" font-size="10.5" fill="#cf222e" text-anchor="middle" font-weight="600">계산</text>
+  <text x="442.0" y="222.0" font-size="10.5" fill="#0969da" text-anchor="end" font-weight="700" font-family="ui-monospace, monospace">pred3</text>
+  <rect x="452" y="202" width="44" height="30" rx="4" fill="#ffffff" stroke="#cf222e" stroke-width="1.4"/>
+  <text x="474.0" y="222.0" font-size="10.5" fill="#cf222e" text-anchor="middle" font-weight="600">계산</text>
+  <rect x="502" y="202" width="44" height="30" rx="4" fill="#ffffff" stroke="#cf222e" stroke-width="1.4"/>
+  <text x="524.0" y="222.0" font-size="10.5" fill="#cf222e" text-anchor="middle" font-weight="600">계산</text>
+  <rect x="552" y="202" width="44" height="30" rx="4" fill="#ffffff" stroke="#cf222e" stroke-width="1.4"/>
+  <text x="574.0" y="222.0" font-size="10.5" fill="#cf222e" text-anchor="middle" font-weight="600">계산</text>
+  <rect x="602" y="202" width="44" height="30" rx="4" fill="#ffffff" stroke="#cf222e" stroke-width="1.4"/>
+  <text x="624.0" y="222.0" font-size="10.5" fill="#cf222e" text-anchor="middle" font-weight="600">계산</text>
+  <text x="442.0" y="258.0" font-size="10.5" fill="#0969da" text-anchor="end" font-weight="700" font-family="ui-monospace, monospace">pred4</text>
+  <rect x="452" y="238" width="44" height="30" rx="4" fill="#ffffff" stroke="#cf222e" stroke-width="1.4"/>
+  <text x="474.0" y="258.0" font-size="10.5" fill="#cf222e" text-anchor="middle" font-weight="600">계산</text>
+  <rect x="502" y="238" width="44" height="30" rx="4" fill="#ffffff" stroke="#cf222e" stroke-width="1.4"/>
+  <text x="524.0" y="258.0" font-size="10.5" fill="#cf222e" text-anchor="middle" font-weight="600">계산</text>
+  <rect x="552" y="238" width="44" height="30" rx="4" fill="#ffffff" stroke="#cf222e" stroke-width="1.4"/>
+  <text x="574.0" y="258.0" font-size="10.5" fill="#cf222e" text-anchor="middle" font-weight="600">계산</text>
+  <rect x="602" y="238" width="44" height="30" rx="4" fill="#ffffff" stroke="#cf222e" stroke-width="1.4"/>
+  <text x="624.0" y="258.0" font-size="10.5" fill="#cf222e" text-anchor="middle" font-weight="600">계산</text>
+  <text x="523.0" y="312.0" font-size="11.5" fill="#cf222e" text-anchor="middle" font-weight="700">각 예측값이 여러 Target과 계산 — 결과 [4, 4]</text>
+  <text x="350.0" y="356.0" font-size="11.5" fill="#57606a" text-anchor="middle" font-weight="700">에러가 나지 않기 때문에 Shape을 직접 확인하지 않으면 그대로 학습된다</text>
+</svg>
