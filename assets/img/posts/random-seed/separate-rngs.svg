@@ -1,0 +1,27 @@
+<svg width="700" height="310" viewBox="0 0 700 310" xmlns="http://www.w3.org/2000/svg" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif">
+  <rect x="0" y="0" width="700" height="310" fill="#f6f8fa" rx="10"/>
+  <text x="350.0" y="28.0" font-size="14" fill="#24292f" text-anchor="middle" font-weight="700">라이브러리마다 난수 생성기를 따로 관리한다</text>
+  <rect x="24" y="46" width="652" height="176" rx="10" fill="#ffffff" stroke="#d0d7de" stroke-width="1.5"/>
+  <text x="50.0" y="70.0" font-size="12" fill="#57606a" text-anchor="start" font-weight="700">Python 프로그램</text>
+  <rect x="56" y="86" width="188" height="118" rx="8" fill="#ffffff" stroke="#0969da" stroke-width="1.8"/>
+  <text x="150.0" y="110.0" font-size="13" fill="#0969da" text-anchor="middle" font-weight="700">random</text>
+  <text x="150.0" y="134.0" font-size="11" fill="#57606a" text-anchor="middle" font-weight="700">별도 난수 생성기</text>
+  <rect x="70" y="150" width="160" height="36" rx="5" fill="#f6f8fa" stroke="#d0d7de" stroke-width="1.2"/>
+  <text x="150.0" y="172.0" font-size="10" fill="#24292f" text-anchor="middle" font-weight="600" font-family="ui-monospace, monospace">random.seed(123)</text>
+  <rect x="256" y="86" width="188" height="118" rx="8" fill="#ffffff" stroke="#1a7f37" stroke-width="1.8"/>
+  <text x="350.0" y="110.0" font-size="13" fill="#1a7f37" text-anchor="middle" font-weight="700">NumPy</text>
+  <text x="350.0" y="134.0" font-size="11" fill="#57606a" text-anchor="middle" font-weight="700">별도 난수 생성기</text>
+  <rect x="270" y="150" width="160" height="36" rx="5" fill="#f6f8fa" stroke="#d0d7de" stroke-width="1.2"/>
+  <text x="350.0" y="172.0" font-size="10" fill="#24292f" text-anchor="middle" font-weight="600" font-family="ui-monospace, monospace">np.random.seed(123)</text>
+  <rect x="456" y="86" width="188" height="118" rx="8" fill="#ffffff" stroke="#8250df" stroke-width="1.8"/>
+  <text x="550.0" y="110.0" font-size="13" fill="#8250df" text-anchor="middle" font-weight="700">PyTorch</text>
+  <text x="550.0" y="134.0" font-size="11" fill="#57606a" text-anchor="middle" font-weight="700">별도 난수 생성기</text>
+  <rect x="470" y="150" width="160" height="36" rx="5" fill="#f6f8fa" stroke="#d0d7de" stroke-width="1.2"/>
+  <text x="550.0" y="172.0" font-size="10" fill="#24292f" text-anchor="middle" font-weight="600" font-family="ui-monospace, monospace">torch.manual_seed(123)</text>
+  <rect x="24" y="234" width="316" height="52" rx="8" fill="#ffffff" stroke="#cf222e" stroke-width="1.6"/>
+  <text x="182.0" y="256.0" font-size="11" fill="#cf222e" text-anchor="middle" font-weight="700">같은 123을 써도</text>
+  <text x="182.0" y="273.0" font-size="11" fill="#cf222e" text-anchor="middle" font-weight="700">만들어지는 숫자는 서로 다를 수 있다</text>
+  <rect x="360" y="234" width="316" height="52" rx="8" fill="#ffffff" stroke="#1a7f37" stroke-width="1.6"/>
+  <text x="518.0" y="256.0" font-size="11" fill="#1a7f37" text-anchor="middle" font-weight="700">같은 라이브러리에서 같은 Seed를 다시 설정하면</text>
+  <text x="518.0" y="273.0" font-size="11" fill="#1a7f37" text-anchor="middle" font-weight="700">같은 랜덤 결과를 재현할 수 있다</text>
+</svg>
