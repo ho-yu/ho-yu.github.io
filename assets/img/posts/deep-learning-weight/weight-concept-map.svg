@@ -1,0 +1,47 @@
+<svg width="720" height="400" viewBox="0 0 720 400" xmlns="http://www.w3.org/2000/svg" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif">
+  <rect x="0" y="0" width="720" height="400" fill="#f6f8fa" rx="10"/>
+  <defs>
+    <marker id="a-57606a" markerWidth="8" markerHeight="8" refX="6.4" refY="3" orient="auto"><path d="M0,0 L6.4,3 L0,6 z" fill="#57606a"/></marker>
+    <marker id="a-0969da" markerWidth="8" markerHeight="8" refX="6.4" refY="3" orient="auto"><path d="M0,0 L6.4,3 L0,6 z" fill="#0969da"/></marker>
+    <marker id="a-8250df" markerWidth="8" markerHeight="8" refX="6.4" refY="3" orient="auto"><path d="M0,0 L6.4,3 L0,6 z" fill="#8250df"/></marker>
+    <marker id="a-1a7f37" markerWidth="8" markerHeight="8" refX="6.4" refY="3" orient="auto"><path d="M0,0 L6.4,3 L0,6 z" fill="#1a7f37"/></marker>
+    <marker id="a-cf222e" markerWidth="8" markerHeight="8" refX="6.4" refY="3" orient="auto"><path d="M0,0 L6.4,3 L0,6 z" fill="#cf222e"/></marker>
+  </defs>
+  <text x="360.0" y="28.0" font-size="14" fill="#24292f" text-anchor="middle" font-weight="700">Weight는 어디에 속하는가</text>
+  <rect x="24" y="50" width="330" height="188" rx="10" fill="#ffffff" stroke="#d0d7de" stroke-width="1.8"/>
+  <text x="189.0" y="74.0" font-size="13" fill="#24292f" text-anchor="middle" font-weight="700">Tensor</text>
+  <text x="189.0" y="92.0" font-size="10.5" fill="#57606a" text-anchor="middle" font-weight="400">숫자를 담는 자료구조</text>
+  <rect x="52" y="106" width="274" height="22" rx="4" fill="#ffffff" stroke="#d0d7de" stroke-width="1.2"/>
+  <text x="189.0" y="121.0" font-size="10.5" fill="#57606a" text-anchor="middle" font-weight="600">입력 데이터</text>
+  <rect x="52" y="132" width="274" height="22" rx="4" fill="#ffffff" stroke="#d0d7de" stroke-width="1.2"/>
+  <text x="189.0" y="147.0" font-size="10.5" fill="#57606a" text-anchor="middle" font-weight="600">Label</text>
+  <rect x="52" y="158" width="274" height="22" rx="4" fill="#ffffff" stroke="#d0d7de" stroke-width="1.2"/>
+  <text x="189.0" y="173.0" font-size="10.5" fill="#57606a" text-anchor="middle" font-weight="600">Activation</text>
+  <rect x="52" y="184" width="274" height="22" rx="4" fill="#ffffff" stroke="#d0d7de" stroke-width="1.2"/>
+  <text x="189.0" y="199.0" font-size="10.5" fill="#57606a" text-anchor="middle" font-weight="600">Gradient</text>
+  <rect x="52" y="210" width="274" height="22" rx="4" fill="#ffffff" stroke="#0969da" stroke-width="1.8"/>
+  <text x="189.0" y="225.0" font-size="11" fill="#0969da" text-anchor="middle" font-weight="700">Weight</text>
+  <rect x="404" y="50" width="292" height="188" rx="10" fill="#ffffff" stroke="#d0d7de" stroke-width="1.8"/>
+  <text x="550.0" y="74.0" font-size="13" fill="#24292f" text-anchor="middle" font-weight="700">Model Parameter</text>
+  <text x="550.0" y="92.0" font-size="10.5" fill="#57606a" text-anchor="middle" font-weight="400">모델이 학습하면서 수정하는 값</text>
+  <rect x="432" y="120" width="236" height="30" rx="5" fill="#ffffff" stroke="#0969da" stroke-width="1.8"/>
+  <text x="550.0" y="140.0" font-size="12" fill="#0969da" text-anchor="middle" font-weight="700">Weight</text>
+  <rect x="432" y="162" width="236" height="30" rx="5" fill="#ffffff" stroke="#8250df" stroke-width="1.8"/>
+  <text x="550.0" y="182.0" font-size="12" fill="#8250df" text-anchor="middle" font-weight="700">Bias</text>
+  <text x="550.0" y="218.0" font-size="10.5" fill="#57606a" text-anchor="middle" font-weight="700">둘 다 학습되는 Parameter</text>
+  <path d="M 326 221 C 366 221, 366 135, 428 135" fill="none" stroke="#0969da" stroke-width="1.8" stroke-dasharray="5 4"/>
+  <rect x="24" y="250" width="672" height="34" rx="8" fill="#ffffff" stroke="#0969da" stroke-width="1.6"/>
+  <text x="360.0" y="272.0" font-size="11.5" fill="#0969da" text-anchor="middle" font-weight="700">Weight는 Tensor 형태로 저장되지만, 모든 Tensor가 Weight인 것은 아니다</text>
+  <rect x="24" y="298" width="224" height="84" rx="8" fill="#ffffff" stroke="#0969da" stroke-width="1.6"/>
+  <text x="136.0" y="322.0" font-size="12.5" fill="#0969da" text-anchor="middle" font-weight="700">Weight</text>
+  <text x="136.0" y="344.0" font-size="10" fill="#57606a" text-anchor="middle" font-weight="400">모델 내부에 저장되어 있고</text>
+  <text x="136.0" y="360.0" font-size="10" fill="#57606a" text-anchor="middle" font-weight="400">학습하면서 수정된다</text>
+  <rect x="248" y="298" width="224" height="84" rx="8" fill="#ffffff" stroke="#1a7f37" stroke-width="1.6"/>
+  <text x="360.0" y="322.0" font-size="12.5" fill="#1a7f37" text-anchor="middle" font-weight="700">Activation</text>
+  <text x="360.0" y="344.0" font-size="10" fill="#57606a" text-anchor="middle" font-weight="400">입력이 모델을 통과하면서</text>
+  <text x="360.0" y="360.0" font-size="10" fill="#57606a" text-anchor="middle" font-weight="400">그때그때 만들어지는 중간 결과값</text>
+  <rect x="472" y="298" width="224" height="84" rx="8" fill="#ffffff" stroke="#cf222e" stroke-width="1.6"/>
+  <text x="584.0" y="322.0" font-size="12.5" fill="#cf222e" text-anchor="middle" font-weight="700">Gradient</text>
+  <text x="584.0" y="344.0" font-size="10" fill="#57606a" text-anchor="middle" font-weight="400">Weight를 어느 방향으로 수정해야</text>
+  <text x="584.0" y="360.0" font-size="10" fill="#57606a" text-anchor="middle" font-weight="400">Loss가 변하는지 알려주는 값</text>
+</svg>
