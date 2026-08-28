@@ -1,6 +1,6 @@
 ---
 title: "Python assert — 예상한 조건 검사하기"
-date: 2026-08-27 10:00:00 +0900
+date: 2026-08-28 09:00:00 +0900
 categories: [Notes, Python]
 tags: [python, assert, assertion-error, shape, device]
 mermaid: true
