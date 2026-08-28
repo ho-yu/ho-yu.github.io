@@ -1,0 +1,50 @@
+<svg width="720" height="372" viewBox="0 0 720 372" xmlns="http://www.w3.org/2000/svg" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif">
+  <rect x="0" y="0" width="720" height="372" fill="#f6f8fa" rx="10"/>
+  <defs>
+    <marker id="a-57606a" markerWidth="8" markerHeight="8" refX="6.4" refY="3" orient="auto"><path d="M0,0 L6.4,3 L0,6 z" fill="#57606a"/></marker>
+    <marker id="a-0969da" markerWidth="8" markerHeight="8" refX="6.4" refY="3" orient="auto"><path d="M0,0 L6.4,3 L0,6 z" fill="#0969da"/></marker>
+    <marker id="a-8250df" markerWidth="8" markerHeight="8" refX="6.4" refY="3" orient="auto"><path d="M0,0 L6.4,3 L0,6 z" fill="#8250df"/></marker>
+    <marker id="a-bc4c00" markerWidth="8" markerHeight="8" refX="6.4" refY="3" orient="auto"><path d="M0,0 L6.4,3 L0,6 z" fill="#bc4c00"/></marker>
+  </defs>
+  <text x="360.0" y="28.0" font-size="14" fill="#24292f" text-anchor="middle" font-weight="700">Conv2d의 Weight Shape 읽기</text>
+  <text x="360.0" y="62.0" font-size="12" fill="#57606a" text-anchor="middle" font-weight="700" font-family="ui-monospace, monospace">conv.weight.shape</text>
+  <text x="24.0" y="100.0" font-size="13" fill="#57606a" text-anchor="start" font-weight="700" font-family="ui-monospace, monospace">torch.Size([</text>
+  <text x="458.0" y="100.0" font-size="13" fill="#57606a" text-anchor="start" font-weight="700" font-family="ui-monospace, monospace">])</text>
+  <rect x="122.0" y="80" width="56" height="30" rx="5" fill="#ffffff" stroke="#0969da" stroke-width="1.8"/>
+  <text x="150.0" y="101.0" font-size="13" fill="#0969da" text-anchor="middle" font-weight="700" font-family="ui-monospace, monospace">16</text>
+  <line x1="150.0" y1="112.0" x2="150.0" y2="126.0" stroke="#0969da" stroke-width="1.8" marker-end="url(#a-0969da)"/>
+  <text x="150.0" y="142.0" font-size="10.5" fill="#0969da" text-anchor="middle" font-weight="700">Filter 개수</text>
+  <text x="150.0" y="157.0" font-size="10.5" fill="#0969da" text-anchor="middle" font-weight="700">out_channels</text>
+  <rect x="242.0" y="80" width="56" height="30" rx="5" fill="#ffffff" stroke="#8250df" stroke-width="1.8"/>
+  <text x="270.0" y="101.0" font-size="13" fill="#8250df" text-anchor="middle" font-weight="700" font-family="ui-monospace, monospace">3</text>
+  <line x1="270.0" y1="112.0" x2="270.0" y2="126.0" stroke="#8250df" stroke-width="1.8" marker-end="url(#a-8250df)"/>
+  <text x="270.0" y="142.0" font-size="10.5" fill="#8250df" text-anchor="middle" font-weight="700">각 Filter가 보는</text>
+  <text x="270.0" y="157.0" font-size="10.5" fill="#8250df" text-anchor="middle" font-weight="700">입력 Channel 수</text>
+  <rect x="354.0" y="80" width="92" height="30" rx="5" fill="#ffffff" stroke="#bc4c00" stroke-width="1.8"/>
+  <text x="400.0" y="101.0" font-size="13" fill="#bc4c00" text-anchor="middle" font-weight="700" font-family="ui-monospace, monospace">3 × 3</text>
+  <line x1="400.0" y1="112.0" x2="400.0" y2="126.0" stroke="#bc4c00" stroke-width="1.8" marker-end="url(#a-bc4c00)"/>
+  <text x="400.0" y="142.0" font-size="10.5" fill="#bc4c00" text-anchor="middle" font-weight="700">Kernel의</text>
+  <text x="400.0" y="157.0" font-size="10.5" fill="#bc4c00" text-anchor="middle" font-weight="700">공간 크기</text>
+  <text x="226.0" y="100.0" font-size="13" fill="#57606a" text-anchor="middle" font-weight="700" font-family="ui-monospace, monospace">,</text>
+  <text x="320.0" y="100.0" font-size="13" fill="#57606a" text-anchor="middle" font-weight="700" font-family="ui-monospace, monospace">,</text>
+  <line x1="40" y1="180" x2="680" y2="180" stroke="#d0d7de" stroke-width="1"/>
+  <text x="360.0" y="204.0" font-size="12" fill="#24292f" text-anchor="middle" font-weight="700">Filter 하나가 Feature Map 하나를 만든다</text>
+  <rect x="168" y="226" width="120" height="22" rx="4" fill="#ffffff" stroke="#0969da" stroke-width="1.4"/>
+  <text x="228.0" y="241.0" font-size="10.5" fill="#0969da" text-anchor="middle" font-weight="700" font-family="ui-monospace, monospace">Filter 1</text>
+  <line x1="292.0" y1="237.0" x2="428.0" y2="237.0" stroke="#57606a" stroke-width="1.4" marker-end="url(#a-57606a)"/>
+  <rect x="432" y="226" width="120" height="22" rx="4" fill="#ffffff" stroke="#1a7f37" stroke-width="1.4"/>
+  <text x="492.0" y="241.0" font-size="10.5" fill="#1a7f37" text-anchor="middle" font-weight="700" font-family="ui-monospace, monospace">Feature Map 1</text>
+  <rect x="168" y="252" width="120" height="22" rx="4" fill="#ffffff" stroke="#0969da" stroke-width="1.4"/>
+  <text x="228.0" y="267.0" font-size="10.5" fill="#0969da" text-anchor="middle" font-weight="700" font-family="ui-monospace, monospace">Filter 2</text>
+  <line x1="292.0" y1="263.0" x2="428.0" y2="263.0" stroke="#57606a" stroke-width="1.4" marker-end="url(#a-57606a)"/>
+  <rect x="432" y="252" width="120" height="22" rx="4" fill="#ffffff" stroke="#1a7f37" stroke-width="1.4"/>
+  <text x="492.0" y="267.0" font-size="10.5" fill="#1a7f37" text-anchor="middle" font-weight="700" font-family="ui-monospace, monospace">Feature Map 2</text>
+  <text x="228.0" y="292.0" font-size="13" fill="#57606a" text-anchor="middle" font-weight="400">⋮</text>
+  <text x="492.0" y="292.0" font-size="13" fill="#57606a" text-anchor="middle" font-weight="400">⋮</text>
+  <rect x="168" y="304" width="120" height="22" rx="4" fill="#ffffff" stroke="#0969da" stroke-width="1.4"/>
+  <text x="228.0" y="319.0" font-size="10.5" fill="#0969da" text-anchor="middle" font-weight="700" font-family="ui-monospace, monospace">Filter 16</text>
+  <line x1="292.0" y1="315.0" x2="428.0" y2="315.0" stroke="#57606a" stroke-width="1.4" marker-end="url(#a-57606a)"/>
+  <rect x="432" y="304" width="120" height="22" rx="4" fill="#ffffff" stroke="#1a7f37" stroke-width="1.4"/>
+  <text x="492.0" y="319.0" font-size="10.5" fill="#1a7f37" text-anchor="middle" font-weight="700" font-family="ui-monospace, monospace">Feature Map 16</text>
+  <text x="360.0" y="354.0" font-size="11.5" fill="#57606a" text-anchor="middle" font-weight="700">out_channels = Filter 개수 = 생성되는 Feature Map 개수</text>
+</svg>
