@@ -1,0 +1,37 @@
+<svg width="660" height="396" viewBox="0 0 660 396" xmlns="http://www.w3.org/2000/svg" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif">
+  <rect x="0" y="0" width="660" height="396" fill="#f6f8fa" rx="10"/>
+  <defs>
+    <marker id="a-57606a" markerWidth="8" markerHeight="8" refX="6.4" refY="3" orient="auto"><path d="M0,0 L6.4,3 L0,6 z" fill="#57606a"/></marker>
+  </defs>
+  <text x="330.0" y="28.0" font-size="14" fill="#24292f" text-anchor="middle" font-weight="700">직선적인 규칙만으로 판단하기 어려운 경우</text>
+  <line x1="96" y1="300" x2="540" y2="300" stroke="#57606a" stroke-width="1.5"/>
+  <line x1="96" y1="300" x2="96" y2="62" stroke="#57606a" stroke-width="1.5"/>
+  <text x="540.0" y="326.0" font-size="11.5" fill="#57606a" text-anchor="end" font-weight="700">X1 = 소득</text>
+  <text x="88.0" y="54.0" font-size="11.5" fill="#57606a" text-anchor="middle" font-weight="700">X2 = 부채</text>
+  <line x1="310" y1="66" x2="310" y2="300" stroke="#8250df" stroke-width="1.8" stroke-dasharray="6 4"/>
+  <text x="310.0" y="54.0" font-size="11" fill="#8250df" text-anchor="middle" font-weight="700">"소득이 높으면 안전" 이라는 직선 규칙</text>
+  <circle cx="150" cy="118" r="8" fill="#cf222e"/>
+  <text x="136.0" y="114.0" font-size="11.5" fill="#cf222e" text-anchor="end" font-weight="700">위험</text>
+  <text x="136.0" y="129.0" font-size="10" fill="#57606a" text-anchor="end" font-weight="400">소득 낮음</text>
+  <text x="136.0" y="142.0" font-size="10" fill="#57606a" text-anchor="end" font-weight="400">부채 높음</text>
+  <circle cx="156" cy="262" r="8" fill="#1a7f37"/>
+  <text x="172.0" y="258.0" font-size="11.5" fill="#1a7f37" text-anchor="start" font-weight="700">안전할 수도 있음</text>
+  <text x="172.0" y="273.0" font-size="10" fill="#57606a" text-anchor="start" font-weight="400">소득 낮음</text>
+  <text x="172.0" y="286.0" font-size="10" fill="#57606a" text-anchor="start" font-weight="400">부채 거의 없음</text>
+  <circle cx="420" cy="252" r="8" fill="#1a7f37"/>
+  <text x="436.0" y="248.0" font-size="11.5" fill="#1a7f37" text-anchor="start" font-weight="700">안전</text>
+  <text x="436.0" y="263.0" font-size="10" fill="#57606a" text-anchor="start" font-weight="400">소득 높음</text>
+  <text x="436.0" y="276.0" font-size="10" fill="#57606a" text-anchor="start" font-weight="400">부채 낮음</text>
+  <circle cx="492" cy="100" r="8" fill="#cf222e"/>
+  <text x="478.0" y="96.0" font-size="11.5" fill="#cf222e" text-anchor="end" font-weight="700">위험할 수도 있음</text>
+  <text x="478.0" y="111.0" font-size="10" fill="#57606a" text-anchor="end" font-weight="400">소득 매우 높음</text>
+  <text x="478.0" y="124.0" font-size="10" fill="#57606a" text-anchor="end" font-weight="400">부채 매우 높음</text>
+  <text x="200.0" y="330.0" font-size="11" fill="#57606a" text-anchor="middle" font-weight="700">이쪽에도 안전·위험이 섞여 있고</text>
+  <text x="432.0" y="330.0" font-size="11" fill="#57606a" text-anchor="middle" font-weight="700">이쪽에도 섞여 있다</text>
+  <circle cx="574" cy="240" r="7" fill="#1a7f37"/>
+  <text x="588.0" y="244.0" font-size="11" fill="#1a7f37" text-anchor="start" font-weight="700">안전</text>
+  <circle cx="574" cy="266" r="7" fill="#cf222e"/>
+  <text x="588.0" y="270.0" font-size="11" fill="#cf222e" text-anchor="start" font-weight="700">위험</text>
+  <text x="330.0" y="356.0" font-size="11.5" fill="#57606a" text-anchor="middle" font-weight="700">여러 조건의 조합에 따라 결과가 달라지기 때문에</text>
+  <text x="330.0" y="376.0" font-size="11.5" fill="#57606a" text-anchor="middle" font-weight="700">활성화 함수가 들어간 신경망이 이런 비선형 결정경계를 학습한다</text>
+</svg>
