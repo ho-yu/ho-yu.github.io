@@ -1,0 +1,53 @@
+<svg width="740" height="396" viewBox="0 0 740 396" xmlns="http://www.w3.org/2000/svg" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif">
+  <rect x="0" y="0" width="740" height="396" fill="#f6f8fa" rx="10"/>
+  <defs>
+    <marker id="a-57606a" markerWidth="8" markerHeight="8" refX="6.4" refY="3" orient="auto"><path d="M0,0 L6.4,3 L0,6 z" fill="#57606a"/></marker>
+    <marker id="a-0969da" markerWidth="8" markerHeight="8" refX="6.4" refY="3" orient="auto"><path d="M0,0 L6.4,3 L0,6 z" fill="#0969da"/></marker>
+    <marker id="a-cf222e" markerWidth="8" markerHeight="8" refX="6.4" refY="3" orient="auto"><path d="M0,0 L6.4,3 L0,6 z" fill="#cf222e"/></marker>
+    <marker id="a-1a7f37" markerWidth="8" markerHeight="8" refX="6.4" refY="3" orient="auto"><path d="M0,0 L6.4,3 L0,6 z" fill="#1a7f37"/></marker>
+  </defs>
+  <text x="370.0" y="28.0" font-size="14" fill="#24292f" text-anchor="middle" font-weight="700">backward() 후 .grad는 어디에 저장되는가</text>
+  <rect x="20" y="48" width="440" height="316" rx="10" fill="#ffffff" stroke="#d0d7de" stroke-width="1.5"/>
+  <text x="240.0" y="72.0" font-size="12" fill="#24292f" text-anchor="middle" font-weight="700">loss와 연결된 계산 그래프</text>
+  <rect x="48" y="96" width="86" height="44" rx="6" fill="#ffffff" stroke="#0969da" stroke-width="1.8"/>
+  <text x="91.0" y="116.0" font-size="12.5" fill="#0969da" text-anchor="middle" font-weight="700" font-family="ui-monospace, monospace">w</text>
+  <text x="91.0" y="132.0" font-size="9.5" fill="#57606a" text-anchor="middle" font-weight="400">Leaf</text>
+  <rect x="48" y="160" width="86" height="44" rx="6" fill="#ffffff" stroke="#0969da" stroke-width="1.8"/>
+  <text x="91.0" y="180.0" font-size="12.5" fill="#0969da" text-anchor="middle" font-weight="700" font-family="ui-monospace, monospace">b</text>
+  <text x="91.0" y="196.0" font-size="9.5" fill="#57606a" text-anchor="middle" font-weight="400">Leaf</text>
+  <rect x="186" y="128" width="118" height="44" rx="6" fill="#ffffff" stroke="#57606a" stroke-width="1.8"/>
+  <text x="245.0" y="148.0" font-size="12.5" fill="#57606a" text-anchor="middle" font-weight="700" font-family="ui-monospace, monospace">y</text>
+  <text x="245.0" y="164.0" font-size="9.5" fill="#57606a" text-anchor="middle" font-weight="400">중간 Tensor</text>
+  <rect x="348" y="128" width="86" height="44" rx="6" fill="#ffffff" stroke="#cf222e" stroke-width="1.8"/>
+  <text x="391.0" y="155.0" font-size="12.5" fill="#cf222e" text-anchor="middle" font-weight="700" font-family="ui-monospace, monospace">loss</text>
+  <line x1="136.0" y1="118.0" x2="182.0" y2="143.0" stroke="#0969da" stroke-width="1.8" marker-end="url(#a-0969da)"/>
+  <line x1="136.0" y1="182.0" x2="182.0" y2="160.0" stroke="#0969da" stroke-width="1.8" marker-end="url(#a-0969da)"/>
+  <line x1="306.0" y1="150.0" x2="344.0" y2="150.0" stroke="#57606a" stroke-width="1.8" marker-end="url(#a-57606a)"/>
+  <path d="M 391 174 L 391 236 L 32 236 L 32 118" fill="none" stroke="#cf222e" stroke-width="1.8" stroke-dasharray="5 4"/>
+  <line x1="32.0" y1="118.0" x2="44.0" y2="118.0" stroke="#cf222e" stroke-width="1.8" marker-end="url(#a-cf222e)"/>
+  <line x1="32.0" y1="182.0" x2="44.0" y2="182.0" stroke="#cf222e" stroke-width="1.8" marker-end="url(#a-cf222e)"/>
+  <text x="250.0" y="252.0" font-size="11" fill="#cf222e" text-anchor="middle" font-weight="700">loss.backward()  ·  계산 그래프를 거꾸로 추적</text>
+  <rect x="48" y="276" width="86" height="44" rx="6" fill="#ffffff" stroke="#57606a" stroke-width="1.8" stroke-dasharray="4 4"/>
+  <text x="91.0" y="303.0" font-size="12.5" fill="#57606a" text-anchor="middle" font-weight="700" font-family="ui-monospace, monospace">z</text>
+  <text x="148.0" y="296.0" font-size="10" fill="#57606a" text-anchor="start" font-weight="400">requires_grad=True 이지만</text>
+  <text x="148.0" y="311.0" font-size="10" fill="#57606a" text-anchor="start" font-weight="400">loss 계산에 사용되지 않았다</text>
+  <rect x="480" y="48" width="240" height="316" rx="10" fill="#ffffff" stroke="#d0d7de" stroke-width="1.5"/>
+  <text x="600.0" y="72.0" font-size="12" fill="#24292f" text-anchor="middle" font-weight="700">backward() 이후</text>
+  <rect x="500" y="96" width="200" height="52" rx="6" fill="#ffffff" stroke="#1a7f37" stroke-width="1.6"/>
+  <text x="516.0" y="118.0" font-size="11.5" fill="#24292f" text-anchor="start" font-weight="700" font-family="ui-monospace, monospace">w.grad</text>
+  <text x="684.0" y="118.0" font-size="11.5" fill="#1a7f37" text-anchor="end" font-weight="700" font-family="ui-monospace, monospace">저장됨</text>
+  <text x="516.0" y="136.0" font-size="9.5" fill="#57606a" text-anchor="start" font-weight="400">Leaf + 연결됨</text>
+  <rect x="500" y="162" width="200" height="52" rx="6" fill="#ffffff" stroke="#1a7f37" stroke-width="1.6"/>
+  <text x="516.0" y="184.0" font-size="11.5" fill="#24292f" text-anchor="start" font-weight="700" font-family="ui-monospace, monospace">b.grad</text>
+  <text x="684.0" y="184.0" font-size="11.5" fill="#1a7f37" text-anchor="end" font-weight="700" font-family="ui-monospace, monospace">저장됨</text>
+  <text x="516.0" y="202.0" font-size="9.5" fill="#57606a" text-anchor="start" font-weight="400">Leaf + 연결됨</text>
+  <rect x="500" y="228" width="200" height="52" rx="6" fill="#ffffff" stroke="#57606a" stroke-width="1.6"/>
+  <text x="516.0" y="250.0" font-size="11.5" fill="#24292f" text-anchor="start" font-weight="700" font-family="ui-monospace, monospace">y.grad</text>
+  <text x="684.0" y="250.0" font-size="11.5" fill="#57606a" text-anchor="end" font-weight="700" font-family="ui-monospace, monospace">None</text>
+  <text x="516.0" y="268.0" font-size="9.5" fill="#57606a" text-anchor="start" font-weight="400">중간 Tensor</text>
+  <rect x="500" y="294" width="200" height="52" rx="6" fill="#ffffff" stroke="#57606a" stroke-width="1.6"/>
+  <text x="516.0" y="316.0" font-size="11.5" fill="#24292f" text-anchor="start" font-weight="700" font-family="ui-monospace, monospace">z.grad</text>
+  <text x="684.0" y="316.0" font-size="11.5" fill="#57606a" text-anchor="end" font-weight="700" font-family="ui-monospace, monospace">None</text>
+  <text x="516.0" y="334.0" font-size="9.5" fill="#57606a" text-anchor="start" font-weight="400">연결되지 않음</text>
+  <text x="370.0" y="384.0" font-size="11.5" fill="#57606a" text-anchor="middle" font-weight="700">중간 Tensor의 gradient가 필요하면 y.retain_grad()를 사용한다</text>
+</svg>
