@@ -1,6 +1,6 @@
 ---
 title: "XOR와 활성화 함수 — 비선형 결정경계와 모델 크기"
-date: 2026-08-31 10:00:00 +0900
+date: 2026-09-01 09:00:00 +0900
 categories: [Notes, Deep Learning]
 tags: [xor, activation-function, decision-boundary, overfitting, underfitting]
 mermaid: true
