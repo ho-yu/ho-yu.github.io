@@ -1,0 +1,67 @@
+<svg width="780" height="448" viewBox="0 0 780 448" xmlns="http://www.w3.org/2000/svg" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif">
+  <rect x="0" y="0" width="780" height="448" fill="#f6f8fa" rx="10"/>
+  <defs>
+    <marker id="a-57606a" markerWidth="8" markerHeight="8" refX="6.4" refY="3" orient="auto"><path d="M0,0 L6.4,3 L0,6 z" fill="#57606a"/></marker>
+    <marker id="a-0969da" markerWidth="8" markerHeight="8" refX="6.4" refY="3" orient="auto"><path d="M0,0 L6.4,3 L0,6 z" fill="#0969da"/></marker>
+    <marker id="a-cf222e" markerWidth="8" markerHeight="8" refX="6.4" refY="3" orient="auto"><path d="M0,0 L6.4,3 L0,6 z" fill="#cf222e"/></marker>
+    <marker id="a-1a7f37" markerWidth="8" markerHeight="8" refX="6.4" refY="3" orient="auto"><path d="M0,0 L6.4,3 L0,6 z" fill="#1a7f37"/></marker>
+  </defs>
+  <text x="390.0" y="28.0" font-size="14" fill="#24292f" text-anchor="middle" font-weight="700">양방향 RNN에서 output[:, -1]이 최종 표현이 아닌 이유</text>
+  <rect x="530" y="52" width="104" height="200" rx="8" fill="#ffffff" stroke="#bc4c00" stroke-width="1.6" stroke-dasharray="5 4"/>
+  <text x="582.0" y="282.0" font-size="10.5" fill="#bc4c00" text-anchor="middle" font-weight="700" font-family="ui-monospace, monospace">output[:, -1] 위치</text>
+  <text x="58.0" y="86.0" font-size="11.5" fill="#57606a" text-anchor="middle" font-weight="700">입력</text>
+  <rect x="113.0" y="66" width="74" height="32" rx="5" fill="#ffffff" stroke="#d0d7de" stroke-width="1.8"/>
+  <text x="150.0" y="86.5" font-size="12.5" fill="#d0d7de" text-anchor="middle" font-weight="700" font-family="ui-monospace, monospace">x1</text>
+  <rect x="221.0" y="66" width="74" height="32" rx="5" fill="#ffffff" stroke="#d0d7de" stroke-width="1.8"/>
+  <text x="258.0" y="86.5" font-size="12.5" fill="#d0d7de" text-anchor="middle" font-weight="700" font-family="ui-monospace, monospace">x2</text>
+  <rect x="329.0" y="66" width="74" height="32" rx="5" fill="#ffffff" stroke="#d0d7de" stroke-width="1.8"/>
+  <text x="366.0" y="86.5" font-size="12.5" fill="#d0d7de" text-anchor="middle" font-weight="700" font-family="ui-monospace, monospace">x3</text>
+  <rect x="437.0" y="66" width="74" height="32" rx="5" fill="#ffffff" stroke="#d0d7de" stroke-width="1.8"/>
+  <text x="474.0" y="86.5" font-size="12.5" fill="#d0d7de" text-anchor="middle" font-weight="700" font-family="ui-monospace, monospace">x4</text>
+  <rect x="545.0" y="66" width="74" height="32" rx="5" fill="#ffffff" stroke="#d0d7de" stroke-width="1.8"/>
+  <text x="582.0" y="86.5" font-size="12.5" fill="#d0d7de" text-anchor="middle" font-weight="700" font-family="ui-monospace, monospace">x5</text>
+  <text x="58.0" y="150.0" font-size="11.5" fill="#0969da" text-anchor="middle" font-weight="700">Forward</text>
+  <rect x="113.0" y="130" width="74" height="32" rx="5" fill="#ffffff" stroke="#0969da" stroke-width="1.8"/>
+  <text x="150.0" y="150.5" font-size="12.5" fill="#0969da" text-anchor="middle" font-weight="700" font-family="ui-monospace, monospace">F1</text>
+  <line x1="188.0" y1="146.0" x2="218.0" y2="146.0" stroke="#0969da" stroke-width="1.8" marker-end="url(#a-0969da)"/>
+  <rect x="221.0" y="130" width="74" height="32" rx="5" fill="#ffffff" stroke="#0969da" stroke-width="1.8"/>
+  <text x="258.0" y="150.5" font-size="12.5" fill="#0969da" text-anchor="middle" font-weight="700" font-family="ui-monospace, monospace">F2</text>
+  <line x1="296.0" y1="146.0" x2="326.0" y2="146.0" stroke="#0969da" stroke-width="1.8" marker-end="url(#a-0969da)"/>
+  <rect x="329.0" y="130" width="74" height="32" rx="5" fill="#ffffff" stroke="#0969da" stroke-width="1.8"/>
+  <text x="366.0" y="150.5" font-size="12.5" fill="#0969da" text-anchor="middle" font-weight="700" font-family="ui-monospace, monospace">F3</text>
+  <line x1="404.0" y1="146.0" x2="434.0" y2="146.0" stroke="#0969da" stroke-width="1.8" marker-end="url(#a-0969da)"/>
+  <rect x="437.0" y="130" width="74" height="32" rx="5" fill="#ffffff" stroke="#0969da" stroke-width="1.8"/>
+  <text x="474.0" y="150.5" font-size="12.5" fill="#0969da" text-anchor="middle" font-weight="700" font-family="ui-monospace, monospace">F4</text>
+  <line x1="512.0" y1="146.0" x2="542.0" y2="146.0" stroke="#0969da" stroke-width="1.8" marker-end="url(#a-0969da)"/>
+  <rect x="545.0" y="130" width="74" height="32" rx="5" fill="#ffffff" stroke="#1a7f37" stroke-width="1.8"/>
+  <text x="582.0" y="150.5" font-size="12.5" fill="#1a7f37" text-anchor="middle" font-weight="700" font-family="ui-monospace, monospace">F5</text>
+  <text x="582.0" y="120.0" font-size="10.5" fill="#1a7f37" text-anchor="middle" font-weight="700">Forward 최종</text>
+  <text x="58.0" y="228.0" font-size="11.5" fill="#cf222e" text-anchor="middle" font-weight="700">Backward</text>
+  <rect x="113.0" y="208" width="74" height="32" rx="5" fill="#ffffff" stroke="#1a7f37" stroke-width="1.8"/>
+  <text x="150.0" y="228.5" font-size="12.5" fill="#1a7f37" text-anchor="middle" font-weight="700" font-family="ui-monospace, monospace">B1</text>
+  <rect x="221.0" y="208" width="74" height="32" rx="5" fill="#ffffff" stroke="#cf222e" stroke-width="1.8"/>
+  <text x="258.0" y="228.5" font-size="12.5" fill="#cf222e" text-anchor="middle" font-weight="700" font-family="ui-monospace, monospace">B2</text>
+  <line x1="220.0" y1="224.0" x2="190.0" y2="224.0" stroke="#cf222e" stroke-width="1.8" marker-end="url(#a-cf222e)"/>
+  <rect x="329.0" y="208" width="74" height="32" rx="5" fill="#ffffff" stroke="#cf222e" stroke-width="1.8"/>
+  <text x="366.0" y="228.5" font-size="12.5" fill="#cf222e" text-anchor="middle" font-weight="700" font-family="ui-monospace, monospace">B3</text>
+  <line x1="328.0" y1="224.0" x2="298.0" y2="224.0" stroke="#cf222e" stroke-width="1.8" marker-end="url(#a-cf222e)"/>
+  <rect x="437.0" y="208" width="74" height="32" rx="5" fill="#ffffff" stroke="#cf222e" stroke-width="1.8"/>
+  <text x="474.0" y="228.5" font-size="12.5" fill="#cf222e" text-anchor="middle" font-weight="700" font-family="ui-monospace, monospace">B4</text>
+  <line x1="436.0" y1="224.0" x2="406.0" y2="224.0" stroke="#cf222e" stroke-width="1.8" marker-end="url(#a-cf222e)"/>
+  <rect x="545.0" y="208" width="74" height="32" rx="5" fill="#ffffff" stroke="#bc4c00" stroke-width="1.8"/>
+  <text x="582.0" y="228.5" font-size="12.5" fill="#bc4c00" text-anchor="middle" font-weight="700" font-family="ui-monospace, monospace">B5</text>
+  <line x1="544.0" y1="224.0" x2="514.0" y2="224.0" stroke="#cf222e" stroke-width="1.8" marker-end="url(#a-cf222e)"/>
+  <text x="150.0" y="266.0" font-size="10.5" fill="#1a7f37" text-anchor="middle" font-weight="700">Backward 최종</text>
+  <text x="582.0" y="266.0" font-size="10.5" fill="#bc4c00" text-anchor="middle" font-weight="700">Backward 첫 상태</text>
+  <rect x="24" y="312" width="360" height="100" rx="10" fill="#ffffff" stroke="#bc4c00" stroke-width="1.8"/>
+  <text x="204.0" y="336.0" font-size="12.5" fill="#bc4c00" text-anchor="middle" font-weight="700" font-family="ui-monospace, monospace">output[:, -1]</text>
+  <text x="204.0" y="360.0" font-size="13" fill="#24292f" text-anchor="middle" font-weight="700" font-family="ui-monospace, monospace">[ F5  |  B5 ]</text>
+  <text x="204.0" y="382.0" font-size="10.5" fill="#57606a" text-anchor="middle" font-weight="400">Forward의 최종 상태  |  Backward의 첫 부분 상태</text>
+  <text x="204.0" y="400.0" font-size="11" fill="#bc4c00" text-anchor="middle" font-weight="700">두 방향 모두의 최종 상태가 아니다</text>
+  <rect x="396" y="312" width="360" height="100" rx="10" fill="#ffffff" stroke="#1a7f37" stroke-width="1.8"/>
+  <text x="576.0" y="336.0" font-size="11.5" fill="#1a7f37" text-anchor="middle" font-weight="700" font-family="ui-monospace, monospace">final = torch.cat([h_n[0], h_n[1]], dim=1)</text>
+  <text x="576.0" y="360.0" font-size="13" fill="#24292f" text-anchor="middle" font-weight="700" font-family="ui-monospace, monospace">[ F5  |  B1 ]</text>
+  <text x="576.0" y="382.0" font-size="10.5" fill="#57606a" text-anchor="middle" font-weight="400">Forward의 최종 상태  |  Backward의 최종 상태</text>
+  <text x="576.0" y="400.0" font-size="11" fill="#1a7f37" text-anchor="middle" font-weight="700">시퀀스 전체를 대표하는 표현</text>
+  <text x="390.0" y="436.0" font-size="11" fill="#57606a" text-anchor="middle" font-weight="700" font-family="ui-monospace, monospace">output[:, t] = [ Forward_t  |  Backward_t ]</text>
+</svg>
