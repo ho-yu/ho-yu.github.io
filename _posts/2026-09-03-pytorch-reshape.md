@@ -1,6 +1,6 @@
 ---
 title: "PyTorch reshape() 이해하기"
-date: 2026-08-29 09:00:00 +0900
+date: 2026-09-03 09:00:00 +0900
 categories: [Notes, Deep Learning]
 tags: [pytorch, reshape, view, tensor-shape, flatten]
 ---
