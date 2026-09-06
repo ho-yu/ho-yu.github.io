@@ -493,31 +493,7 @@ Projection 자체를 Cosine Similarity로 대체하는 것이 아니다.
 
 ---
 
-## 15. 🧹 코드에서 한 가지 정리할 부분
-
-현재 함수에는 다음처럼 되어 있는데,
-
-```python
-return matrix / (norm_matrix + eps)
-return None
-```
-
-첫 번째 `return`이 실행되는 순간 함수가 종료되므로 `return None`은 절대 실행되지 않는다.
-따라서 삭제해도 된다.
-
-```python
-def l2_normalize_rows(matrix, eps=1e-12):
-    norm_matrix = np.linalg.norm(
-        matrix,
-        axis=1,
-        keepdims=True
-    )
-    return matrix / (norm_matrix + eps)
-```
-
----
-
-## 16. ✅ 최종 한 줄 요약
+## 15. ✅ 최종 한 줄 요약
 
 > 💡 **문서와 Query를 같은 임베딩 공간으로 Projection한 뒤 L2 정규화하여 크기 영향을
 > 제거하고, 정규화된 내적으로 Cosine Similarity를 계산해 가장 방향이 비슷한 문서를
@@ -526,7 +502,7 @@ def l2_normalize_rows(matrix, eps=1e-12):
 
 ---
 
-## 17. 🧠 핵심 기억 카드
+## 16. 🧠 핵심 기억 카드
 
 <details markdown="1">
 <summary><strong>펼쳐서 확인</strong></summary>
@@ -550,7 +526,7 @@ def l2_normalize_rows(matrix, eps=1e-12):
 
 ---
 
-## 18. 🔗 관련 글
+## 17. 🔗 관련 글
 
 - [벡터 기초 — 정의부터 정규화까지](/posts/vector-basics/)
 - [PCA와 고유값 분해 핵심 정리](/posts/pca-and-eigen-decomposition/)
