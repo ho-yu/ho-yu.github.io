@@ -1,0 +1,37 @@
+<svg width="720" height="320" viewBox="0 0 720 320" xmlns="http://www.w3.org/2000/svg" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif">
+  <rect x="0" y="0" width="720" height="320" fill="#f6f8fa" rx="10"/>
+  <defs>
+    <marker id="ar" markerWidth="8" markerHeight="8" refX="6.4" refY="3" orient="auto"><path d="M0,0 L6.4,3 L0,6 z" fill="#57606a"/></marker>
+  </defs>
+  <text x="360" y="28" font-size="14" fill="#24292f" text-anchor="middle" font-weight="700">1,797개를 두 번에 나눠 70 : 15 : 15로 만든다</text>
+
+  <rect x="40" y="44" width="640" height="42" rx="6" fill="#ffffff" stroke="#d0d7de" stroke-width="1.5"/>
+  <text x="360" y="70" font-size="13" fill="#24292f" text-anchor="middle" font-weight="700">전체 데이터 1,797개</text>
+
+  <line x1="360" y1="90" x2="360" y2="106" stroke="#57606a" stroke-width="1.4" marker-end="url(#ar)"/>
+  <text x="360" y="124" font-size="11" fill="#57606a" text-anchor="middle" font-family="ui-monospace, monospace">1) train_test_split(test_size=0.3, stratify=source_labels)</text>
+
+  <rect x="40" y="134" width="448" height="48" rx="6" fill="#ffffff" stroke="#0969da" stroke-width="1.6"/>
+  <text x="264" y="155" font-size="12.5" fill="#0969da" text-anchor="middle" font-weight="700">Train</text>
+  <text x="264" y="172" font-size="11" fill="#57606a" text-anchor="middle">1257개 (약 70%)</text>
+
+  <rect x="488" y="134" width="192" height="48" rx="6" fill="#ffffff" stroke="#9a6700" stroke-width="1.6"/>
+  <text x="584" y="155" font-size="12.5" fill="#9a6700" text-anchor="middle" font-weight="700">Remainder</text>
+  <text x="584" y="172" font-size="11" fill="#57606a" text-anchor="middle">540개 (30%)</text>
+
+  <line x1="584" y1="186" x2="584" y2="202" stroke="#57606a" stroke-width="1.4" marker-end="url(#ar)"/>
+  <text x="584" y="220" font-size="11" fill="#57606a" text-anchor="middle" font-family="ui-monospace, monospace">2) train_test_split(test_size=0.5)</text>
+
+  <rect x="40" y="230" width="448" height="48" rx="6" fill="#ffffff" stroke="#0969da" stroke-width="1.4" stroke-dasharray="5 4"/>
+  <text x="264" y="259" font-size="11" fill="#57606a" text-anchor="middle">Train 1257개 (그대로)</text>
+
+  <rect x="488" y="230" width="96" height="48" rx="6" fill="#ffffff" stroke="#1a7f37" stroke-width="1.6"/>
+  <text x="536" y="251" font-size="11.5" fill="#1a7f37" text-anchor="middle" font-weight="700">Validation</text>
+  <text x="536" y="267" font-size="10.5" fill="#57606a" text-anchor="middle">270개 (15%)</text>
+
+  <rect x="584" y="230" width="96" height="48" rx="6" fill="#ffffff" stroke="#8250df" stroke-width="1.6"/>
+  <text x="632" y="251" font-size="11.5" fill="#8250df" text-anchor="middle" font-weight="700">Test</text>
+  <text x="632" y="267" font-size="10.5" fill="#57606a" text-anchor="middle">270개 (15%)</text>
+
+  <text x="360" y="302" font-size="12.5" fill="#24292f" text-anchor="middle" font-family="ui-monospace, monospace">1257 + 270 + 270 = 1797</text>
+</svg>
