@@ -1,0 +1,32 @@
+<svg width="720" height="290" viewBox="0 0 720 290" xmlns="http://www.w3.org/2000/svg" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif">
+  <rect x="0" y="0" width="720" height="290" fill="#f6f8fa" rx="10"/>
+  <defs><marker id="a" markerWidth="8" markerHeight="8" refX="6.4" refY="3" orient="auto"><path d="M0,0 L6.4,3 L0,6 z" fill="#57606a"/></marker></defs>
+  <text x="360" y="28" font-size="14" fill="#24292f" text-anchor="middle" font-weight="700">Loss 곡선으로 보는 정상 학습과 과적합</text>
+  <rect x="30" y="44" width="320" height="234" rx="8" fill="#ffffff" stroke="#d0d7de" stroke-width="1.5"/>
+  <text x="190" y="68" font-size="11.5" fill="#24292f" text-anchor="middle" font-weight="700">정상적인 학습 - 둘 다 감소</text>
+  <line x1="70" y1="84" x2="70" y2="214" stroke="#d0d7de" stroke-width="1.2"/>
+  <line x1="70" y1="214" x2="320" y2="214" stroke="#d0d7de" stroke-width="1.2"/>
+  <text x="70" y="80" font-size="10" fill="#57606a">Loss</text>
+  <text x="320" y="230" font-size="10" fill="#57606a" text-anchor="end">Epoch</text>
+  <line x1="80" y1="248" x2="100" y2="248" stroke="#0969da" stroke-width="2.2"/>
+  <text x="106" y="252" font-size="10.5" fill="#57606a">Train Loss</text>
+  <line x1="190" y1="248" x2="210" y2="248" stroke="#1a7f37" stroke-width="2.2"/>
+  <text x="216" y="252" font-size="10.5" fill="#57606a">Validation Loss</text>
+  <rect x="370" y="44" width="320" height="234" rx="8" fill="#ffffff" stroke="#d0d7de" stroke-width="1.5"/>
+  <text x="530" y="68" font-size="11.5" fill="#24292f" text-anchor="middle" font-weight="700">과적합 패턴 - Validation Loss가 다시 상승</text>
+  <line x1="410" y1="84" x2="410" y2="214" stroke="#d0d7de" stroke-width="1.2"/>
+  <line x1="410" y1="214" x2="660" y2="214" stroke="#d0d7de" stroke-width="1.2"/>
+  <text x="410" y="80" font-size="10" fill="#57606a">Loss</text>
+  <text x="660" y="230" font-size="10" fill="#57606a" text-anchor="end">Epoch</text>
+  <line x1="420" y1="248" x2="440" y2="248" stroke="#0969da" stroke-width="2.2"/>
+  <text x="446" y="252" font-size="10.5" fill="#57606a">Train Loss</text>
+  <line x1="530" y1="248" x2="550" y2="248" stroke="#1a7f37" stroke-width="2.2"/>
+  <text x="556" y="252" font-size="10.5" fill="#57606a">Validation Loss</text>
+  <path d="M70,96 C140,160 220,186 320,200" fill="none" stroke="#0969da" stroke-width="2.2"/>
+  <path d="M70,106 C140,168 220,188 320,190" fill="none" stroke="#1a7f37" stroke-width="2.2"/>
+  <path d="M410,96 C480,152 560,186 660,200" fill="none" stroke="#0969da" stroke-width="2.2"/>
+  <path d="M410,106 C468,150 502,168 540,171 C582,174 622,150 660,118" fill="none" stroke="#1a7f37" stroke-width="2.2"/>
+  <line x1="540" y1="171" x2="540" y2="214" stroke="#1a7f37" stroke-width="1.2" stroke-dasharray="4 3"/>
+  <circle cx="540" cy="171" r="4.5" fill="#1a7f37"/>
+  <text x="540" y="230" font-size="10" fill="#1a7f37" text-anchor="middle" font-weight="700">Best epoch</text>
+</svg>

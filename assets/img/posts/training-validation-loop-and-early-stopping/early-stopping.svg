@@ -1,0 +1,30 @@
+<svg width="720" height="256" viewBox="0 0 720 256" xmlns="http://www.w3.org/2000/svg" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif">
+  <rect x="0" y="0" width="720" height="256" fill="#f6f8fa" rx="10"/>
+  <defs><marker id="a" markerWidth="8" markerHeight="8" refX="6.4" refY="3" orient="auto"><path d="M0,0 L6.4,3 L0,6 z" fill="#57606a"/></marker></defs>
+  <text x="360" y="28" font-size="14" fill="#24292f" text-anchor="middle" font-weight="700">patience = 3 - 개선 없음이 3번 누적되면 학습을 멈춘다</text>
+  <rect x="36" y="60" width="150" height="76" rx="8" fill="#ffffff" stroke="#1a7f37" stroke-width="1.6"/>
+  <text x="111" y="84" font-size="12.5" fill="#24292f" text-anchor="middle" font-weight="700">Epoch 10</text>
+  <text x="111" y="105" font-size="11.5" fill="#1a7f37" text-anchor="middle" font-weight="700">개선</text>
+  <text x="111" y="125" font-size="11" fill="#57606a" text-anchor="middle" font-family="ui-monospace, monospace">누적 0</text>
+  <line x1="188" y1="98" x2="200" y2="98" stroke="#57606a" stroke-width="1.4" marker-end="url(#a)"/>
+  <rect x="202" y="60" width="150" height="76" rx="8" fill="#ffffff" stroke="#9a6700" stroke-width="1.6"/>
+  <text x="277" y="84" font-size="12.5" fill="#24292f" text-anchor="middle" font-weight="700">Epoch 11</text>
+  <text x="277" y="105" font-size="11.5" fill="#9a6700" text-anchor="middle" font-weight="700">개선 없음</text>
+  <text x="277" y="125" font-size="11" fill="#57606a" text-anchor="middle" font-family="ui-monospace, monospace">누적 1</text>
+  <line x1="354" y1="98" x2="366" y2="98" stroke="#57606a" stroke-width="1.4" marker-end="url(#a)"/>
+  <rect x="368" y="60" width="150" height="76" rx="8" fill="#ffffff" stroke="#9a6700" stroke-width="1.6"/>
+  <text x="443" y="84" font-size="12.5" fill="#24292f" text-anchor="middle" font-weight="700">Epoch 12</text>
+  <text x="443" y="105" font-size="11.5" fill="#9a6700" text-anchor="middle" font-weight="700">개선 없음</text>
+  <text x="443" y="125" font-size="11" fill="#57606a" text-anchor="middle" font-family="ui-monospace, monospace">누적 2</text>
+  <line x1="520" y1="98" x2="532" y2="98" stroke="#57606a" stroke-width="1.4" marker-end="url(#a)"/>
+  <rect x="534" y="60" width="150" height="76" rx="8" fill="#ffffff" stroke="#cf222e" stroke-width="1.6"/>
+  <text x="609" y="84" font-size="12.5" fill="#24292f" text-anchor="middle" font-weight="700">Epoch 13</text>
+  <text x="609" y="105" font-size="11.5" fill="#cf222e" text-anchor="middle" font-weight="700">개선 없음</text>
+  <text x="609" y="125" font-size="11" fill="#57606a" text-anchor="middle" font-family="ui-monospace, monospace">누적 3</text>
+  <line x1="609" y1="140" x2="609" y2="166" stroke="#57606a" stroke-width="1.4" marker-end="url(#a)"/>
+  <rect x="450" y="172" width="230" height="42" rx="8" fill="#ffffff" stroke="#cf222e" stroke-width="1.8"/>
+  <text x="565" y="198" font-size="12.5" fill="#cf222e" text-anchor="middle" font-weight="700">Early Stopping - 학습 중단</text>
+  <text x="40" y="198" font-size="11.5" fill="#57606a">min_delta = 0.002 이상 좋아지지 않으면</text>
+  <text x="40" y="216" font-size="11.5" fill="#57606a">&quot;개선 없음&quot;으로 센다</text>
+  <text x="360" y="242" font-size="11" fill="#57606a" text-anchor="middle">최대 epoch = 30, patience = 3, min_delta = 0.002</text>
+</svg>
