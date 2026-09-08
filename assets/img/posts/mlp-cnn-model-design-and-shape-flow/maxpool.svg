@@ -1,0 +1,32 @@
+<svg width="720" height="290" viewBox="0 0 720 290" xmlns="http://www.w3.org/2000/svg" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif">
+  <rect x="0" y="0" width="720" height="290" fill="#f6f8fa" rx="10"/>
+  <defs><marker id="a" markerWidth="8" markerHeight="8" refX="6.4" refY="3" orient="auto"><path d="M0,0 L6.4,3 L0,6 z" fill="#57606a"/></marker>
+  <marker id="ag" markerWidth="8" markerHeight="8" refX="6.4" refY="3" orient="auto"><path d="M0,0 L6.4,3 L0,6 z" fill="#1a7f37"/></marker></defs>
+  <text x="360" y="28" font-size="14" fill="#24292f" text-anchor="middle" font-weight="700">MaxPool2d(2)는 2x2 영역의 최댓값만 남겨 공간 크기를 줄인다</text>
+  <rect x="30" y="44" width="320" height="226" rx="8" fill="#ffffff" stroke="#d0d7de" stroke-width="1.5"/>
+  <rect x="370" y="44" width="320" height="226" rx="8" fill="#ffffff" stroke="#d0d7de" stroke-width="1.5"/>
+  <text x="190" y="70" font-size="12" fill="#24292f" text-anchor="middle" font-weight="700">2x2 영역에서 최댓값 1개 선택</text>
+  <text x="530" y="70" font-size="12" fill="#24292f" text-anchor="middle" font-weight="700">이번 모델의 공간 크기 변화</text>
+  <rect x="90" y="100" width="48" height="48" fill="#ffffff" stroke="#57606a" stroke-width="1.6"/>
+  <text x="114" y="130" font-size="16" fill="#57606a" text-anchor="middle" font-weight="700" font-family="ui-monospace, monospace">1</text>
+  <rect x="138" y="100" width="48" height="48" fill="#eaf6ec" stroke="#1a7f37" stroke-width="1.6"/>
+  <text x="162" y="130" font-size="16" fill="#1a7f37" text-anchor="middle" font-weight="700" font-family="ui-monospace, monospace">4</text>
+  <rect x="90" y="148" width="48" height="48" fill="#ffffff" stroke="#57606a" stroke-width="1.6"/>
+  <text x="114" y="178" font-size="16" fill="#57606a" text-anchor="middle" font-weight="700" font-family="ui-monospace, monospace">2</text>
+  <rect x="138" y="148" width="48" height="48" fill="#ffffff" stroke="#57606a" stroke-width="1.6"/>
+  <text x="162" y="178" font-size="16" fill="#57606a" text-anchor="middle" font-weight="700" font-family="ui-monospace, monospace">3</text>
+  <line x1="200" y1="148" x2="236" y2="148" stroke="#57606a" stroke-width="1.4" marker-end="url(#a)"/>
+  <rect x="250" y="124" width="48" height="48" fill="#eaf6ec" stroke="#1a7f37" stroke-width="1.6"/>
+  <text x="274" y="154" font-size="16" fill="#1a7f37" text-anchor="middle" font-weight="700" font-family="ui-monospace, monospace">4</text>
+  <text x="190" y="228" font-size="11.5" fill="#57606a" text-anchor="middle">2x2 안의 최댓값 4만 남는다</text>
+  <text x="190" y="250" font-size="11" fill="#57606a" text-anchor="middle" font-family="ui-monospace, monospace">nn.MaxPool2d(2)</text>
+  <rect x="396" y="100" width="96" height="96" rx="3" fill="#ffffff" stroke="#0969da" stroke-width="1.6"/>
+  <rect x="520" y="148" width="48" height="48" rx="3" fill="#ffffff" stroke="#1a7f37" stroke-width="1.6"/>
+  <rect x="596" y="172" width="24" height="24" rx="3" fill="#ffffff" stroke="#8250df" stroke-width="1.6"/>
+  <line x1="500" y1="180" x2="514" y2="180" stroke="#57606a" stroke-width="1.4" marker-end="url(#a)"/>
+  <line x1="574" y1="190" x2="590" y2="190" stroke="#57606a" stroke-width="1.4" marker-end="url(#a)"/>
+  <text x="444" y="216" font-size="11.5" fill="#0969da" text-anchor="middle" font-weight="700" font-family="ui-monospace, monospace">8 x 8</text>
+  <text x="544" y="216" font-size="11.5" fill="#1a7f37" text-anchor="middle" font-weight="700" font-family="ui-monospace, monospace">4 x 4</text>
+  <text x="608" y="216" font-size="11.5" fill="#8250df" text-anchor="middle" font-weight="700" font-family="ui-monospace, monospace">2 x 2</text>
+  <text x="530" y="248" font-size="11.5" fill="#57606a" text-anchor="middle">Pool을 두 번 거쳐 8x8 -&gt; 4x4 -&gt; 2x2로 줄어든다</text>
+</svg>
