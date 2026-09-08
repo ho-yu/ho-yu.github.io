@@ -1,0 +1,19 @@
+<svg width="720" height="224" viewBox="0 0 720 224" xmlns="http://www.w3.org/2000/svg" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif">
+  <rect x="0" y="0" width="720" height="224" fill="#f6f8fa" rx="10"/>
+  <defs><marker id="a" markerWidth="8" markerHeight="8" refX="6.4" refY="3" orient="auto"><path d="M0,0 L6.4,3 L0,6 z" fill="#57606a"/></marker>
+  <marker id="ao" markerWidth="8" markerHeight="8" refX="6.4" refY="3" orient="auto"><path d="M0,0 L6.4,3 L0,6 z" fill="#9a6700"/></marker></defs>
+  <text x="360" y="26" font-size="14" fill="#24292f" text-anchor="middle" font-weight="700">Gradient Clipping은 backward() 뒤, step() 앞에 온다</text>
+  <rect x="20" y="70" width="200" height="64" rx="8" fill="#ffffff" stroke="#0969da" stroke-width="1.6"/>
+  <text x="120" y="96" font-size="11.5" fill="#0969da" text-anchor="middle" font-weight="700" font-family="ui-monospace, monospace">loss.backward()</text>
+  <text x="120" y="116" font-size="10.5" fill="#57606a" text-anchor="middle">Gradient 계산</text>
+  <line x1="222" y1="102" x2="238" y2="102" stroke="#57606a" stroke-width="1.4" marker-end="url(#a)"/>
+  <rect x="260" y="70" width="200" height="64" rx="8" fill="#fdf3e3" stroke="#9a6700" stroke-width="1.8"/>
+  <text x="360" y="96" font-size="11.5" fill="#9a6700" text-anchor="middle" font-weight="700" font-family="ui-monospace, monospace">clip_grad_norm_(...)</text>
+  <text x="360" y="116" font-size="10.5" fill="#57606a" text-anchor="middle">Gradient 크기 제한</text>
+  <line x1="462" y1="102" x2="478" y2="102" stroke="#57606a" stroke-width="1.4" marker-end="url(#a)"/>
+  <rect x="500" y="70" width="200" height="64" rx="8" fill="#ffffff" stroke="#1a7f37" stroke-width="1.6"/>
+  <text x="600" y="96" font-size="11.5" fill="#1a7f37" text-anchor="middle" font-weight="700" font-family="ui-monospace, monospace">optimizer.step()</text>
+  <text x="600" y="116" font-size="10.5" fill="#57606a" text-anchor="middle">제한된 Gradient로 파라미터 수정</text>
+  <text x="360" y="176" font-size="11.5" fill="#24292f" text-anchor="middle">backward() 를 해야 parameter.grad 가 존재하므로 Clipping은 반드시 그 뒤에 온다</text>
+  <text x="360" y="200" font-size="11.5" fill="#57606a" text-anchor="middle">경사 폭주를 완화하는 안전장치이며, 경사 소실 자체를 해결하지는 않는다</text>
+</svg>

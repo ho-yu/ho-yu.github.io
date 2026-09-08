@@ -1,0 +1,38 @@
+<svg width="720" height="326" viewBox="0 0 720 326" xmlns="http://www.w3.org/2000/svg" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif">
+  <rect x="0" y="0" width="720" height="326" fill="#f6f8fa" rx="10"/>
+  <defs><marker id="a" markerWidth="8" markerHeight="8" refX="6.4" refY="3" orient="auto"><path d="M0,0 L6.4,3 L0,6 z" fill="#57606a"/></marker>
+  <marker id="ao" markerWidth="8" markerHeight="8" refX="6.4" refY="3" orient="auto"><path d="M0,0 L6.4,3 L0,6 z" fill="#9a6700"/></marker></defs>
+  <text x="360" y="26" font-size="14" fill="#24292f" text-anchor="middle" font-weight="700">같은 역전파 과정에서 나타나는 정반대의 두 문제</text>
+  <rect x="30" y="44" width="320" height="256" rx="8" fill="#ffffff" stroke="#d0d7de" stroke-width="1.5"/>
+  <text x="190" y="68" font-size="11.5" fill="#0969da" text-anchor="middle" font-weight="700">경사 소실 — 매 단계 0.5배</text>
+  <rect x="72" y="130.0" width="36" height="120.0" rx="3" fill="#eaf2fb" stroke="#0969da" stroke-width="1.5"/>
+  <text x="90.0" y="123.0" font-size="8.5" fill="#0969da" text-anchor="middle" font-weight="700" font-family="ui-monospace, monospace">0.5</text>
+  <rect x="122" y="190.0" width="36" height="60.0" rx="3" fill="#eaf2fb" stroke="#0969da" stroke-width="1.5"/>
+  <text x="140.0" y="183.0" font-size="8.5" fill="#0969da" text-anchor="middle" font-weight="700" font-family="ui-monospace, monospace">0.25</text>
+  <rect x="172" y="220.0" width="36" height="30.0" rx="3" fill="#eaf2fb" stroke="#0969da" stroke-width="1.5"/>
+  <text x="190.0" y="213.0" font-size="8.5" fill="#0969da" text-anchor="middle" font-weight="700" font-family="ui-monospace, monospace">0.125</text>
+  <rect x="222" y="235.0" width="36" height="15.0" rx="3" fill="#eaf2fb" stroke="#0969da" stroke-width="1.5"/>
+  <text x="240.0" y="228.0" font-size="8.5" fill="#0969da" text-anchor="middle" font-weight="700" font-family="ui-monospace, monospace">0.0625</text>
+  <rect x="272" y="242.5" width="36" height="7.5" rx="3" fill="#eaf2fb" stroke="#0969da" stroke-width="1.5"/>
+  <text x="290.0" y="235.5" font-size="8.5" fill="#0969da" text-anchor="middle" font-weight="700" font-family="ui-monospace, monospace">0.03125</text>
+  <line x1="54" y1="250" x2="326" y2="250" stroke="#57606a" stroke-width="1.4"/>
+  <text x="190" y="268" font-size="10.5" fill="#57606a" text-anchor="middle">역전파가 진행될수록  →</text>
+  <text x="190" y="290" font-size="10" fill="#57606a" text-anchor="middle">앞쪽 시점에서는 gradient ≈ 0 이 되어 학습이 거의 진행되지 않는다</text>
+  <rect x="370" y="44" width="320" height="256" rx="8" fill="#ffffff" stroke="#d0d7de" stroke-width="1.5"/>
+  <text x="530" y="68" font-size="11.5" fill="#cf222e" text-anchor="middle" font-weight="700">경사 폭발 — 매 단계 2배</text>
+  <rect x="404" y="246" width="32" height="4" rx="3" fill="#fceceb" stroke="#cf222e" stroke-width="1.5"/>
+  <text x="420.0" y="239" font-size="8.5" fill="#cf222e" text-anchor="middle" font-weight="700" font-family="ui-monospace, monospace">2</text>
+  <rect x="448" y="242.5" width="32" height="7.5" rx="3" fill="#fceceb" stroke="#cf222e" stroke-width="1.5"/>
+  <text x="464.0" y="235.5" font-size="8.5" fill="#cf222e" text-anchor="middle" font-weight="700" font-family="ui-monospace, monospace">4</text>
+  <rect x="492" y="235.0" width="32" height="15.0" rx="3" fill="#fceceb" stroke="#cf222e" stroke-width="1.5"/>
+  <text x="508.0" y="228.0" font-size="8.5" fill="#cf222e" text-anchor="middle" font-weight="700" font-family="ui-monospace, monospace">8</text>
+  <rect x="536" y="220.0" width="32" height="30.0" rx="3" fill="#fceceb" stroke="#cf222e" stroke-width="1.5"/>
+  <text x="552.0" y="213.0" font-size="8.5" fill="#cf222e" text-anchor="middle" font-weight="700" font-family="ui-monospace, monospace">16</text>
+  <rect x="580" y="190.0" width="32" height="60.0" rx="3" fill="#fceceb" stroke="#cf222e" stroke-width="1.5"/>
+  <text x="596.0" y="183.0" font-size="8.5" fill="#cf222e" text-anchor="middle" font-weight="700" font-family="ui-monospace, monospace">32</text>
+  <rect x="624" y="130.0" width="32" height="120.0" rx="3" fill="#fceceb" stroke="#cf222e" stroke-width="1.5"/>
+  <text x="640.0" y="123.0" font-size="8.5" fill="#cf222e" text-anchor="middle" font-weight="700" font-family="ui-monospace, monospace">64</text>
+  <line x1="394" y1="250" x2="666" y2="250" stroke="#57606a" stroke-width="1.4"/>
+  <text x="530" y="268" font-size="10.5" fill="#57606a" text-anchor="middle">역전파가 진행될수록  →</text>
+  <text x="530" y="290" font-size="10" fill="#57606a" text-anchor="middle">값이 계속 커져 파라미터가 한 번에 크게 바뀌고 학습이 불안정해진다</text>
+</svg>
