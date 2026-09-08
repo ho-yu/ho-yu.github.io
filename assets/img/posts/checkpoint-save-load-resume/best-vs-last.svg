@@ -1,0 +1,41 @@
+<svg width="720" height="388" viewBox="0 0 720 388" xmlns="http://www.w3.org/2000/svg" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif">
+  <rect x="0" y="0" width="720" height="388" fill="#f6f8fa" rx="10"/>
+  <defs><marker id="a" markerWidth="8" markerHeight="8" refX="6.4" refY="3" orient="auto"><path d="M0,0 L6.4,3 L0,6 z" fill="#57606a"/></marker></defs>
+  <text x="360" y="28" font-size="14" fill="#24292f" text-anchor="middle" font-weight="700">Best와 Last Checkpoint는 목적이 달라서 담는 정보도 다르다</text>
+  <rect x="30" y="44" width="320" height="300" rx="8" fill="#ffffff" stroke="#d0d7de" stroke-width="1.5"/>
+  <text x="190" y="72" font-size="13" fill="#0969da" text-anchor="middle" font-weight="700">BEST CHECKPOINT</text>
+  <text x="190" y="91" font-size="9.5" fill="#57606a" text-anchor="middle" font-family="ui-monospace, monospace">checkpoint_role = &quot;best_for_inference&quot;</text>
+  <text x="190" y="113" font-size="11.5" fill="#24292f" text-anchor="middle" font-weight="700">목적 : 평가 / 추론</text>
+  <line x1="54" y1="126" x2="326" y2="126" stroke="#d0d7de" stroke-width="1"/>
+  <rect x="54" y="140" width="272" height="28" rx="5" fill="#ffffff" stroke="#d0d7de" stroke-width="1.2"/>
+  <text x="68" y="159" font-size="11" fill="#24292f" font-family="ui-monospace, monospace">model_state_dict</text>
+  <rect x="54" y="174" width="272" height="28" rx="5" fill="#ffffff" stroke="#d0d7de" stroke-width="1.2"/>
+  <text x="68" y="193" font-size="11" fill="#24292f" font-family="ui-monospace, monospace">epoch</text>
+  <rect x="54" y="208" width="272" height="28" rx="5" fill="#ffffff" stroke="#d0d7de" stroke-width="1.2"/>
+  <text x="68" y="227" font-size="11" fill="#24292f" font-family="ui-monospace, monospace">best_valid_loss</text>
+  <rect x="54" y="242" width="272" height="28" rx="5" fill="#ffffff" stroke="#d0d7de" stroke-width="1.2"/>
+  <text x="68" y="261" font-size="11" fill="#24292f" font-family="ui-monospace, monospace">best_valid_accuracy</text>
+  <rect x="54" y="276" width="272" height="28" rx="5" fill="#ffffff" stroke="#d0d7de" stroke-width="1.2"/>
+  <text x="68" y="295" font-size="11" fill="#24292f" font-family="ui-monospace, monospace">history</text>
+  <rect x="54" y="310" width="272" height="28" rx="5" fill="#ffffff" stroke="#d0d7de" stroke-width="1.2"/>
+  <text x="68" y="329" font-size="11" fill="#24292f" font-family="ui-monospace, monospace">config</text>
+  <rect x="370" y="44" width="320" height="300" rx="8" fill="#ffffff" stroke="#d0d7de" stroke-width="1.5"/>
+  <text x="530" y="72" font-size="13" fill="#8250df" text-anchor="middle" font-weight="700">LAST CHECKPOINT</text>
+  <text x="530" y="91" font-size="9.5" fill="#57606a" text-anchor="middle" font-family="ui-monospace, monospace">checkpoint_role = &quot;last_for_resume&quot;</text>
+  <text x="530" y="113" font-size="11.5" fill="#24292f" text-anchor="middle" font-weight="700">목적 : 학습 Resume</text>
+  <line x1="394" y1="126" x2="666" y2="126" stroke="#d0d7de" stroke-width="1"/>
+  <rect x="394" y="140" width="272" height="28" rx="5" fill="#ffffff" stroke="#d0d7de" stroke-width="1.2"/>
+  <text x="408" y="159" font-size="11" fill="#24292f" font-family="ui-monospace, monospace">model_state_dict</text>
+  <rect x="394" y="174" width="272" height="28" rx="5" fill="#f3eefc" stroke="#9a6700" stroke-width="1.6"/>
+  <text x="408" y="193" font-size="11" fill="#9a6700" font-family="ui-monospace, monospace" font-weight="700">optimizer_state_dict</text>
+  <text x="654" y="193" font-size="10" fill="#9a6700" text-anchor="end">Resume에 필요</text>
+  <rect x="394" y="208" width="272" height="28" rx="5" fill="#ffffff" stroke="#d0d7de" stroke-width="1.2"/>
+  <text x="408" y="227" font-size="11" fill="#24292f" font-family="ui-monospace, monospace">epoch</text>
+  <rect x="394" y="242" width="272" height="28" rx="5" fill="#ffffff" stroke="#d0d7de" stroke-width="1.2"/>
+  <text x="408" y="261" font-size="11" fill="#24292f" font-family="ui-monospace, monospace">last_valid_loss</text>
+  <rect x="394" y="276" width="272" height="28" rx="5" fill="#ffffff" stroke="#d0d7de" stroke-width="1.2"/>
+  <text x="408" y="295" font-size="11" fill="#24292f" font-family="ui-monospace, monospace">history</text>
+  <rect x="394" y="310" width="272" height="28" rx="5" fill="#ffffff" stroke="#d0d7de" stroke-width="1.2"/>
+  <text x="408" y="329" font-size="11" fill="#24292f" font-family="ui-monospace, monospace">config</text>
+  <text x="360" y="370" font-size="11.5" fill="#57606a" text-anchor="middle">Best는 가장 좋은 모델을 사용하기 위한 파일, Last는 멈춘 학습을 정확히 이어가기 위한 파일이다</text>
+</svg>
