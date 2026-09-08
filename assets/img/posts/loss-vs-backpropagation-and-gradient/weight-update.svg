@@ -1,0 +1,19 @@
+<svg width="720" height="262" viewBox="0 0 720 262" xmlns="http://www.w3.org/2000/svg" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif">
+  <rect x="0" y="0" width="720" height="262" fill="#f6f8fa" rx="10"/>
+  <defs><marker id="a" markerWidth="8" markerHeight="8" refX="6.4" refY="3" orient="auto"><path d="M0,0 L6.4,3 L0,6 z" fill="#57606a"/></marker>
+  <marker id="ao" markerWidth="8" markerHeight="8" refX="6.4" refY="3" orient="auto"><path d="M0,0 L6.4,3 L0,6 z" fill="#9a6700"/></marker></defs>
+  <text x="360" y="26" font-size="14" fill="#24292f" text-anchor="middle" font-weight="700">Gradient Descent가 W를 옮기는 방향</text>
+  <rect x="150" y="46" width="420" height="44" rx="8" fill="#ffffff" stroke="#d0d7de" stroke-width="1.5"/>
+  <text x="360" y="74" font-size="15" fill="#24292f" text-anchor="middle" font-weight="700" font-family="ui-monospace, monospace">W_new = W_old − learning_rate × gradient</text>
+  <text x="360" y="118" font-size="14" fill="#0969da" text-anchor="middle" font-weight="700" font-family="ui-monospace, monospace">= 2.0 − 0.1 × 0.8 = 1.92</text>
+  <line x1="140" y1="190" x2="640" y2="190" stroke="#57606a" stroke-width="1.4"/>
+  <line x1="531" y1="166" x2="249" y2="166" stroke="#9a6700" stroke-width="1.4" marker-end="url(#ao)"/>
+  <text x="390" y="156" font-size="11" fill="#9a6700" text-anchor="middle">gradient가 +0.8 이므로 W는 작아지는 방향으로 이동</text>
+  <circle cx="543" cy="190" r="5.5" fill="#57606a"/>
+  <line x1="543" y1="184" x2="543" y2="196" stroke="#57606a" stroke-width="1.6"/>
+  <text x="543" y="216" font-size="11.5" fill="#57606a" text-anchor="middle" font-weight="700" font-family="ui-monospace, monospace">W_old = 2.0</text>
+  <circle cx="237" cy="190" r="5.5" fill="#1a7f37"/>
+  <line x1="237" y1="184" x2="237" y2="196" stroke="#1a7f37" stroke-width="1.6"/>
+  <text x="237" y="216" font-size="11.5" fill="#1a7f37" text-anchor="middle" font-weight="700" font-family="ui-monospace, monospace">W_new = 1.92</text>
+  <text x="360" y="246" font-size="11.5" fill="#57606a" text-anchor="middle">learning_rate = 0.1 은 한 번에 얼마나 움직일지를 정한다</text>
+</svg>
