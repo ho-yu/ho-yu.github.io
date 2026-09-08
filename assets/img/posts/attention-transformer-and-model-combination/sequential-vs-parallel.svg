@@ -1,0 +1,41 @@
+<svg width="720" height="300" viewBox="0 0 720 300" xmlns="http://www.w3.org/2000/svg" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif">
+  <rect x="0" y="0" width="720" height="300" fill="#f6f8fa" rx="10"/>
+  <defs><marker id="a" markerWidth="8" markerHeight="8" refX="6.4" refY="3" orient="auto"><path d="M0,0 L6.4,3 L0,6 z" fill="#57606a"/></marker>
+  <marker id="ao" markerWidth="8" markerHeight="8" refX="6.4" refY="3" orient="auto"><path d="M0,0 L6.4,3 L0,6 z" fill="#9a6700"/></marker></defs>
+  <text x="360" y="26" font-size="14" fill="#24292f" text-anchor="middle" font-weight="700">순차 계산과 한 층을 한 번에 계산하는 방식의 차이</text>
+  <rect x="30" y="44" width="320" height="240" rx="8" fill="#ffffff" stroke="#d0d7de" stroke-width="1.5"/>
+  <rect x="370" y="44" width="320" height="240" rx="8" fill="#ffffff" stroke="#d0d7de" stroke-width="1.5"/>
+  <text x="190" y="70" font-size="11.5" fill="#57606a" text-anchor="middle" font-weight="700">RNN / LSTM — 순차 계산</text>
+  <text x="530" y="70" font-size="11.5" fill="#0969da" text-anchor="middle" font-weight="700">Transformer — 학습 시 병렬 계산</text>
+  <rect x="135" y="90" width="110" height="32" rx="6" fill="#ffffff" stroke="#57606a" stroke-width="1.6"/>
+  <text x="190" y="111" font-size="11.5" fill="#24292f" text-anchor="middle" font-weight="700" font-family="ui-monospace, monospace">x1 계산</text>
+  <line x1="190" y1="124" x2="190" y2="130" stroke="#57606a" stroke-width="1.4" marker-end="url(#a)"/>
+  <rect x="135" y="132" width="110" height="32" rx="6" fill="#ffffff" stroke="#57606a" stroke-width="1.6"/>
+  <text x="190" y="153" font-size="11.5" fill="#24292f" text-anchor="middle" font-weight="700" font-family="ui-monospace, monospace">x2 계산</text>
+  <line x1="190" y1="166" x2="190" y2="172" stroke="#57606a" stroke-width="1.4" marker-end="url(#a)"/>
+  <rect x="135" y="174" width="110" height="32" rx="6" fill="#ffffff" stroke="#57606a" stroke-width="1.6"/>
+  <text x="190" y="195" font-size="11.5" fill="#24292f" text-anchor="middle" font-weight="700" font-family="ui-monospace, monospace">x3 계산</text>
+  <line x1="190" y1="208" x2="190" y2="214" stroke="#57606a" stroke-width="1.4" marker-end="url(#a)"/>
+  <rect x="135" y="216" width="110" height="32" rx="6" fill="#ffffff" stroke="#57606a" stroke-width="1.6"/>
+  <text x="190" y="237" font-size="11.5" fill="#24292f" text-anchor="middle" font-weight="700" font-family="ui-monospace, monospace">x4 계산</text>
+  <text x="190" y="272" font-size="11" fill="#57606a" text-anchor="middle">이전 계산이 끝나야 다음 계산</text>
+  <rect x="510" y="90" width="150" height="150" rx="8" fill="#eaf2fb" stroke="#0969da" stroke-width="1.6"/>
+  <text x="585" y="158" font-size="12" fill="#0969da" text-anchor="middle" font-weight="700">큰 행렬 연산</text>
+  <text x="585" y="178" font-size="10.5" fill="#57606a" text-anchor="middle">동시에 관계 계산</text>
+  <rect x="396" y="90" width="70" height="26" rx="4" fill="#ffffff" stroke="#57606a" stroke-width="1.3"/>
+  <text x="431" y="107" font-size="11" fill="#24292f" text-anchor="middle" font-weight="700" font-family="ui-monospace, monospace">x1</text>
+  <line x1="468" y1="103" x2="504" y2="103" stroke="#57606a" stroke-width="1.4" marker-end="url(#a)"/>
+  <rect x="396" y="122" width="70" height="26" rx="4" fill="#ffffff" stroke="#57606a" stroke-width="1.3"/>
+  <text x="431" y="139" font-size="11" fill="#24292f" text-anchor="middle" font-weight="700" font-family="ui-monospace, monospace">x2</text>
+  <line x1="468" y1="135" x2="504" y2="135" stroke="#57606a" stroke-width="1.4" marker-end="url(#a)"/>
+  <rect x="396" y="154" width="70" height="26" rx="4" fill="#ffffff" stroke="#57606a" stroke-width="1.3"/>
+  <text x="431" y="171" font-size="11" fill="#24292f" text-anchor="middle" font-weight="700" font-family="ui-monospace, monospace">x3</text>
+  <line x1="468" y1="167" x2="504" y2="167" stroke="#57606a" stroke-width="1.4" marker-end="url(#a)"/>
+  <rect x="396" y="186" width="70" height="26" rx="4" fill="#ffffff" stroke="#57606a" stroke-width="1.3"/>
+  <text x="431" y="203" font-size="11" fill="#24292f" text-anchor="middle" font-weight="700" font-family="ui-monospace, monospace">x4</text>
+  <line x1="468" y1="199" x2="504" y2="199" stroke="#57606a" stroke-width="1.4" marker-end="url(#a)"/>
+  <rect x="396" y="218" width="70" height="26" rx="4" fill="#ffffff" stroke="#57606a" stroke-width="1.3"/>
+  <text x="431" y="235" font-size="11" fill="#24292f" text-anchor="middle" font-weight="700" font-family="ui-monospace, monospace">x5</text>
+  <line x1="468" y1="231" x2="504" y2="231" stroke="#57606a" stroke-width="1.4" marker-end="url(#a)"/>
+  <text x="530" y="272" font-size="11" fill="#57606a" text-anchor="middle">학습 시 한 층의 여러 위치를 동시에 계산</text>
+</svg>
