@@ -1,0 +1,75 @@
+<svg width="720" height="300" viewBox="0 0 720 300" xmlns="http://www.w3.org/2000/svg" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif">
+  <rect x="0" y="0" width="720" height="300" fill="#f6f8fa" rx="10"/>
+  <defs><marker id="a" markerWidth="8" markerHeight="8" refX="6.4" refY="3" orient="auto"><path d="M0,0 L6.4,3 L0,6 z" fill="#57606a"/></marker>
+  <marker id="ao" markerWidth="8" markerHeight="8" refX="6.4" refY="3" orient="auto"><path d="M0,0 L6.4,3 L0,6 z" fill="#9a6700"/></marker></defs>
+  <text x="360" y="26" font-size="14" fill="#24292f" text-anchor="middle" font-weight="700">입력 Shape [2, 5, 4]를 나누어 보기</text>
+  <text x="360" y="46" font-size="11.5" fill="#57606a" text-anchor="middle" font-family="ui-monospace, monospace">x = torch.randn(2, 5, 4)   ·   batch_first=True 이면 [B, L, D_in]</text>
+  <text x="110" y="104" font-size="12" fill="#0969da" text-anchor="end" font-weight="700">Sample 1</text>
+  <rect x="126" y="64" width="100" height="72" rx="6" fill="#ffffff" stroke="#1a7f37" stroke-width="1.5"/>
+  <text x="176" y="84" font-size="10.5" fill="#1a7f37" text-anchor="middle" font-weight="700" font-family="ui-monospace, monospace">t = 1</text>
+  <rect x="134" y="98" width="18" height="22" rx="3" fill="#f3eefc" stroke="#8250df" stroke-width="1.2"/>
+  <rect x="156" y="98" width="18" height="22" rx="3" fill="#f3eefc" stroke="#8250df" stroke-width="1.2"/>
+  <rect x="178" y="98" width="18" height="22" rx="3" fill="#f3eefc" stroke="#8250df" stroke-width="1.2"/>
+  <rect x="200" y="98" width="18" height="22" rx="3" fill="#f3eefc" stroke="#8250df" stroke-width="1.2"/>
+  <rect x="242" y="64" width="100" height="72" rx="6" fill="#ffffff" stroke="#1a7f37" stroke-width="1.5"/>
+  <text x="292" y="84" font-size="10.5" fill="#1a7f37" text-anchor="middle" font-weight="700" font-family="ui-monospace, monospace">t = 2</text>
+  <rect x="250" y="98" width="18" height="22" rx="3" fill="#f3eefc" stroke="#8250df" stroke-width="1.2"/>
+  <rect x="272" y="98" width="18" height="22" rx="3" fill="#f3eefc" stroke="#8250df" stroke-width="1.2"/>
+  <rect x="294" y="98" width="18" height="22" rx="3" fill="#f3eefc" stroke="#8250df" stroke-width="1.2"/>
+  <rect x="316" y="98" width="18" height="22" rx="3" fill="#f3eefc" stroke="#8250df" stroke-width="1.2"/>
+  <rect x="358" y="64" width="100" height="72" rx="6" fill="#ffffff" stroke="#1a7f37" stroke-width="1.5"/>
+  <text x="408" y="84" font-size="10.5" fill="#1a7f37" text-anchor="middle" font-weight="700" font-family="ui-monospace, monospace">t = 3</text>
+  <rect x="366" y="98" width="18" height="22" rx="3" fill="#f3eefc" stroke="#8250df" stroke-width="1.2"/>
+  <rect x="388" y="98" width="18" height="22" rx="3" fill="#f3eefc" stroke="#8250df" stroke-width="1.2"/>
+  <rect x="410" y="98" width="18" height="22" rx="3" fill="#f3eefc" stroke="#8250df" stroke-width="1.2"/>
+  <rect x="432" y="98" width="18" height="22" rx="3" fill="#f3eefc" stroke="#8250df" stroke-width="1.2"/>
+  <rect x="474" y="64" width="100" height="72" rx="6" fill="#ffffff" stroke="#1a7f37" stroke-width="1.5"/>
+  <text x="524" y="84" font-size="10.5" fill="#1a7f37" text-anchor="middle" font-weight="700" font-family="ui-monospace, monospace">t = 4</text>
+  <rect x="482" y="98" width="18" height="22" rx="3" fill="#f3eefc" stroke="#8250df" stroke-width="1.2"/>
+  <rect x="504" y="98" width="18" height="22" rx="3" fill="#f3eefc" stroke="#8250df" stroke-width="1.2"/>
+  <rect x="526" y="98" width="18" height="22" rx="3" fill="#f3eefc" stroke="#8250df" stroke-width="1.2"/>
+  <rect x="548" y="98" width="18" height="22" rx="3" fill="#f3eefc" stroke="#8250df" stroke-width="1.2"/>
+  <rect x="590" y="64" width="100" height="72" rx="6" fill="#ffffff" stroke="#1a7f37" stroke-width="1.5"/>
+  <text x="640" y="84" font-size="10.5" fill="#1a7f37" text-anchor="middle" font-weight="700" font-family="ui-monospace, monospace">t = 5</text>
+  <rect x="598" y="98" width="18" height="22" rx="3" fill="#f3eefc" stroke="#8250df" stroke-width="1.2"/>
+  <rect x="620" y="98" width="18" height="22" rx="3" fill="#f3eefc" stroke="#8250df" stroke-width="1.2"/>
+  <rect x="642" y="98" width="18" height="22" rx="3" fill="#f3eefc" stroke="#8250df" stroke-width="1.2"/>
+  <rect x="664" y="98" width="18" height="22" rx="3" fill="#f3eefc" stroke="#8250df" stroke-width="1.2"/>
+  <text x="110" y="196" font-size="12" fill="#0969da" text-anchor="end" font-weight="700">Sample 2</text>
+  <rect x="126" y="156" width="100" height="72" rx="6" fill="#ffffff" stroke="#1a7f37" stroke-width="1.5"/>
+  <text x="176" y="176" font-size="10.5" fill="#1a7f37" text-anchor="middle" font-weight="700" font-family="ui-monospace, monospace">t = 1</text>
+  <rect x="134" y="190" width="18" height="22" rx="3" fill="#f3eefc" stroke="#8250df" stroke-width="1.2"/>
+  <rect x="156" y="190" width="18" height="22" rx="3" fill="#f3eefc" stroke="#8250df" stroke-width="1.2"/>
+  <rect x="178" y="190" width="18" height="22" rx="3" fill="#f3eefc" stroke="#8250df" stroke-width="1.2"/>
+  <rect x="200" y="190" width="18" height="22" rx="3" fill="#f3eefc" stroke="#8250df" stroke-width="1.2"/>
+  <rect x="242" y="156" width="100" height="72" rx="6" fill="#ffffff" stroke="#1a7f37" stroke-width="1.5"/>
+  <text x="292" y="176" font-size="10.5" fill="#1a7f37" text-anchor="middle" font-weight="700" font-family="ui-monospace, monospace">t = 2</text>
+  <rect x="250" y="190" width="18" height="22" rx="3" fill="#f3eefc" stroke="#8250df" stroke-width="1.2"/>
+  <rect x="272" y="190" width="18" height="22" rx="3" fill="#f3eefc" stroke="#8250df" stroke-width="1.2"/>
+  <rect x="294" y="190" width="18" height="22" rx="3" fill="#f3eefc" stroke="#8250df" stroke-width="1.2"/>
+  <rect x="316" y="190" width="18" height="22" rx="3" fill="#f3eefc" stroke="#8250df" stroke-width="1.2"/>
+  <rect x="358" y="156" width="100" height="72" rx="6" fill="#ffffff" stroke="#1a7f37" stroke-width="1.5"/>
+  <text x="408" y="176" font-size="10.5" fill="#1a7f37" text-anchor="middle" font-weight="700" font-family="ui-monospace, monospace">t = 3</text>
+  <rect x="366" y="190" width="18" height="22" rx="3" fill="#f3eefc" stroke="#8250df" stroke-width="1.2"/>
+  <rect x="388" y="190" width="18" height="22" rx="3" fill="#f3eefc" stroke="#8250df" stroke-width="1.2"/>
+  <rect x="410" y="190" width="18" height="22" rx="3" fill="#f3eefc" stroke="#8250df" stroke-width="1.2"/>
+  <rect x="432" y="190" width="18" height="22" rx="3" fill="#f3eefc" stroke="#8250df" stroke-width="1.2"/>
+  <rect x="474" y="156" width="100" height="72" rx="6" fill="#ffffff" stroke="#1a7f37" stroke-width="1.5"/>
+  <text x="524" y="176" font-size="10.5" fill="#1a7f37" text-anchor="middle" font-weight="700" font-family="ui-monospace, monospace">t = 4</text>
+  <rect x="482" y="190" width="18" height="22" rx="3" fill="#f3eefc" stroke="#8250df" stroke-width="1.2"/>
+  <rect x="504" y="190" width="18" height="22" rx="3" fill="#f3eefc" stroke="#8250df" stroke-width="1.2"/>
+  <rect x="526" y="190" width="18" height="22" rx="3" fill="#f3eefc" stroke="#8250df" stroke-width="1.2"/>
+  <rect x="548" y="190" width="18" height="22" rx="3" fill="#f3eefc" stroke="#8250df" stroke-width="1.2"/>
+  <rect x="590" y="156" width="100" height="72" rx="6" fill="#ffffff" stroke="#1a7f37" stroke-width="1.5"/>
+  <text x="640" y="176" font-size="10.5" fill="#1a7f37" text-anchor="middle" font-weight="700" font-family="ui-monospace, monospace">t = 5</text>
+  <rect x="598" y="190" width="18" height="22" rx="3" fill="#f3eefc" stroke="#8250df" stroke-width="1.2"/>
+  <rect x="620" y="190" width="18" height="22" rx="3" fill="#f3eefc" stroke="#8250df" stroke-width="1.2"/>
+  <rect x="642" y="190" width="18" height="22" rx="3" fill="#f3eefc" stroke="#8250df" stroke-width="1.2"/>
+  <rect x="664" y="190" width="18" height="22" rx="3" fill="#f3eefc" stroke="#8250df" stroke-width="1.2"/>
+  <line x1="126" y1="244" x2="690" y2="244" stroke="#1a7f37" stroke-width="1.4"/>
+  <line x1="126" y1="238" x2="126" y2="250" stroke="#1a7f37" stroke-width="1.4"/>
+  <line x1="690" y1="238" x2="690" y2="250" stroke="#1a7f37" stroke-width="1.4"/>
+  <text x="408" y="262" font-size="11.5" fill="#1a7f37" text-anchor="middle" font-weight="700">L = 5  ·  각 샘플을 5개의 시점으로 순서대로 처리</text>
+  <text x="126" y="288" font-size="11.5" fill="#0969da" text-anchor="start" font-weight="700">B = 2  ·  샘플 2개</text>
+  <text x="430" y="288" font-size="11.5" fill="#8250df" text-anchor="start" font-weight="700">D_in = 4  ·  한 시점에 들어가는 Feature 4개 (작은 칸)</text>
+</svg>
