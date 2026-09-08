@@ -1,0 +1,19 @@
+<svg width="720" height="254" viewBox="0 0 720 254" xmlns="http://www.w3.org/2000/svg" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif">
+  <rect x="0" y="0" width="720" height="254" fill="#f6f8fa" rx="10"/>
+  <defs><marker id="a" markerWidth="8" markerHeight="8" refX="6.4" refY="3" orient="auto"><path d="M0,0 L6.4,3 L0,6 z" fill="#57606a"/></marker>
+  <marker id="ao" markerWidth="8" markerHeight="8" refX="6.4" refY="3" orient="auto"><path d="M0,0 L6.4,3 L0,6 z" fill="#9a6700"/></marker></defs>
+  <text x="360" y="26" font-size="14" fill="#24292f" text-anchor="middle" font-weight="700">RNN과 LSTM이 다음 시점으로 넘기는 것</text>
+  <rect x="30" y="44" width="320" height="150" rx="8" fill="#ffffff" stroke="#d0d7de" stroke-width="1.5"/>
+  <text x="190" y="70" font-size="13" fill="#57606a" text-anchor="middle" font-weight="700">RNN</text>
+  <rect x="110" y="112" width="160" height="40" rx="6" fill="#f3eefc" stroke="#8250df" stroke-width="1.6"/>
+  <text x="190" y="137" font-size="12" fill="#8250df" text-anchor="middle" font-weight="700">Hidden State</text>
+  <rect x="370" y="44" width="320" height="150" rx="8" fill="#ffffff" stroke="#d0d7de" stroke-width="1.5"/>
+  <text x="530" y="70" font-size="13" fill="#0969da" text-anchor="middle" font-weight="700">LSTM</text>
+  <rect x="450" y="94" width="160" height="36" rx="6" fill="#f3eefc" stroke="#8250df" stroke-width="1.6"/>
+  <text x="530" y="117" font-size="12" fill="#8250df" text-anchor="middle" font-weight="700">Hidden State</text>
+  <rect x="450" y="140" width="160" height="36" rx="6" fill="#eaf2fb" stroke="#0969da" stroke-width="1.6"/>
+  <text x="530" y="163" font-size="12" fill="#0969da" text-anchor="middle" font-weight="700">Cell State</text>
+  <text x="190" y="214" font-size="11.5" fill="#57606a" text-anchor="middle">Hidden State 하나만 전달</text>
+  <text x="530" y="214" font-size="11.5" fill="#57606a" text-anchor="middle">Hidden State + Cell State 전달</text>
+  <text x="360" y="240" font-size="11.5" fill="#57606a" text-anchor="middle">LSTM은 여기에 Gate 구조를 더해 무엇을 유지하고 버릴지 조절한다</text>
+</svg>
