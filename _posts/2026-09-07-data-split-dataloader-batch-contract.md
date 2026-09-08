@@ -2,12 +2,12 @@
 title: "데이터 분할과 DataLoader — Batch Contract 검사까지"
 date: 2026-09-07 09:00:00 +0900
 categories: [Notes, Deep Learning]
-tags: [pytorch, dataloader, batch, train-test-split, tensor-shape]
+tags: [dataloader, batch, train-test-split, tensor-shape, assignment]
 math: true
 mermaid: true
 ---
 
-> 🗂️ **Notes · Deep Learning** — `pytorch` `dataloader` `batch` `train-test-split` `tensor-shape`
+> 🗂️ **Notes · Deep Learning** — `dataloader` `batch` `train-test-split` `tensor-shape` `assignment`
 {: .prompt-info }
 
 ---
