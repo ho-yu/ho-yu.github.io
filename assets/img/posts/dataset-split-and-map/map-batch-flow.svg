@@ -1,0 +1,29 @@
+<svg width="720" height="256" viewBox="0 0 720 256" xmlns="http://www.w3.org/2000/svg" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif">
+  <rect x="0" y="0" width="720" height="256" fill="#f6f8fa" rx="10"/>
+  <defs><marker id="a" markerWidth="8" markerHeight="8" refX="6.4" refY="3" orient="auto"><path d="M0,0 L6.4,3 L0,6 z" fill="#57606a"/></marker>
+  <marker id="ar" markerWidth="8" markerHeight="8" refX="6.4" refY="3" orient="auto"><path d="M0,0 L6.4,3 L0,6 z" fill="#cf222e"/></marker></defs>
+  <text x="360" y="26" font-size="14" fill="#24292f" text-anchor="middle" font-weight="700">splits.map()이 여러 행을 묶어 함수에 전달한다</text>
+  <rect x="30" y="64" width="220" height="126" rx="8" fill="#ffffff" stroke="#0969da" stroke-width="1.6"/>
+  <text x="140" y="86" font-size="11" fill="#0969da" text-anchor="middle" font-weight="700" font-family="ui-monospace, monospace">splits["train"]</text>
+  <text x="48" y="108" font-size="10" fill="#57606a" text-anchor="start" font-weight="700">text</text>
+  <text x="232" y="108" font-size="10" fill="#57606a" text-anchor="end" font-weight="700">label</text>
+  <line x1="44" y1="114" x2="236" y2="114" stroke="#d0d7de" stroke-width="1.2"/>
+  <text x="48" y="134" font-size="10.5" fill="#24292f" text-anchor="start">금리 인상 전망</text>
+  <text x="232" y="134" font-size="10.5" fill="#24292f" text-anchor="end" font-family="ui-monospace, monospace">0</text>
+  <text x="48" y="154" font-size="10.5" fill="#24292f" text-anchor="start">수출 증가 발표</text>
+  <text x="232" y="154" font-size="10.5" fill="#24292f" text-anchor="end" font-family="ui-monospace, monospace">0</text>
+  <text x="140" y="176" font-size="12" fill="#57606a" text-anchor="middle">…</text>
+  <line x1="252" y1="127" x2="274" y2="127" stroke="#57606a" stroke-width="1.4" marker-end="url(#a)"/>
+  <rect x="280" y="64" width="220" height="126" rx="8" fill="#fdf3e3" stroke="#9a6700" stroke-width="1.6"/>
+  <text x="390" y="86" font-size="10.5" fill="#9a6700" text-anchor="middle" font-weight="700" font-family="ui-monospace, monospace">batch  (batched=True)</text>
+  <text x="390" y="112" font-size="10.5" fill="#57606a" text-anchor="middle">열마다 여러 값을 담은</text>
+  <text x="390" y="130" font-size="10.5" fill="#57606a" text-anchor="middle">딕셔너리 하나</text>
+  <text x="390" y="156" font-size="10.5" fill="#24292f" text-anchor="middle" font-family="ui-monospace, monospace">{"text": [...],</text>
+  <text x="390" y="174" font-size="10.5" fill="#24292f" text-anchor="middle" font-family="ui-monospace, monospace"> "label": [...]}</text>
+  <line x1="502" y1="127" x2="524" y2="127" stroke="#57606a" stroke-width="1.4" marker-end="url(#a)"/>
+  <rect x="530" y="64" width="160" height="126" rx="8" fill="#eaf6ec" stroke="#1a7f37" stroke-width="1.6"/>
+  <text x="610" y="116" font-size="11" fill="#1a7f37" text-anchor="middle" font-weight="700" font-family="ui-monospace, monospace">tokenize_batch</text>
+  <text x="610" y="140" font-size="10.5" fill="#57606a" text-anchor="middle">토큰 ID로 변환</text>
+  <text x="360" y="216" font-size="11.5" fill="#24292f" text-anchor="middle">batched=True 이므로 batch는 열마다 여러 값을 담은 딕셔너리다</text>
+  <text x="360" y="240" font-size="11" fill="#57606a" text-anchor="middle">batch["text"]는 문자열 하나가 아니라 문자열 list</text>
+</svg>
