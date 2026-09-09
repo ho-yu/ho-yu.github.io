@@ -1,0 +1,37 @@
+<svg width="720" height="296" viewBox="0 0 720 296" xmlns="http://www.w3.org/2000/svg" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif">
+  <rect x="0" y="0" width="720" height="296" fill="#f6f8fa" rx="10"/>
+  <defs><marker id="a" markerWidth="8" markerHeight="8" refX="6.4" refY="3" orient="auto"><path d="M0,0 L6.4,3 L0,6 z" fill="#57606a"/></marker>
+  <marker id="ar" markerWidth="8" markerHeight="8" refX="6.4" refY="3" orient="auto"><path d="M0,0 L6.4,3 L0,6 z" fill="#cf222e"/></marker></defs>
+  <text x="360" y="26" font-size="14" fill="#24292f" text-anchor="middle" font-weight="700">Token ID와 Label ID는 서로 다른 질문에 답한다</text>
+  <text x="30" y="58" font-size="11" fill="#0969da" text-anchor="start" font-weight="700">입력 — 모델이 판단할 재료</text>
+  <rect x="30" y="66" width="150" height="44" rx="6" fill="#ffffff" stroke="#57606a" stroke-width="1.6"/>
+  <text x="105.0" y="92.0" font-size="11" fill="#57606a" text-anchor="middle" font-weight="700">"설치가 편해요"</text>
+  <line x1="182" y1="88" x2="206" y2="88" stroke="#57606a" stroke-width="1.4" marker-end="url(#a)"/>
+  <rect x="210" y="66" width="130" height="44" rx="6" fill="#eaf2fb" stroke="#0969da" stroke-width="1.6"/>
+  <text x="275.0" y="92.0" font-size="11" fill="#0969da" text-anchor="middle" font-weight="700">Tokenizer</text>
+  <line x1="342" y1="88" x2="366" y2="88" stroke="#57606a" stroke-width="1.4" marker-end="url(#a)"/>
+  <rect x="370" y="66" width="170" height="44" rx="6" fill="#eaf2fb" stroke="#0969da" stroke-width="1.6"/>
+  <text x="455.0" y="92.0" font-size="11" fill="#0969da" text-anchor="middle" font-weight="700" font-family="ui-monospace, monospace">[10, 11, 12, 13]</text>
+  <line x1="542" y1="88" x2="566" y2="88" stroke="#57606a" stroke-width="1.4" marker-end="url(#a)"/>
+  <rect x="570" y="66" width="120" height="44" rx="6" fill="#ffffff" stroke="#57606a" stroke-width="1.6"/>
+  <text x="630.0" y="92.0" font-size="11" fill="#57606a" text-anchor="middle" font-weight="700">embedding 조회</text>
+  <line x1="30" y1="132" x2="690" y2="132" stroke="#d0d7de" stroke-width="1.2"/>
+  <text x="30" y="158" font-size="11" fill="#1a7f37" text-anchor="start" font-weight="700">정답 — 모델이 맞혀야 하는 목표</text>
+  <rect x="30" y="166" width="150" height="44" rx="6" fill="#ffffff" stroke="#57606a" stroke-width="1.6"/>
+  <text x="105.0" y="192.0" font-size="11" fill="#57606a" text-anchor="middle" font-weight="700">"긍정"</text>
+  <line x1="182" y1="188" x2="206" y2="188" stroke="#57606a" stroke-width="1.4" marker-end="url(#a)"/>
+  <rect x="210" y="166" width="130" height="44" rx="6" fill="#eaf6ec" stroke="#1a7f37" stroke-width="1.6"/>
+  <text x="275.0" y="192.0" font-size="11" fill="#1a7f37" text-anchor="middle" font-weight="700">label2id</text>
+  <line x1="342" y1="188" x2="366" y2="188" stroke="#57606a" stroke-width="1.4" marker-end="url(#a)"/>
+  <rect x="370" y="166" width="170" height="44" rx="6" fill="#eaf6ec" stroke="#1a7f37" stroke-width="1.6"/>
+  <text x="455.0" y="192.0" font-size="11" fill="#1a7f37" text-anchor="middle" font-weight="700" font-family="ui-monospace, monospace">2</text>
+  <line x1="542" y1="188" x2="566" y2="188" stroke="#57606a" stroke-width="1.4" marker-end="url(#a)"/>
+  <rect x="570" y="166" width="120" height="44" rx="6" fill="#ffffff" stroke="#57606a" stroke-width="1.6"/>
+  <text x="630.0" y="192.0" font-size="11" fill="#57606a" text-anchor="middle" font-weight="700">출력 2번 위치</text>
+  <rect x="60" y="234" width="280" height="46" rx="8" fill="#eaf2fb" stroke="#0969da" stroke-width="1.6"/>
+  <text x="200" y="254" font-size="12" fill="#0969da" text-anchor="middle" font-weight="700" font-family="ui-monospace, monospace">Token ID</text>
+  <text x="200" y="272" font-size="11" fill="#57606a" text-anchor="middle">어떤 텍스트 조각인가?</text>
+  <rect x="380" y="234" width="280" height="46" rx="8" fill="#eaf6ec" stroke="#1a7f37" stroke-width="1.6"/>
+  <text x="520" y="254" font-size="12" fill="#1a7f37" text-anchor="middle" font-weight="700" font-family="ui-monospace, monospace">Label ID</text>
+  <text x="520" y="272" font-size="11" fill="#57606a" text-anchor="middle">어떤 정답 범주인가?</text>
+</svg>

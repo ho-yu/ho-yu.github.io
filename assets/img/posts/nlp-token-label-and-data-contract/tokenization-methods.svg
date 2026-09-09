@@ -1,0 +1,38 @@
+<svg width="720" height="262" viewBox="0 0 720 262" xmlns="http://www.w3.org/2000/svg" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif">
+  <rect x="0" y="0" width="720" height="262" fill="#f6f8fa" rx="10"/>
+  <defs><marker id="a" markerWidth="8" markerHeight="8" refX="6.4" refY="3" orient="auto"><path d="M0,0 L6.4,3 L0,6 z" fill="#57606a"/></marker>
+  <marker id="ar" markerWidth="8" markerHeight="8" refX="6.4" refY="3" orient="auto"><path d="M0,0 L6.4,3 L0,6 z" fill="#cf222e"/></marker></defs>
+  <text x="360" y="26" font-size="14" fill="#24292f" text-anchor="middle" font-weight="700">같은 문장도 tokenizer에 따라 토큰이 달라진다</text>
+  <text x="360" y="46" font-size="11" fill="#57606a" text-anchor="middle">원문 : "설치가 편해요"  (공백 처리는 생략한 예시)</text>
+  <text x="132" y="98" font-size="12" fill="#57606a" text-anchor="end" font-weight="700">Word</text>
+  <rect x="146" y="76" width="86" height="36" rx="6" fill="#eef1f4" stroke="#57606a" stroke-width="1.6"/>
+  <text x="189.0" y="98.0" font-size="11.5" fill="#57606a" text-anchor="middle" font-weight="700">설치가</text>
+  <rect x="242" y="76" width="86" height="36" rx="6" fill="#eef1f4" stroke="#57606a" stroke-width="1.6"/>
+  <text x="285.0" y="98.0" font-size="11.5" fill="#57606a" text-anchor="middle" font-weight="700">편해요</text>
+  <text x="690" y="98" font-size="11" fill="#57606a" text-anchor="end">토큰 2개</text>
+  <text x="132" y="154" font-size="12" fill="#8250df" text-anchor="end" font-weight="700">Character</text>
+  <rect x="146" y="132" width="48" height="36" rx="6" fill="#f3eefc" stroke="#8250df" stroke-width="1.6"/>
+  <text x="170.0" y="154.0" font-size="11.5" fill="#8250df" text-anchor="middle" font-weight="700">설</text>
+  <rect x="202" y="132" width="48" height="36" rx="6" fill="#f3eefc" stroke="#8250df" stroke-width="1.6"/>
+  <text x="226.0" y="154.0" font-size="11.5" fill="#8250df" text-anchor="middle" font-weight="700">치</text>
+  <rect x="258" y="132" width="48" height="36" rx="6" fill="#f3eefc" stroke="#8250df" stroke-width="1.6"/>
+  <text x="282.0" y="154.0" font-size="11.5" fill="#8250df" text-anchor="middle" font-weight="700">가</text>
+  <rect x="314" y="132" width="48" height="36" rx="6" fill="#f3eefc" stroke="#8250df" stroke-width="1.6"/>
+  <text x="338.0" y="154.0" font-size="11.5" fill="#8250df" text-anchor="middle" font-weight="700">편</text>
+  <rect x="370" y="132" width="48" height="36" rx="6" fill="#f3eefc" stroke="#8250df" stroke-width="1.6"/>
+  <text x="394.0" y="154.0" font-size="11.5" fill="#8250df" text-anchor="middle" font-weight="700">해</text>
+  <rect x="426" y="132" width="48" height="36" rx="6" fill="#f3eefc" stroke="#8250df" stroke-width="1.6"/>
+  <text x="450.0" y="154.0" font-size="11.5" fill="#8250df" text-anchor="middle" font-weight="700">요</text>
+  <text x="690" y="154" font-size="11" fill="#57606a" text-anchor="end">토큰 6개</text>
+  <text x="132" y="210" font-size="12" fill="#1a7f37" text-anchor="end" font-weight="700">Subword</text>
+  <rect x="146" y="188" width="68" height="36" rx="6" fill="#eaf6ec" stroke="#1a7f37" stroke-width="1.6"/>
+  <text x="180.0" y="210.0" font-size="11.5" fill="#1a7f37" text-anchor="middle" font-weight="700">설치</text>
+  <rect x="222" y="188" width="68" height="36" rx="6" fill="#eaf6ec" stroke="#1a7f37" stroke-width="1.6"/>
+  <text x="256.0" y="210.0" font-size="11.5" fill="#1a7f37" text-anchor="middle" font-weight="700">가</text>
+  <rect x="298" y="188" width="68" height="36" rx="6" fill="#eaf6ec" stroke="#1a7f37" stroke-width="1.6"/>
+  <text x="332.0" y="210.0" font-size="11.5" fill="#1a7f37" text-anchor="middle" font-weight="700">편</text>
+  <rect x="374" y="188" width="68" height="36" rx="6" fill="#eaf6ec" stroke="#1a7f37" stroke-width="1.6"/>
+  <text x="408.0" y="210.0" font-size="11.5" fill="#1a7f37" text-anchor="middle" font-weight="700">해요</text>
+  <text x="690" y="210" font-size="11" fill="#57606a" text-anchor="end">토큰 4개</text>
+  <text x="360" y="248" font-size="11" fill="#57606a" text-anchor="middle">단어 수와 토큰 수는 같지 않을 수 있고, sequence 길이는 처리할 토큰의 개수다</text>
+</svg>
