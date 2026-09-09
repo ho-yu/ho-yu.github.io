@@ -1,0 +1,21 @@
+<svg width="720" height="240" viewBox="0 0 720 240" xmlns="http://www.w3.org/2000/svg" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif">
+  <rect x="0" y="0" width="720" height="240" fill="#f6f8fa" rx="10"/>
+  <defs><marker id="a" markerWidth="8" markerHeight="8" refX="6.4" refY="3" orient="auto"><path d="M0,0 L6.4,3 L0,6 z" fill="#57606a"/></marker>
+  <marker id="ar" markerWidth="8" markerHeight="8" refX="6.4" refY="3" orient="auto"><path d="M0,0 L6.4,3 L0,6 z" fill="#cf222e"/></marker></defs>
+  <text x="360" y="26" font-size="14" fill="#24292f" text-anchor="middle" font-weight="700">길이 분포를 보고 상한을 정한다</text>
+  <text x="360" y="46" font-size="11" fill="#57606a" text-anchor="middle">아래 수치는 가상의 길이 조사 결과다</text>
+  <rect x="70" y="120" width="157.70020533880904" height="20" rx="3" fill="#eaf6ec" stroke="#1a7f37" stroke-width="1.2"/>
+  <rect x="227.70020533880904" y="120" width="442.29979466119096" height="20" rx="3" fill="#fceceb" stroke="#cf222e" stroke-width="1.2"/>
+  <line x1="70" y1="140" x2="670" y2="140" stroke="#57606a" stroke-width="1.6"/>
+  <line x1="113.1211498973306" y1="132" x2="113.1211498973306" y2="150" stroke="#0969da" stroke-width="1.6"/>
+  <text x="113.1211498973306" y="172" font-size="10.5" fill="#0969da" text-anchor="middle" font-weight="700">평균 35</text>
+  <line x1="219.07597535934292" y1="132" x2="219.07597535934292" y2="150" stroke="#8250df" stroke-width="1.6"/>
+  <text x="219.07597535934292" y="198" font-size="10.5" fill="#8250df" text-anchor="middle" font-weight="700">99% 샘플이 들어오는 길이 121</text>
+  <line x1="670.0" y1="132" x2="670.0" y2="150" stroke="#57606a" stroke-width="1.6"/>
+  <text x="670" y="172" font-size="10.5" fill="#57606a" text-anchor="end" font-weight="700">최대 487</text>
+  <line x1="227.70020533880904" y1="92" x2="227.70020533880904" y2="156" stroke="#9a6700" stroke-width="1.8" stroke-dasharray="5 4"/>
+  <text x="227.70020533880904" y="84" font-size="11.5" fill="#9a6700" text-anchor="middle" font-weight="700" font-family="ui-monospace, monospace">max_length = 128 후보</text>
+  <text x="148.85010266940452" y="134" font-size="9.5" fill="#1a7f37" text-anchor="middle" font-weight="700">대부분 보존</text>
+  <text x="448.8501026694045" y="134" font-size="9.5" fill="#cf222e" text-anchor="middle" font-weight="700">이 구간은 잘림</text>
+  <text x="360" y="224" font-size="11" fill="#57606a" text-anchor="middle">잘리는 부분에 중요한 내용이 있는지도 함께 확인해야 한다</text>
+</svg>

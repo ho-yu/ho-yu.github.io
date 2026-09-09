@@ -1,0 +1,61 @@
+<svg width="720" height="260" viewBox="0 0 720 260" xmlns="http://www.w3.org/2000/svg" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif">
+  <rect x="0" y="0" width="720" height="260" fill="#f6f8fa" rx="10"/>
+  <defs><marker id="a" markerWidth="8" markerHeight="8" refX="6.4" refY="3" orient="auto"><path d="M0,0 L6.4,3 L0,6 z" fill="#57606a"/></marker>
+  <marker id="ar" markerWidth="8" markerHeight="8" refX="6.4" refY="3" orient="auto"><path d="M0,0 L6.4,3 L0,6 z" fill="#cf222e"/></marker></defs>
+  <text x="360" y="26" font-size="14" fill="#24292f" text-anchor="middle" font-weight="700">길이를 최장 샘플에 맞추면 PAD가 얼마나 생기는가</text>
+  <text x="360" y="46" font-size="11" fill="#57606a" text-anchor="middle">문장 길이 [3, 5, 8]  →  최장 길이 8에 맞춤</text>
+  <text x="140" y="93" font-size="11.5" fill="#57606a" text-anchor="end" font-weight="700">A (3)</text>
+  <rect x="150" y="70" width="52" height="34" rx="4" fill="#eaf2fb" stroke="#0969da" stroke-width="1.4"/>
+  <text x="176.0" y="92" font-size="10" fill="#0969da" text-anchor="middle" font-weight="700" font-family="ui-monospace, monospace">t1</text>
+  <rect x="208" y="70" width="52" height="34" rx="4" fill="#eaf2fb" stroke="#0969da" stroke-width="1.4"/>
+  <text x="234.0" y="92" font-size="10" fill="#0969da" text-anchor="middle" font-weight="700" font-family="ui-monospace, monospace">t2</text>
+  <rect x="266" y="70" width="52" height="34" rx="4" fill="#eaf2fb" stroke="#0969da" stroke-width="1.4"/>
+  <text x="292.0" y="92" font-size="10" fill="#0969da" text-anchor="middle" font-weight="700" font-family="ui-monospace, monospace">t3</text>
+  <rect x="324" y="70" width="52" height="34" rx="4" fill="#eef1f4" stroke="#57606a" stroke-width="1.4"/>
+  <text x="350.0" y="92" font-size="10" fill="#57606a" text-anchor="middle" font-weight="700" font-family="ui-monospace, monospace">PAD</text>
+  <rect x="382" y="70" width="52" height="34" rx="4" fill="#eef1f4" stroke="#57606a" stroke-width="1.4"/>
+  <text x="408.0" y="92" font-size="10" fill="#57606a" text-anchor="middle" font-weight="700" font-family="ui-monospace, monospace">PAD</text>
+  <rect x="440" y="70" width="52" height="34" rx="4" fill="#eef1f4" stroke="#57606a" stroke-width="1.4"/>
+  <text x="466.0" y="92" font-size="10" fill="#57606a" text-anchor="middle" font-weight="700" font-family="ui-monospace, monospace">PAD</text>
+  <rect x="498" y="70" width="52" height="34" rx="4" fill="#eef1f4" stroke="#57606a" stroke-width="1.4"/>
+  <text x="524.0" y="92" font-size="10" fill="#57606a" text-anchor="middle" font-weight="700" font-family="ui-monospace, monospace">PAD</text>
+  <rect x="556" y="70" width="52" height="34" rx="4" fill="#eef1f4" stroke="#57606a" stroke-width="1.4"/>
+  <text x="582.0" y="92" font-size="10" fill="#57606a" text-anchor="middle" font-weight="700" font-family="ui-monospace, monospace">PAD</text>
+  <text x="140" y="135" font-size="11.5" fill="#57606a" text-anchor="end" font-weight="700">B (5)</text>
+  <rect x="150" y="112" width="52" height="34" rx="4" fill="#eaf2fb" stroke="#0969da" stroke-width="1.4"/>
+  <text x="176.0" y="134" font-size="10" fill="#0969da" text-anchor="middle" font-weight="700" font-family="ui-monospace, monospace">t1</text>
+  <rect x="208" y="112" width="52" height="34" rx="4" fill="#eaf2fb" stroke="#0969da" stroke-width="1.4"/>
+  <text x="234.0" y="134" font-size="10" fill="#0969da" text-anchor="middle" font-weight="700" font-family="ui-monospace, monospace">t2</text>
+  <rect x="266" y="112" width="52" height="34" rx="4" fill="#eaf2fb" stroke="#0969da" stroke-width="1.4"/>
+  <text x="292.0" y="134" font-size="10" fill="#0969da" text-anchor="middle" font-weight="700" font-family="ui-monospace, monospace">t3</text>
+  <rect x="324" y="112" width="52" height="34" rx="4" fill="#eaf2fb" stroke="#0969da" stroke-width="1.4"/>
+  <text x="350.0" y="134" font-size="10" fill="#0969da" text-anchor="middle" font-weight="700" font-family="ui-monospace, monospace">t4</text>
+  <rect x="382" y="112" width="52" height="34" rx="4" fill="#eaf2fb" stroke="#0969da" stroke-width="1.4"/>
+  <text x="408.0" y="134" font-size="10" fill="#0969da" text-anchor="middle" font-weight="700" font-family="ui-monospace, monospace">t5</text>
+  <rect x="440" y="112" width="52" height="34" rx="4" fill="#eef1f4" stroke="#57606a" stroke-width="1.4"/>
+  <text x="466.0" y="134" font-size="10" fill="#57606a" text-anchor="middle" font-weight="700" font-family="ui-monospace, monospace">PAD</text>
+  <rect x="498" y="112" width="52" height="34" rx="4" fill="#eef1f4" stroke="#57606a" stroke-width="1.4"/>
+  <text x="524.0" y="134" font-size="10" fill="#57606a" text-anchor="middle" font-weight="700" font-family="ui-monospace, monospace">PAD</text>
+  <rect x="556" y="112" width="52" height="34" rx="4" fill="#eef1f4" stroke="#57606a" stroke-width="1.4"/>
+  <text x="582.0" y="134" font-size="10" fill="#57606a" text-anchor="middle" font-weight="700" font-family="ui-monospace, monospace">PAD</text>
+  <text x="140" y="177" font-size="11.5" fill="#57606a" text-anchor="end" font-weight="700">C (8)</text>
+  <rect x="150" y="154" width="52" height="34" rx="4" fill="#eaf2fb" stroke="#0969da" stroke-width="1.4"/>
+  <text x="176.0" y="176" font-size="10" fill="#0969da" text-anchor="middle" font-weight="700" font-family="ui-monospace, monospace">t1</text>
+  <rect x="208" y="154" width="52" height="34" rx="4" fill="#eaf2fb" stroke="#0969da" stroke-width="1.4"/>
+  <text x="234.0" y="176" font-size="10" fill="#0969da" text-anchor="middle" font-weight="700" font-family="ui-monospace, monospace">t2</text>
+  <rect x="266" y="154" width="52" height="34" rx="4" fill="#eaf2fb" stroke="#0969da" stroke-width="1.4"/>
+  <text x="292.0" y="176" font-size="10" fill="#0969da" text-anchor="middle" font-weight="700" font-family="ui-monospace, monospace">t3</text>
+  <rect x="324" y="154" width="52" height="34" rx="4" fill="#eaf2fb" stroke="#0969da" stroke-width="1.4"/>
+  <text x="350.0" y="176" font-size="10" fill="#0969da" text-anchor="middle" font-weight="700" font-family="ui-monospace, monospace">t4</text>
+  <rect x="382" y="154" width="52" height="34" rx="4" fill="#eaf2fb" stroke="#0969da" stroke-width="1.4"/>
+  <text x="408.0" y="176" font-size="10" fill="#0969da" text-anchor="middle" font-weight="700" font-family="ui-monospace, monospace">t5</text>
+  <rect x="440" y="154" width="52" height="34" rx="4" fill="#eaf2fb" stroke="#0969da" stroke-width="1.4"/>
+  <text x="466.0" y="176" font-size="10" fill="#0969da" text-anchor="middle" font-weight="700" font-family="ui-monospace, monospace">t6</text>
+  <rect x="498" y="154" width="52" height="34" rx="4" fill="#eaf2fb" stroke="#0969da" stroke-width="1.4"/>
+  <text x="524.0" y="176" font-size="10" fill="#0969da" text-anchor="middle" font-weight="700" font-family="ui-monospace, monospace">t7</text>
+  <rect x="556" y="154" width="52" height="34" rx="4" fill="#eaf2fb" stroke="#0969da" stroke-width="1.4"/>
+  <text x="582.0" y="176" font-size="10" fill="#0969da" text-anchor="middle" font-weight="700" font-family="ui-monospace, monospace">t8</text>
+  <line x1="150" y1="196" x2="608" y2="196" stroke="#d0d7de" stroke-width="1.2"/>
+  <text x="379" y="218" font-size="12" fill="#24292f" text-anchor="middle" font-weight="700">실제 토큰 16개   ·   Tensor 위치 24개   ·   PAD 8개 (약 33.3%)</text>
+  <text x="360" y="244" font-size="10.5" fill="#57606a" text-anchor="middle">이 수치는 padding 위치의 비율이며, 전체 실행 시간의 낭비 비율과 정확히 같지는 않다</text>
+</svg>
