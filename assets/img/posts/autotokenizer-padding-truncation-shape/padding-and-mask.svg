@@ -1,0 +1,76 @@
+<svg width="720" height="362" viewBox="0 0 720 362" xmlns="http://www.w3.org/2000/svg" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif">
+  <rect x="0" y="0" width="720" height="362" fill="#f6f8fa" rx="10"/>
+  <defs><marker id="a" markerWidth="8" markerHeight="8" refX="6.4" refY="3" orient="auto"><path d="M0,0 L6.4,3 L0,6 z" fill="#57606a"/></marker>
+  <marker id="ar" markerWidth="8" markerHeight="8" refX="6.4" refY="3" orient="auto"><path d="M0,0 L6.4,3 L0,6 z" fill="#cf222e"/></marker></defs>
+  <text x="360" y="26" font-size="14" fill="#24292f" text-anchor="middle" font-weight="700">패딩은 배치의 입력 길이를 맞추고, 마스크는 패딩 위치를 구분한다</text>
+  <text x="360" y="46" font-size="11" fill="#57606a" text-anchor="middle">토큰 길이 3 · 5 · 2  →  가장 긴 5에 맞춤  →  shape [3, 5]</text>
+  <text x="230" y="68" font-size="11" fill="#0969da" text-anchor="start" font-weight="700">input_ids   [3, 5]</text>
+  <text x="218" y="97" font-size="11" fill="#57606a" text-anchor="end" font-weight="700">A (3)</text>
+  <rect x="230" y="76" width="64" height="32" rx="4" fill="#eaf2fb" stroke="#0969da" stroke-width="1.4"/>
+  <text x="262.0" y="97" font-size="10.5" fill="#0969da" text-anchor="middle" font-weight="700" font-family="ui-monospace, monospace">t1</text>
+  <rect x="302" y="76" width="64" height="32" rx="4" fill="#eaf2fb" stroke="#0969da" stroke-width="1.4"/>
+  <text x="334.0" y="97" font-size="10.5" fill="#0969da" text-anchor="middle" font-weight="700" font-family="ui-monospace, monospace">t2</text>
+  <rect x="374" y="76" width="64" height="32" rx="4" fill="#eaf2fb" stroke="#0969da" stroke-width="1.4"/>
+  <text x="406.0" y="97" font-size="10.5" fill="#0969da" text-anchor="middle" font-weight="700" font-family="ui-monospace, monospace">t3</text>
+  <rect x="446" y="76" width="64" height="32" rx="4" fill="#eef1f4" stroke="#57606a" stroke-width="1.4"/>
+  <text x="478.0" y="97" font-size="10.5" fill="#57606a" text-anchor="middle" font-weight="700" font-family="ui-monospace, monospace">PAD</text>
+  <rect x="518" y="76" width="64" height="32" rx="4" fill="#eef1f4" stroke="#57606a" stroke-width="1.4"/>
+  <text x="550.0" y="97" font-size="10.5" fill="#57606a" text-anchor="middle" font-weight="700" font-family="ui-monospace, monospace">PAD</text>
+  <text x="218" y="135" font-size="11" fill="#57606a" text-anchor="end" font-weight="700">B (5)</text>
+  <rect x="230" y="114" width="64" height="32" rx="4" fill="#eaf2fb" stroke="#0969da" stroke-width="1.4"/>
+  <text x="262.0" y="135" font-size="10.5" fill="#0969da" text-anchor="middle" font-weight="700" font-family="ui-monospace, monospace">t1</text>
+  <rect x="302" y="114" width="64" height="32" rx="4" fill="#eaf2fb" stroke="#0969da" stroke-width="1.4"/>
+  <text x="334.0" y="135" font-size="10.5" fill="#0969da" text-anchor="middle" font-weight="700" font-family="ui-monospace, monospace">t2</text>
+  <rect x="374" y="114" width="64" height="32" rx="4" fill="#eaf2fb" stroke="#0969da" stroke-width="1.4"/>
+  <text x="406.0" y="135" font-size="10.5" fill="#0969da" text-anchor="middle" font-weight="700" font-family="ui-monospace, monospace">t3</text>
+  <rect x="446" y="114" width="64" height="32" rx="4" fill="#eaf2fb" stroke="#0969da" stroke-width="1.4"/>
+  <text x="478.0" y="135" font-size="10.5" fill="#0969da" text-anchor="middle" font-weight="700" font-family="ui-monospace, monospace">t4</text>
+  <rect x="518" y="114" width="64" height="32" rx="4" fill="#eaf2fb" stroke="#0969da" stroke-width="1.4"/>
+  <text x="550.0" y="135" font-size="10.5" fill="#0969da" text-anchor="middle" font-weight="700" font-family="ui-monospace, monospace">t5</text>
+  <text x="218" y="173" font-size="11" fill="#57606a" text-anchor="end" font-weight="700">C (2)</text>
+  <rect x="230" y="152" width="64" height="32" rx="4" fill="#eaf2fb" stroke="#0969da" stroke-width="1.4"/>
+  <text x="262.0" y="173" font-size="10.5" fill="#0969da" text-anchor="middle" font-weight="700" font-family="ui-monospace, monospace">t1</text>
+  <rect x="302" y="152" width="64" height="32" rx="4" fill="#eaf2fb" stroke="#0969da" stroke-width="1.4"/>
+  <text x="334.0" y="173" font-size="10.5" fill="#0969da" text-anchor="middle" font-weight="700" font-family="ui-monospace, monospace">t2</text>
+  <rect x="374" y="152" width="64" height="32" rx="4" fill="#eef1f4" stroke="#57606a" stroke-width="1.4"/>
+  <text x="406.0" y="173" font-size="10.5" fill="#57606a" text-anchor="middle" font-weight="700" font-family="ui-monospace, monospace">PAD</text>
+  <rect x="446" y="152" width="64" height="32" rx="4" fill="#eef1f4" stroke="#57606a" stroke-width="1.4"/>
+  <text x="478.0" y="173" font-size="10.5" fill="#57606a" text-anchor="middle" font-weight="700" font-family="ui-monospace, monospace">PAD</text>
+  <rect x="518" y="152" width="64" height="32" rx="4" fill="#eef1f4" stroke="#57606a" stroke-width="1.4"/>
+  <text x="550.0" y="173" font-size="10.5" fill="#57606a" text-anchor="middle" font-weight="700" font-family="ui-monospace, monospace">PAD</text>
+  <text x="230" y="210" font-size="11" fill="#1a7f37" text-anchor="start" font-weight="700">attention_mask   [3, 5]</text>
+  <text x="218" y="239" font-size="11" fill="#57606a" text-anchor="end" font-weight="700">A (3)</text>
+  <rect x="230" y="218" width="64" height="32" rx="4" fill="#eaf6ec" stroke="#1a7f37" stroke-width="1.4"/>
+  <text x="262.0" y="239" font-size="11" fill="#1a7f37" text-anchor="middle" font-weight="700" font-family="ui-monospace, monospace">1</text>
+  <rect x="302" y="218" width="64" height="32" rx="4" fill="#eaf6ec" stroke="#1a7f37" stroke-width="1.4"/>
+  <text x="334.0" y="239" font-size="11" fill="#1a7f37" text-anchor="middle" font-weight="700" font-family="ui-monospace, monospace">1</text>
+  <rect x="374" y="218" width="64" height="32" rx="4" fill="#eaf6ec" stroke="#1a7f37" stroke-width="1.4"/>
+  <text x="406.0" y="239" font-size="11" fill="#1a7f37" text-anchor="middle" font-weight="700" font-family="ui-monospace, monospace">1</text>
+  <rect x="446" y="218" width="64" height="32" rx="4" fill="#eef1f4" stroke="#57606a" stroke-width="1.4"/>
+  <text x="478.0" y="239" font-size="11" fill="#57606a" text-anchor="middle" font-weight="700" font-family="ui-monospace, monospace">0</text>
+  <rect x="518" y="218" width="64" height="32" rx="4" fill="#eef1f4" stroke="#57606a" stroke-width="1.4"/>
+  <text x="550.0" y="239" font-size="11" fill="#57606a" text-anchor="middle" font-weight="700" font-family="ui-monospace, monospace">0</text>
+  <text x="218" y="277" font-size="11" fill="#57606a" text-anchor="end" font-weight="700">B (5)</text>
+  <rect x="230" y="256" width="64" height="32" rx="4" fill="#eaf6ec" stroke="#1a7f37" stroke-width="1.4"/>
+  <text x="262.0" y="277" font-size="11" fill="#1a7f37" text-anchor="middle" font-weight="700" font-family="ui-monospace, monospace">1</text>
+  <rect x="302" y="256" width="64" height="32" rx="4" fill="#eaf6ec" stroke="#1a7f37" stroke-width="1.4"/>
+  <text x="334.0" y="277" font-size="11" fill="#1a7f37" text-anchor="middle" font-weight="700" font-family="ui-monospace, monospace">1</text>
+  <rect x="374" y="256" width="64" height="32" rx="4" fill="#eaf6ec" stroke="#1a7f37" stroke-width="1.4"/>
+  <text x="406.0" y="277" font-size="11" fill="#1a7f37" text-anchor="middle" font-weight="700" font-family="ui-monospace, monospace">1</text>
+  <rect x="446" y="256" width="64" height="32" rx="4" fill="#eaf6ec" stroke="#1a7f37" stroke-width="1.4"/>
+  <text x="478.0" y="277" font-size="11" fill="#1a7f37" text-anchor="middle" font-weight="700" font-family="ui-monospace, monospace">1</text>
+  <rect x="518" y="256" width="64" height="32" rx="4" fill="#eaf6ec" stroke="#1a7f37" stroke-width="1.4"/>
+  <text x="550.0" y="277" font-size="11" fill="#1a7f37" text-anchor="middle" font-weight="700" font-family="ui-monospace, monospace">1</text>
+  <text x="218" y="315" font-size="11" fill="#57606a" text-anchor="end" font-weight="700">C (2)</text>
+  <rect x="230" y="294" width="64" height="32" rx="4" fill="#eaf6ec" stroke="#1a7f37" stroke-width="1.4"/>
+  <text x="262.0" y="315" font-size="11" fill="#1a7f37" text-anchor="middle" font-weight="700" font-family="ui-monospace, monospace">1</text>
+  <rect x="302" y="294" width="64" height="32" rx="4" fill="#eaf6ec" stroke="#1a7f37" stroke-width="1.4"/>
+  <text x="334.0" y="315" font-size="11" fill="#1a7f37" text-anchor="middle" font-weight="700" font-family="ui-monospace, monospace">1</text>
+  <rect x="374" y="294" width="64" height="32" rx="4" fill="#eef1f4" stroke="#57606a" stroke-width="1.4"/>
+  <text x="406.0" y="315" font-size="11" fill="#57606a" text-anchor="middle" font-weight="700" font-family="ui-monospace, monospace">0</text>
+  <rect x="446" y="294" width="64" height="32" rx="4" fill="#eef1f4" stroke="#57606a" stroke-width="1.4"/>
+  <text x="478.0" y="315" font-size="11" fill="#57606a" text-anchor="middle" font-weight="700" font-family="ui-monospace, monospace">0</text>
+  <rect x="518" y="294" width="64" height="32" rx="4" fill="#eef1f4" stroke="#57606a" stroke-width="1.4"/>
+  <text x="550.0" y="315" font-size="11" fill="#57606a" text-anchor="middle" font-weight="700" font-family="ui-monospace, monospace">0</text>
+  <text x="360" y="348" font-size="10.5" fill="#57606a" text-anchor="middle">파란 칸은 입력 토큰, 회색 PAD는 추가한 자리 — 마스크의 1은 입력 위치, 0은 패딩 위치 (특수 토큰 생략)</text>
+</svg>

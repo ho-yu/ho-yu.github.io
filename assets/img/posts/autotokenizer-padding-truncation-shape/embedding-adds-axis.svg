@@ -1,0 +1,77 @@
+<svg width="720" height="330" viewBox="0 0 720 330" xmlns="http://www.w3.org/2000/svg" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif">
+  <rect x="0" y="0" width="720" height="330" fill="#f6f8fa" rx="10"/>
+  <defs><marker id="a" markerWidth="8" markerHeight="8" refX="6.4" refY="3" orient="auto"><path d="M0,0 L6.4,3 L0,6 z" fill="#57606a"/></marker>
+  <marker id="ar" markerWidth="8" markerHeight="8" refX="6.4" refY="3" orient="auto"><path d="M0,0 L6.4,3 L0,6 z" fill="#cf222e"/></marker></defs>
+  <text x="360" y="26" font-size="14" fill="#24292f" text-anchor="middle" font-weight="700">임베딩을 거치면 축이 하나 추가된다</text>
+  <rect x="30" y="44" width="300" height="250" rx="8" fill="#ffffff" stroke="#d0d7de" stroke-width="1.5"/>
+  <text x="180" y="68" font-size="11.5" fill="#0969da" text-anchor="middle" font-weight="700" font-family="ui-monospace, monospace">input_ids   [3, 5]</text>
+  <text x="46" y="113" font-size="11" fill="#57606a" text-anchor="end" font-weight="700">A</text>
+  <rect x="54" y="92" width="46" height="32" rx="4" fill="#eaf2fb" stroke="#0969da" stroke-width="1.3"/>
+  <text x="77" y="113" font-size="10" fill="#0969da" text-anchor="middle" font-weight="700" font-family="ui-monospace, monospace">t1</text>
+  <rect x="106" y="92" width="46" height="32" rx="4" fill="#eaf2fb" stroke="#0969da" stroke-width="1.3"/>
+  <text x="129" y="113" font-size="10" fill="#0969da" text-anchor="middle" font-weight="700" font-family="ui-monospace, monospace">t2</text>
+  <rect x="158" y="92" width="46" height="32" rx="4" fill="#eaf2fb" stroke="#0969da" stroke-width="1.3"/>
+  <text x="181" y="113" font-size="10" fill="#0969da" text-anchor="middle" font-weight="700" font-family="ui-monospace, monospace">t3</text>
+  <rect x="210" y="92" width="46" height="32" rx="4" fill="#eaf2fb" stroke="#0969da" stroke-width="1.3"/>
+  <text x="233" y="113" font-size="10" fill="#0969da" text-anchor="middle" font-weight="700" font-family="ui-monospace, monospace">t4</text>
+  <rect x="262" y="92" width="46" height="32" rx="4" fill="#eaf2fb" stroke="#0969da" stroke-width="1.3"/>
+  <text x="285" y="113" font-size="10" fill="#0969da" text-anchor="middle" font-weight="700" font-family="ui-monospace, monospace">t5</text>
+  <text x="46" y="151" font-size="11" fill="#57606a" text-anchor="end" font-weight="700">B</text>
+  <rect x="54" y="130" width="46" height="32" rx="4" fill="#eaf2fb" stroke="#0969da" stroke-width="1.3"/>
+  <text x="77" y="151" font-size="10" fill="#0969da" text-anchor="middle" font-weight="700" font-family="ui-monospace, monospace">t1</text>
+  <rect x="106" y="130" width="46" height="32" rx="4" fill="#eaf2fb" stroke="#0969da" stroke-width="1.3"/>
+  <text x="129" y="151" font-size="10" fill="#0969da" text-anchor="middle" font-weight="700" font-family="ui-monospace, monospace">t2</text>
+  <rect x="158" y="130" width="46" height="32" rx="4" fill="#eaf2fb" stroke="#0969da" stroke-width="1.3"/>
+  <text x="181" y="151" font-size="10" fill="#0969da" text-anchor="middle" font-weight="700" font-family="ui-monospace, monospace">t3</text>
+  <rect x="210" y="130" width="46" height="32" rx="4" fill="#eaf2fb" stroke="#0969da" stroke-width="1.3"/>
+  <text x="233" y="151" font-size="10" fill="#0969da" text-anchor="middle" font-weight="700" font-family="ui-monospace, monospace">t4</text>
+  <rect x="262" y="130" width="46" height="32" rx="4" fill="#eaf2fb" stroke="#0969da" stroke-width="1.3"/>
+  <text x="285" y="151" font-size="10" fill="#0969da" text-anchor="middle" font-weight="700" font-family="ui-monospace, monospace">t5</text>
+  <text x="46" y="189" font-size="11" fill="#57606a" text-anchor="end" font-weight="700">C</text>
+  <rect x="54" y="168" width="46" height="32" rx="4" fill="#eaf2fb" stroke="#0969da" stroke-width="1.3"/>
+  <text x="77" y="189" font-size="10" fill="#0969da" text-anchor="middle" font-weight="700" font-family="ui-monospace, monospace">t1</text>
+  <rect x="106" y="168" width="46" height="32" rx="4" fill="#eaf2fb" stroke="#0969da" stroke-width="1.3"/>
+  <text x="129" y="189" font-size="10" fill="#0969da" text-anchor="middle" font-weight="700" font-family="ui-monospace, monospace">t2</text>
+  <rect x="158" y="168" width="46" height="32" rx="4" fill="#eaf2fb" stroke="#0969da" stroke-width="1.3"/>
+  <text x="181" y="189" font-size="10" fill="#0969da" text-anchor="middle" font-weight="700" font-family="ui-monospace, monospace">t3</text>
+  <rect x="210" y="168" width="46" height="32" rx="4" fill="#eaf2fb" stroke="#0969da" stroke-width="1.3"/>
+  <text x="233" y="189" font-size="10" fill="#0969da" text-anchor="middle" font-weight="700" font-family="ui-monospace, monospace">t4</text>
+  <rect x="262" y="168" width="46" height="32" rx="4" fill="#eaf2fb" stroke="#0969da" stroke-width="1.3"/>
+  <text x="285" y="189" font-size="10" fill="#0969da" text-anchor="middle" font-weight="700" font-family="ui-monospace, monospace">t5</text>
+  <text x="180" y="238" font-size="11" fill="#57606a" text-anchor="middle">샘플 3개 × 토큰 5칸</text>
+  <text x="180" y="262" font-size="11" fill="#57606a" text-anchor="middle" font-family="ui-monospace, monospace">축 2개 : [B, L]</text>
+  <line x1="336" y1="168" x2="362" y2="168" stroke="#57606a" stroke-width="1.4" marker-end="url(#a)"/>
+  <rect x="370" y="44" width="320" height="250" rx="8" fill="#ffffff" stroke="#d0d7de" stroke-width="1.5"/>
+  <text x="530" y="68" font-size="11.5" fill="#8250df" text-anchor="middle" font-weight="700">A 샘플 하나를 확대</text>
+  <text x="452" y="90" font-size="9.5" fill="#57606a" text-anchor="middle" font-family="ui-monospace, monospace">d1</text>
+  <text x="508" y="90" font-size="9.5" fill="#57606a" text-anchor="middle" font-family="ui-monospace, monospace">d2</text>
+  <text x="564" y="90" font-size="9.5" fill="#57606a" text-anchor="middle" font-family="ui-monospace, monospace">d3</text>
+  <text x="620" y="90" font-size="9.5" fill="#57606a" text-anchor="middle" font-family="ui-monospace, monospace">d4</text>
+  <text x="422" y="117" font-size="10" fill="#57606a" text-anchor="end" font-weight="700">t1</text>
+  <rect x="428" y="98" width="48" height="24" rx="3" fill="#f3eefc" stroke="#8250df" stroke-width="1.2"/>
+  <rect x="484" y="98" width="48" height="24" rx="3" fill="#f3eefc" stroke="#8250df" stroke-width="1.2"/>
+  <rect x="540" y="98" width="48" height="24" rx="3" fill="#f3eefc" stroke="#8250df" stroke-width="1.2"/>
+  <rect x="596" y="98" width="48" height="24" rx="3" fill="#f3eefc" stroke="#8250df" stroke-width="1.2"/>
+  <text x="422" y="147" font-size="10" fill="#57606a" text-anchor="end" font-weight="700">t2</text>
+  <rect x="428" y="128" width="48" height="24" rx="3" fill="#f3eefc" stroke="#8250df" stroke-width="1.2"/>
+  <rect x="484" y="128" width="48" height="24" rx="3" fill="#f3eefc" stroke="#8250df" stroke-width="1.2"/>
+  <rect x="540" y="128" width="48" height="24" rx="3" fill="#f3eefc" stroke="#8250df" stroke-width="1.2"/>
+  <rect x="596" y="128" width="48" height="24" rx="3" fill="#f3eefc" stroke="#8250df" stroke-width="1.2"/>
+  <text x="422" y="177" font-size="10" fill="#57606a" text-anchor="end" font-weight="700">t3</text>
+  <rect x="428" y="158" width="48" height="24" rx="3" fill="#f3eefc" stroke="#8250df" stroke-width="1.2"/>
+  <rect x="484" y="158" width="48" height="24" rx="3" fill="#f3eefc" stroke="#8250df" stroke-width="1.2"/>
+  <rect x="540" y="158" width="48" height="24" rx="3" fill="#f3eefc" stroke="#8250df" stroke-width="1.2"/>
+  <rect x="596" y="158" width="48" height="24" rx="3" fill="#f3eefc" stroke="#8250df" stroke-width="1.2"/>
+  <text x="422" y="207" font-size="10" fill="#57606a" text-anchor="end" font-weight="700">t4</text>
+  <rect x="428" y="188" width="48" height="24" rx="3" fill="#f3eefc" stroke="#8250df" stroke-width="1.2"/>
+  <rect x="484" y="188" width="48" height="24" rx="3" fill="#f3eefc" stroke="#8250df" stroke-width="1.2"/>
+  <rect x="540" y="188" width="48" height="24" rx="3" fill="#f3eefc" stroke="#8250df" stroke-width="1.2"/>
+  <rect x="596" y="188" width="48" height="24" rx="3" fill="#f3eefc" stroke="#8250df" stroke-width="1.2"/>
+  <text x="422" y="237" font-size="10" fill="#57606a" text-anchor="end" font-weight="700">t5</text>
+  <rect x="428" y="218" width="48" height="24" rx="3" fill="#f3eefc" stroke="#8250df" stroke-width="1.2"/>
+  <rect x="484" y="218" width="48" height="24" rx="3" fill="#f3eefc" stroke="#8250df" stroke-width="1.2"/>
+  <rect x="540" y="218" width="48" height="24" rx="3" fill="#f3eefc" stroke="#8250df" stroke-width="1.2"/>
+  <rect x="596" y="218" width="48" height="24" rx="3" fill="#f3eefc" stroke="#8250df" stroke-width="1.2"/>
+  <text x="530" y="268" font-size="10.5" fill="#57606a" text-anchor="middle">토큰 5개 × 4차원 벡터 — 값은 설명용</text>
+  <text x="360" y="316" font-size="11.5" fill="#24292f" text-anchor="middle" font-weight="700" font-family="ui-monospace, monospace">input_ids [B, L]  →  임베딩 결과 [B, L, D]   ·   이 예시에서는 [3, 5, 4]</text>
+</svg>

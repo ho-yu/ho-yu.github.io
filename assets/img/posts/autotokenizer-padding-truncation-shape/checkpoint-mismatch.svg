@@ -1,0 +1,41 @@
+<svg width="720" height="292" viewBox="0 0 720 292" xmlns="http://www.w3.org/2000/svg" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif">
+  <rect x="0" y="0" width="720" height="292" fill="#f6f8fa" rx="10"/>
+  <defs><marker id="a" markerWidth="8" markerHeight="8" refX="6.4" refY="3" orient="auto"><path d="M0,0 L6.4,3 L0,6 z" fill="#57606a"/></marker>
+  <marker id="ar" markerWidth="8" markerHeight="8" refX="6.4" refY="3" orient="auto"><path d="M0,0 L6.4,3 L0,6 z" fill="#cf222e"/></marker></defs>
+  <text x="360" y="26" font-size="14" fill="#24292f" text-anchor="middle" font-weight="700">토크나이저가 다르면 같은 번호가 다른 내용을 가리킨다</text>
+  <text x="30" y="58" font-size="11" fill="#1a7f37" text-anchor="start" font-weight="700">같은 체크포인트 — 정상</text>
+  <rect x="30" y="66" width="90" height="44" rx="6" fill="#ffffff" stroke="#57606a" stroke-width="1.6"/>
+  <text x="75.0" y="92.0" font-size="11" fill="#57606a" text-anchor="middle" font-weight="700">"제품"</text>
+  <line x1="122" y1="88" x2="138" y2="88" stroke="#57606a" stroke-width="1.4" marker-end="url(#a)"/>
+  <rect x="150" y="66" width="130" height="44" rx="6" fill="#eaf6ec" stroke="#1a7f37" stroke-width="1.6"/>
+  <text x="215.0" y="92.0" font-size="11" fill="#1a7f37" text-anchor="middle" font-weight="700">A 토크나이저</text>
+  <line x1="282" y1="88" x2="298" y2="88" stroke="#57606a" stroke-width="1.4" marker-end="url(#a)"/>
+  <rect x="310" y="66" width="90" height="44" rx="6" fill="#eaf6ec" stroke="#1a7f37" stroke-width="1.6"/>
+  <text x="355.0" y="92.0" font-size="11" fill="#1a7f37" text-anchor="middle" font-weight="700" font-family="ui-monospace, monospace">ID 350</text>
+  <line x1="402" y1="88" x2="418" y2="88" stroke="#57606a" stroke-width="1.4" marker-end="url(#a)"/>
+  <rect x="430" y="66" width="100" height="44" rx="6" fill="#ffffff" stroke="#57606a" stroke-width="1.6"/>
+  <text x="480.0" y="92.0" font-size="11" fill="#57606a" text-anchor="middle" font-weight="700">A 모델</text>
+  <line x1="532" y1="88" x2="548" y2="88" stroke="#57606a" stroke-width="1.4" marker-end="url(#a)"/>
+  <rect x="560" y="66" width="130" height="44" rx="6" fill="#ffffff" stroke="#57606a" stroke-width="1.6"/>
+  <text x="625.0" y="92.0" font-size="11" fill="#57606a" text-anchor="middle" font-weight="700">제품의 임베딩</text>
+  <text x="696" y="92" font-size="11" fill="#1a7f37" text-anchor="end" font-weight="700"></text>
+  <text x="30" y="164" font-size="11" fill="#cf222e" text-anchor="start" font-weight="700">다른 토크나이저 — 같은 번호, 다른 내용</text>
+  <rect x="30" y="174" width="90" height="44" rx="6" fill="#ffffff" stroke="#57606a" stroke-width="1.6"/>
+  <text x="75.0" y="200.0" font-size="11" fill="#57606a" text-anchor="middle" font-weight="700">"배송"</text>
+  <line x1="122" y1="196" x2="138" y2="196" stroke="#cf222e" stroke-width="1.4" marker-end="url(#ar)"/>
+  <rect x="150" y="174" width="130" height="44" rx="6" fill="#fceceb" stroke="#cf222e" stroke-width="1.6"/>
+  <text x="215.0" y="200.0" font-size="11" fill="#cf222e" text-anchor="middle" font-weight="700">B 토크나이저</text>
+  <line x1="282" y1="196" x2="298" y2="196" stroke="#cf222e" stroke-width="1.4" marker-end="url(#ar)"/>
+  <rect x="310" y="174" width="90" height="44" rx="6" fill="#fceceb" stroke="#cf222e" stroke-width="1.6"/>
+  <text x="355.0" y="200.0" font-size="11" fill="#cf222e" text-anchor="middle" font-weight="700" font-family="ui-monospace, monospace">ID 350</text>
+  <line x1="402" y1="196" x2="418" y2="196" stroke="#cf222e" stroke-width="1.4" marker-end="url(#ar)"/>
+  <rect x="430" y="174" width="100" height="44" rx="6" fill="#ffffff" stroke="#57606a" stroke-width="1.6"/>
+  <text x="480.0" y="200.0" font-size="11" fill="#57606a" text-anchor="middle" font-weight="700">A 모델</text>
+  <line x1="532" y1="196" x2="548" y2="196" stroke="#cf222e" stroke-width="1.4" marker-end="url(#ar)"/>
+  <rect x="560" y="174" width="130" height="44" rx="6" fill="#ffffff" stroke="#57606a" stroke-width="1.6"/>
+  <text x="625.0" y="200.0" font-size="11" fill="#57606a" text-anchor="middle" font-weight="700">제품의 임베딩</text>
+  <text x="696" y="200" font-size="11" fill="#cf222e" text-anchor="end" font-weight="700"></text>
+  <line x1="30" y1="140" x2="690" y2="140" stroke="#d0d7de" stroke-width="1.2"/>
+  <text x="360" y="246" font-size="11.5" fill="#24292f" text-anchor="middle">정수 형식과 shape가 맞아 실행되더라도 모델은 다른 토큰의 임베딩을 참조하게 된다</text>
+  <text x="360" y="270" font-size="11" fill="#57606a" text-anchor="middle">토큰 분리 · 토큰&#8596;ID 매핑 · 특수 토큰 규칙이 학습 당시와 일치해야 한다</text>
+</svg>
