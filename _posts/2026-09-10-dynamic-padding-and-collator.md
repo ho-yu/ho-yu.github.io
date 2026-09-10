@@ -1,6 +1,6 @@
 ---
 title: "동적 Padding과 Collator — PAD를 줄이는 길이 정책"
-date: 2026-09-10 10:00:00 +0900
+date: 2026-09-10 09:10:00 +0900
 categories: [Notes, Deep Learning]
 tags: [nlp, data-collator, tokenizer, attention-mask, tensor-shape]
 ---
