@@ -1,0 +1,68 @@
+{% comment %}
+  Navigation buttons at the bottom of the post.
+
+  Chirpy의 post-nav.html을 대체한다. 마크업과 클래스는 테마 원본과 동일하게 유지하고,
+  어떤 글을 가리킬지만 바꾼다.
+
+  - _data/reading_order.yml에 현재 글의 하위 카테고리 순서가 있으면 그 순서의 앞/뒤 글로 연결한다.
+  - 카테고리의 처음·마지막 글에서는 해당 방향을 비활성으로 둔다.
+  - 순서 목록에 없거나 목록에 글이 하나뿐이면 Jekyll 기본값(page.previous / page.next)을 쓴다.
+{% endcomment %}
+
+{%- assign previous = site.data.locales[include.lang].post.button.previous -%}
+{%- assign next = site.data.locales[include.lang].post.button.next -%}
+
+{%- assign sub_category = page.categories[1] -%}
+{%- assign order_list = site.data.reading_order[sub_category] -%}
+{%- assign use_reading_order = false -%}
+{%- assign prev_post = nil -%}
+{%- assign next_post = nil -%}
+
+{%- if order_list.size > 1 and order_list contains page.slug -%}
+  {%- for ordered_slug in order_list -%}
+    {%- if ordered_slug == page.slug -%}
+      {%- assign prev_index = forloop.index0 | minus: 1 -%}
+      {%- assign next_index = forloop.index0 | plus: 1 -%}
+      {%- if prev_index >= 0 -%}
+        {%- assign prev_slug = order_list[prev_index] -%}
+        {%- assign prev_match = site.posts | where: 'slug', prev_slug -%}
+        {%- assign prev_post = prev_match[0] -%}
+      {%- endif -%}
+      {%- if next_index < order_list.size -%}
+        {%- assign next_slug = order_list[next_index] -%}
+        {%- assign next_match = site.posts | where: 'slug', next_slug -%}
+        {%- assign next_post = next_match[0] -%}
+      {%- endif -%}
+    {%- endif -%}
+  {%- endfor -%}
+  {%- if prev_post or next_post -%}
+    {%- assign use_reading_order = true -%}
+  {%- endif -%}
+{%- endif -%}
+
+{%- unless use_reading_order -%}
+  {%- assign prev_post = page.previous -%}
+  {%- assign next_post = page.next -%}
+{%- endunless -%}
+
+<nav class="post-navigation d-flex justify-content-between" aria-label="Post Navigation">
+  {% if prev_post.url %}
+    <a href="{{ site.baseurl }}{{ prev_post.url }}" class="btn btn-outline-primary" aria-label="{{ previous }}">
+      <p>{{ prev_post.title }}</p>
+    </a>
+  {% else %}
+    <div class="btn btn-outline-primary disabled" aria-label="{{ previous }}">
+      <p>-</p>
+    </div>
+  {% endif %}
+
+  {% if next_post.url %}
+    <a href="{{ site.baseurl }}{{ next_post.url }}" class="btn btn-outline-primary" aria-label="{{ next }}">
+      <p>{{ next_post.title }}</p>
+    </a>
+  {% else %}
+    <div class="btn btn-outline-primary disabled" aria-label="{{ next }}">
+      <p>-</p>
+    </div>
+  {% endif %}
+</nav>

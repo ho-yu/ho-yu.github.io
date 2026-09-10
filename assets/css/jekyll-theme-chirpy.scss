@@ -340,6 +340,21 @@ article[data-toc] {
   gap: 0.25rem 1rem;
 }
 
+.section-list-note {
+  margin: -0.2rem 0 0.9rem;
+  font-size: 0.82rem;
+  color: var(--text-muted-color);
+}
+
+.section-list-items .step-no {
+  display: inline-block;
+  min-width: 1.7em;
+  font-size: 0.78rem;
+  font-weight: 600;
+  color: var(--text-muted-color);
+  font-variant-numeric: tabular-nums;
+}
+
 .section-list-items .title {
   font-weight: 500;
   color: var(--heading-color);

@@ -1,0 +1,87 @@
+# 하위 카테고리별 "처음 읽는 순서".
+#
+# - key   : Front Matter categories의 2차 값 (예: [Notes, Deep Learning] → "Deep Learning")
+# - value : 글의 slug 목록 (파일명에서 날짜 접두사와 .md를 뺀 부분)
+#
+# _includes/section-post-list.html이 이 순서로 목록을 정렬한다.
+# 여기에 없는 글은 목록 뒤쪽에 최신순으로 붙는다.
+# 날짜와 URL은 바꾸지 않으므로 홈 피드와 Archives는 실제 작성 순서를 유지한다.
+
+"Math":
+  # 벡터 → 벡터 사이의 관계 → 차원 축소 → 압축
+  - vector-basics
+  - projection-and-cosine-similarity
+  - pca-and-eigen-decomposition
+  - svd-low-rank-approximation
+
+"Machine Learning":
+  # 큰 그림 → 가장 기본 모델 → 평가 방법 → 모델 비교·선택
+  - supervised-vs-unsupervised-learning
+  - linear-regression-and-logistic-regression
+  - train-valid-test-split-and-metrics
+  - model-selection-linear-knn-tree-kmeans-pca
+
+"Deep Learning":
+  # 1) 큰 그림
+  - machine-learning-vs-deep-learning-basics
+  - deep-learning-problem-types-and-io-shapes
+  - pytorch-training-script-structure
+  # 2) Tensor 다루기
+  - pytorch-tensor-basics
+  - batch-dimension-and-broadcasting
+  - pytorch-reshape
+  - input-output-dimensions-and-flatten
+  - torch-cat-dim
+  - pytorch-device-cpu-gpu
+  - pytorch-shape-device-debugging
+  - dangerous-broadcasting
+  # 3) 선형 모델에서 신경망으로
+  - perceptron-and-linear-decision-boundary
+  - nn-linear-weight-bias
+  - deep-learning-weight
+  - mlp-input-hidden-output-layers
+  - activation-function-and-relu
+  - xor-nonlinear-decision-boundary
+  # 4) 출력과 Loss
+  - sigmoid-softmax-classification-output
+  - pytorch-argmax-and-dim
+  - loss-function-and-epoch
+  - mse-loss
+  - bce-with-logits-loss
+  - cross-entropy-loss
+  - loss-reduction-mean-sum-none
+  # 5) 학습 - 역전파와 Optimizer
+  - loss-vs-backpropagation-and-gradient
+  - weight-and-chain-rule
+  - loss-backward-and-grad
+  - requires-grad-and-no-grad
+  - optimizer-sgd-learning-rate
+  - pytorch-training-5-steps
+  - random-seed
+  # 6) 과적합 완화와 학습 안정화
+  - dropout
+  - dropout-vs-batchnorm
+  # 7) CNN
+  - cnn-kernel
+  - cnn-padding-and-stride
+  # 8) 딥러닝 과제 - 데이터부터 checkpoint까지
+  - data-split-dataloader-batch-contract
+  - mlp-cnn-model-design-and-shape-flow
+  - training-validation-loop-and-early-stopping
+  - checkpoint-save-load-resume
+  # 9) 순차 데이터 - RNN에서 Transformer까지
+  - rnn-input-shape-and-batch-first
+  - rnn-hidden-state-and-output
+  - vanishing-exploding-gradient
+  - lstm-cell-state-and-gate
+  - attention-transformer-and-model-combination
+  # 10) NLP - 텍스트를 모델 입력으로
+  - nlp-token-subword-vocabulary
+  - nlp-label-and-data-contract
+  - autotokenizer-and-checkpoint
+  - padding-truncation-and-shape
+  - dataset-split-and-map
+  - dynamic-padding-and-collator
+
+"Python":
+  - python-assert

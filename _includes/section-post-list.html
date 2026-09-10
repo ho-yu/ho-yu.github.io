@@ -28,11 +28,34 @@
 </nav>
 {% endif %}
 {% for subgroup in subgroups %}
+{%- comment -%}
+  _data/reading_order.yml에 이 하위 카테고리의 slug 순서가 있으면 그 순서로 정렬한다.
+  목록에 없는 글은 뒤쪽에 기존 순서(최신순)로 붙는다. 날짜와 URL은 바꾸지 않는다.
+{%- endcomment -%}
+{%- assign order_list = site.data.reading_order[subgroup.name] -%}
+{%- if order_list -%}
+{%- assign ordered_posts = '' | split: '' -%}
+{%- for ordered_slug in order_list -%}
+{%- assign matched = subgroup.items | where: 'slug', ordered_slug -%}
+{%- assign ordered_posts = ordered_posts | concat: matched -%}
+{%- endfor -%}
+{%- for post in subgroup.items -%}
+{%- unless order_list contains post.slug -%}
+{%- assign leftover = subgroup.items | where: 'slug', post.slug -%}
+{%- assign ordered_posts = ordered_posts | concat: leftover -%}
+{%- endunless -%}
+{%- endfor -%}
+{%- else -%}
+{%- assign ordered_posts = subgroup.items -%}
+{%- endif -%}
 <div class="section-list-group">
 <h2 id="{{ subgroup.name | default: 'general' | slugify }}"><span class="dot"></span>{{ subgroup.name | default: 'General' }} <span class="text-muted small">{{ subgroup.items.size }}</span></h2>
+{%- if order_list and subgroup.items.size > 1 %}
+<p class="section-list-note">처음 읽는다면 아래 번호 순서대로 보는 것을 권합니다. 날짜는 실제로 정리한 날입니다.</p>
+{%- endif %}
 <ul class="section-list-items">
-{%- for post in subgroup.items %}
-<li><div class="row-top"><a class="title" href="{{ post.url | relative_url }}">{{ post.title }}</a><span class="meta">{{ post.date | date: '%Y-%m-%d' }} · {% include read-time.html content=post.content lang=lang %}</span></div><span class="excerpt">{% include post-excerpt.html max_length=110 %}</span>{% if post.tags.size > 0 %}<div class="tags">{%- for tag in post.tags -%}<a href="{{ site.baseurl }}/tags/{{ tag | slugify | url_encode }}/" class="post-tag no-text-decoration">{{- tag -}}</a>{%- endfor -%}</div>{% endif %}</li>
+{%- for post in ordered_posts %}
+<li><div class="row-top"><a class="title" href="{{ post.url | relative_url }}">{%- if order_list and subgroup.items.size > 1 %}<span class="step-no">{{ forloop.index }}</span>{% endif -%}{{ post.title }}</a><span class="meta">{{ post.date | date: '%Y-%m-%d' }} · {% include read-time.html content=post.content lang=lang %}</span></div><span class="excerpt">{% include post-excerpt.html max_length=110 %}</span>{% if post.tags.size > 0 %}<div class="tags">{%- for tag in post.tags -%}<a href="{{ site.baseurl }}/tags/{{ tag | slugify | url_encode }}/" class="post-tag no-text-decoration">{{- tag -}}</a>{%- endfor -%}</div>{% endif %}</li>
 {%- endfor %}
 </ul>
 </div>
