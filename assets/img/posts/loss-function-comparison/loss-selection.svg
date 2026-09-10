@@ -1,0 +1,31 @@
+<svg width="720" height="256" viewBox="0 0 720 256" xmlns="http://www.w3.org/2000/svg" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif">
+  <rect x="0" y="0" width="720" height="256" fill="#f6f8fa" rx="10"/>
+  <defs><marker id="a" markerWidth="8" markerHeight="8" refX="6.4" refY="3" orient="auto"><path d="M0,0 L6.4,3 L0,6 z" fill="#57606a"/></marker>
+  <marker id="ar" markerWidth="8" markerHeight="8" refX="6.4" refY="3" orient="auto"><path d="M0,0 L6.4,3 L0,6 z" fill="#cf222e"/></marker></defs>
+  <text x="360" y="26" font-size="14" fill="#24292f" text-anchor="middle" font-weight="700">문제 유형이 정답의 형태를 정하고, 정답의 형태가 Loss를 정한다</text>
+  <rect x="40" y="56" width="160" height="46" rx="6" fill="#eaf2fb" stroke="#0969da" stroke-width="1.6"/>
+  <text x="120.0" y="83.0" font-size="11.5" fill="#0969da" text-anchor="middle" font-weight="700">회귀</text>
+  <line x1="204" y1="79" x2="226" y2="79" stroke="#57606a" stroke-width="1.4" marker-end="url(#a)"/>
+  <rect x="232" y="56" width="200" height="46" rx="6" fill="#ffffff" stroke="#57606a" stroke-width="1.6"/>
+  <text x="332.0" y="83.0" font-size="11.5" fill="#57606a" text-anchor="middle" font-weight="700">정답 : 실수값</text>
+  <line x1="436" y1="79" x2="458" y2="79" stroke="#57606a" stroke-width="1.4" marker-end="url(#a)"/>
+  <rect x="464" y="56" width="200" height="46" rx="6" fill="#eaf2fb" stroke="#0969da" stroke-width="1.6"/>
+  <text x="564.0" y="83.0" font-size="11.5" fill="#0969da" text-anchor="middle" font-weight="700" font-family="ui-monospace, monospace">MSE</text>
+  <rect x="40" y="122" width="160" height="46" rx="6" fill="#eaf6ec" stroke="#1a7f37" stroke-width="1.6"/>
+  <text x="120.0" y="149.0" font-size="11.5" fill="#1a7f37" text-anchor="middle" font-weight="700">이진 분류</text>
+  <line x1="204" y1="145" x2="226" y2="145" stroke="#57606a" stroke-width="1.4" marker-end="url(#a)"/>
+  <rect x="232" y="122" width="200" height="46" rx="6" fill="#ffffff" stroke="#57606a" stroke-width="1.6"/>
+  <text x="332.0" y="149.0" font-size="11.5" fill="#57606a" text-anchor="middle" font-weight="700">정답 : 0 또는 1</text>
+  <line x1="436" y1="145" x2="458" y2="145" stroke="#57606a" stroke-width="1.4" marker-end="url(#a)"/>
+  <rect x="464" y="122" width="200" height="46" rx="6" fill="#eaf6ec" stroke="#1a7f37" stroke-width="1.6"/>
+  <text x="564.0" y="149.0" font-size="11.5" fill="#1a7f37" text-anchor="middle" font-weight="700" font-family="ui-monospace, monospace">BCE</text>
+  <rect x="40" y="188" width="160" height="46" rx="6" fill="#f3eefc" stroke="#8250df" stroke-width="1.6"/>
+  <text x="120.0" y="215.0" font-size="11.5" fill="#8250df" text-anchor="middle" font-weight="700">다중 클래스 분류</text>
+  <line x1="204" y1="211" x2="226" y2="211" stroke="#57606a" stroke-width="1.4" marker-end="url(#a)"/>
+  <rect x="232" y="188" width="200" height="46" rx="6" fill="#ffffff" stroke="#57606a" stroke-width="1.6"/>
+  <text x="332.0" y="215.0" font-size="11.5" fill="#57606a" text-anchor="middle" font-weight="700">정답 : class index</text>
+  <line x1="436" y1="211" x2="458" y2="211" stroke="#57606a" stroke-width="1.4" marker-end="url(#a)"/>
+  <rect x="464" y="188" width="200" height="46" rx="6" fill="#f3eefc" stroke="#8250df" stroke-width="1.6"/>
+  <text x="564.0" y="215.0" font-size="11.5" fill="#8250df" text-anchor="middle" font-weight="700" font-family="ui-monospace, monospace">CrossEntropy</text>
+  <text x="360" y="244" font-size="11" fill="#57606a" text-anchor="middle">다중 클래스에서는 logits가 [B, C], 정답은 [B] 형태다</text>
+</svg>

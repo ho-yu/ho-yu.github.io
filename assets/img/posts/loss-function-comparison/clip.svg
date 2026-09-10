@@ -1,0 +1,29 @@
+<svg width="720" height="250" viewBox="0 0 720 250" xmlns="http://www.w3.org/2000/svg" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif">
+  <rect x="0" y="0" width="720" height="250" fill="#f6f8fa" rx="10"/>
+  <defs><marker id="a" markerWidth="8" markerHeight="8" refX="6.4" refY="3" orient="auto"><path d="M0,0 L6.4,3 L0,6 z" fill="#57606a"/></marker>
+  <marker id="ar" markerWidth="8" markerHeight="8" refX="6.4" refY="3" orient="auto"><path d="M0,0 L6.4,3 L0,6 z" fill="#cf222e"/></marker></defs>
+  <text x="360" y="26" font-size="14" fill="#24292f" text-anchor="middle" font-weight="700">clip은 값을 지정한 범위 안으로 강제로 밀어 넣는다</text>
+  <text x="360" y="46" font-size="11" fill="#57606a" text-anchor="middle">np.clip(x, 0, 1)</text>
+  <rect x="273.33333333333337" y="118" width="173.33333333333331" height="26" rx="4" fill="#eaf6ec" stroke="#1a7f37" stroke-width="1.4"/>
+  <line x1="100" y1="131" x2="620" y2="131" stroke="#57606a" stroke-width="1.6"/>
+  <line x1="100.0" y1="125" x2="100.0" y2="137" stroke="#57606a" stroke-width="1.4"/>
+  <text x="100.0" y="158" font-size="10" fill="#57606a" text-anchor="middle" font-family="ui-monospace, monospace">-1</text>
+  <line x1="273.33333333333337" y1="125" x2="273.33333333333337" y2="137" stroke="#57606a" stroke-width="1.4"/>
+  <text x="273.33333333333337" y="158" font-size="10" fill="#57606a" text-anchor="middle" font-family="ui-monospace, monospace">0</text>
+  <line x1="446.6666666666667" y1="125" x2="446.6666666666667" y2="137" stroke="#57606a" stroke-width="1.4"/>
+  <text x="446.6666666666667" y="158" font-size="10" fill="#57606a" text-anchor="middle" font-family="ui-monospace, monospace">1</text>
+  <line x1="620.0" y1="125" x2="620.0" y2="137" stroke="#57606a" stroke-width="1.4"/>
+  <text x="620.0" y="158" font-size="10" fill="#57606a" text-anchor="middle" font-family="ui-monospace, monospace">2</text>
+  <text x="360.0" y="110" font-size="10" fill="#1a7f37" text-anchor="middle" font-weight="700">허용 범위</text>
+  <text x="186.66666666666669" y="78" font-size="11" fill="#cf222e" text-anchor="middle" font-weight="700" font-family="ui-monospace, monospace">-0.5</text>
+  <line x1="186.66666666666669" y1="86" x2="273.33333333333337" y2="114" stroke="#cf222e" stroke-width="1.4" marker-end="url(#ar)"/>
+  <text x="273.33333333333337" y="184" font-size="10.5" fill="#1a7f37" text-anchor="middle" font-weight="700" font-family="ui-monospace, monospace">→ 0</text>
+  <text x="325.33333333333337" y="78" font-size="11" fill="#0969da" text-anchor="middle" font-weight="700" font-family="ui-monospace, monospace">0.3</text>
+  <line x1="325.33333333333337" y1="86" x2="325.33333333333337" y2="114" stroke="#0969da" stroke-width="1.4" marker-end="url(#a)"/>
+  <text x="325.33333333333337" y="184" font-size="10.5" fill="#1a7f37" text-anchor="middle" font-weight="700" font-family="ui-monospace, monospace">→ 0.3</text>
+  <text x="568.0" y="78" font-size="11" fill="#cf222e" text-anchor="middle" font-weight="700" font-family="ui-monospace, monospace">1.7</text>
+  <line x1="568.0" y1="86" x2="446.6666666666667" y2="114" stroke="#cf222e" stroke-width="1.4" marker-end="url(#ar)"/>
+  <text x="446.6666666666667" y="184" font-size="10.5" fill="#1a7f37" text-anchor="middle" font-weight="700" font-family="ui-monospace, monospace">→ 1</text>
+  <text x="360" y="214" font-size="11.5" fill="#24292f" text-anchor="middle">BCE에서는 [epsilon, 1 − epsilon] 범위로 확률을 제한해 log(0)을 피한다</text>
+  <text x="360" y="238" font-size="11" fill="#57606a" text-anchor="middle">실무에서는 logits를 직접 받는 BCEWithLogitsLoss를 쓰기도 한다</text>
+</svg>
