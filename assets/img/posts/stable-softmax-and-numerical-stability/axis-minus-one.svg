@@ -1,0 +1,33 @@
+<svg width="720" height="268" viewBox="0 0 720 268" xmlns="http://www.w3.org/2000/svg" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif">
+  <rect x="0" y="0" width="720" height="268" fill="#f6f8fa" rx="10"/>
+  <defs><marker id="a" markerWidth="8" markerHeight="8" refX="6.4" refY="3" orient="auto"><path d="M0,0 L6.4,3 L0,6 z" fill="#57606a"/></marker>
+  <marker id="ar" markerWidth="8" markerHeight="8" refX="6.4" refY="3" orient="auto"><path d="M0,0 L6.4,3 L0,6 z" fill="#cf222e"/></marker></defs>
+  <text x="360" y="26" font-size="14" fill="#24292f" text-anchor="middle" font-weight="700">axis=-1은 마지막 값이 아니라 마지막 차원 전체다</text>
+  <text x="245" y="80" font-size="11" fill="#57606a" text-anchor="middle" font-weight="700">A</text>
+  <text x="345" y="80" font-size="11" fill="#57606a" text-anchor="middle" font-weight="700">B</text>
+  <text x="445" y="80" font-size="11" fill="#57606a" text-anchor="middle" font-weight="700">C</text>
+  <rect x="196" y="86" width="302" height="52" rx="6" fill="#fdf3e3" stroke="#9a6700" stroke-width="1.6"/>
+  <text x="190" y="118" font-size="11" fill="#57606a" text-anchor="end" font-weight="700">샘플1</text>
+  <rect x="200" y="90" width="90" height="44" rx="4" fill="#ffffff" stroke="#57606a" stroke-width="1.2"/>
+  <text x="245" y="118" font-size="11.5" fill="#24292f" text-anchor="middle" font-weight="700" font-family="ui-monospace, monospace">2.0</text>
+  <rect x="300" y="90" width="90" height="44" rx="4" fill="#ffffff" stroke="#57606a" stroke-width="1.2"/>
+  <text x="345" y="118" font-size="11.5" fill="#24292f" text-anchor="middle" font-weight="700" font-family="ui-monospace, monospace">1.0</text>
+  <rect x="400" y="90" width="90" height="44" rx="4" fill="#ffffff" stroke="#57606a" stroke-width="1.2"/>
+  <text x="445" y="118" font-size="11.5" fill="#24292f" text-anchor="middle" font-weight="700" font-family="ui-monospace, monospace">-0.5</text>
+  <line x1="504" y1="112" x2="530" y2="112" stroke="#9a6700" stroke-width="1.4" marker-end="url(#a)"/>
+  <text x="538" y="108" font-size="10" fill="#1a7f37" text-anchor="start" font-weight="700">[A확률, B확률, C확률]</text>
+  <text x="538" y="124" font-size="10" fill="#57606a" text-anchor="start" font-family="ui-monospace, monospace">합 = 1</text>
+  <rect x="196" y="140" width="302" height="52" rx="6" fill="#fdf3e3" stroke="#9a6700" stroke-width="1.6"/>
+  <text x="190" y="172" font-size="11" fill="#57606a" text-anchor="end" font-weight="700">샘플2</text>
+  <rect x="200" y="144" width="90" height="44" rx="4" fill="#ffffff" stroke="#57606a" stroke-width="1.2"/>
+  <text x="245" y="172" font-size="11.5" fill="#24292f" text-anchor="middle" font-weight="700" font-family="ui-monospace, monospace">0.3</text>
+  <rect x="300" y="144" width="90" height="44" rx="4" fill="#ffffff" stroke="#57606a" stroke-width="1.2"/>
+  <text x="345" y="172" font-size="11.5" fill="#24292f" text-anchor="middle" font-weight="700" font-family="ui-monospace, monospace">2.1</text>
+  <rect x="400" y="144" width="90" height="44" rx="4" fill="#ffffff" stroke="#57606a" stroke-width="1.2"/>
+  <text x="445" y="172" font-size="11.5" fill="#24292f" text-anchor="middle" font-weight="700" font-family="ui-monospace, monospace">1.2</text>
+  <line x1="504" y1="166" x2="530" y2="166" stroke="#9a6700" stroke-width="1.4" marker-end="url(#a)"/>
+  <text x="538" y="162" font-size="10" fill="#1a7f37" text-anchor="start" font-weight="700">[A확률, B확률, C확률]</text>
+  <text x="538" y="178" font-size="10" fill="#57606a" text-anchor="start" font-family="ui-monospace, monospace">합 = 1</text>
+  <text x="360" y="224" font-size="11.5" fill="#1a7f37" text-anchor="middle" font-weight="700">axis=-1  =  마지막 차원 전체  =  [A, B, C]가 들어 있는 클래스 축</text>
+  <text x="360" y="250" font-size="11.5" fill="#cf222e" text-anchor="middle" font-weight="700">axis=-1  ≠  마지막 값 C 하나</text>
+</svg>
