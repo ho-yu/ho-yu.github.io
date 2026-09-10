@@ -44,12 +44,14 @@
   - xor-nonlinear-decision-boundary
   # 4) 출력과 Loss
   - sigmoid-softmax-classification-output
+  - stable-softmax-and-numerical-stability
   - pytorch-argmax-and-dim
   - loss-function-and-epoch
   - mse-loss
   - bce-with-logits-loss
   - cross-entropy-loss
   - loss-reduction-mean-sum-none
+  - loss-function-comparison
   # 5) 학습 - 역전파와 Optimizer
   - loss-vs-backpropagation-and-gradient
   - weight-and-chain-rule
