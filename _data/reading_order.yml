@@ -87,3 +87,6 @@
 
 "Python":
   - python-assert
+
+"AWS":
+  - aws-getting-started-checklist
