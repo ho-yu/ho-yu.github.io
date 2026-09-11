@@ -1,6 +1,6 @@
 ---
 title: "MSE·BCE·CrossEntropy — 문제 유형별 Loss 고르기"
-date: 2026-09-11 10:00:00 +0900
+date: 2026-09-11 09:03:00 +0900
 categories: [Notes, Deep Learning]
 tags: [loss-function, mse-loss, bce-with-logits-loss, cross-entropy-loss, reduction]
 ---
