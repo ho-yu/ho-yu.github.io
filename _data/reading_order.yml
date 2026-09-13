@@ -84,6 +84,9 @@
   - padding-truncation-and-shape
   - dataset-split-and-map
   - dynamic-padding-and-collator
+  # 11) 모델 선택 - Task · Backbone · Head
+  - hugging-face-model-card-and-backbone-head
+  - task-backbone-head-selection-order
 
 "Python":
   - python-assert
