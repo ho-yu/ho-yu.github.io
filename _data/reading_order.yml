@@ -87,6 +87,10 @@
   # 11) 모델 선택 - Task · Backbone · Head
   - hugging-face-model-card-and-backbone-head
   - task-backbone-head-selection-order
+  # 12) LLM - 모델 계열부터 실행 방식과 성능 비교까지
+  - llm-model-family-llama-qwen
+  - llm-model-understanding-order
+  - llm-temperature-and-runtime-metrics
 
 "Python":
   - python-assert
