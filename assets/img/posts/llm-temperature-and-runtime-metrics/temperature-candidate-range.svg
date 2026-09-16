@@ -1,0 +1,20 @@
+<svg width="720" height="330" viewBox="0 0 720 330" xmlns="http://www.w3.org/2000/svg" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif">
+  <rect x="0" y="0" width="720" height="330" fill="#f6f8fa" rx="10"/>
+  <text x="360.0" y="28" font-size="14" fill="#24292f" text-anchor="middle" font-weight="700">temperature — 얼마나 다양한 후보를 허용할지</text>
+  <rect x="40" y="48" width="310" height="258" rx="8" fill="#ffffff" stroke="#d0d7de" stroke-width="1.2"/>
+  <text x="195.0" y="72" font-size="13" fill="#0969da" text-anchor="middle" font-weight="700">temperature 낮음</text>
+  <text x="195.0" y="100" font-size="10.5" fill="#57606a" text-anchor="middle" font-weight="400">높은 확률의 후보</text>
+  <rect x="141.0" y="112" width="108" height="150" rx="6" fill="#ffffff" stroke="#d0d7de" stroke-width="1.4"/>
+  <rect x="141.0" y="112" width="108" height="45.0" rx="6" fill="#0969da" fill-opacity="0.22" stroke="#0969da" stroke-width="1.6"/>
+  <line x1="129.0" y1="157.0" x2="261.0" y2="157.0" stroke="#0969da" stroke-width="1.4" stroke-dasharray="4 3"/>
+  <text x="195.0" y="280" font-size="10.5" fill="#57606a" text-anchor="middle" font-weight="400">낮은 확률 후보</text>
+  <text x="195.0" y="294" font-size="11.5" fill="#24292f" text-anchor="middle" font-weight="700">높은 확률의 후보를 더 강하게 선택.</text>
+  <rect x="370" y="48" width="310" height="258" rx="8" fill="#ffffff" stroke="#d0d7de" stroke-width="1.2"/>
+  <text x="525.0" y="72" font-size="13" fill="#9a6700" text-anchor="middle" font-weight="700">temperature 높음</text>
+  <text x="525.0" y="100" font-size="10.5" fill="#57606a" text-anchor="middle" font-weight="400">높은 확률의 후보</text>
+  <rect x="471.0" y="112" width="108" height="150" rx="6" fill="#ffffff" stroke="#d0d7de" stroke-width="1.4"/>
+  <rect x="471.0" y="112" width="108" height="117.0" rx="6" fill="#9a6700" fill-opacity="0.22" stroke="#9a6700" stroke-width="1.6"/>
+  <line x1="459.0" y1="229.0" x2="591.0" y2="229.0" stroke="#9a6700" stroke-width="1.4" stroke-dasharray="4 3"/>
+  <text x="525.0" y="280" font-size="10.5" fill="#57606a" text-anchor="middle" font-weight="400">낮은 확률 후보</text>
+  <text x="525.0" y="294" font-size="11.5" fill="#24292f" text-anchor="middle" font-weight="700">낮은 확률 후보도 선택될 가능성이 커짐.</text>
+</svg>
