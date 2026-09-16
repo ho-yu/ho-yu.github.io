@@ -1,0 +1,29 @@
+<svg width="720" height="250" viewBox="0 0 720 250" xmlns="http://www.w3.org/2000/svg" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif">
+  <rect x="0" y="0" width="720" height="250" fill="#f6f8fa" rx="10"/>
+  <defs><marker id="a" markerWidth="8" markerHeight="8" refX="6.4" refY="3" orient="auto"><path d="M0,0 L6.4,3 L0,6 z" fill="#57606a"/></marker>
+  <marker id="ar" markerWidth="8" markerHeight="8" refX="6.4" refY="3" orient="auto"><path d="M0,0 L6.4,3 L0,6 z" fill="#cf222e"/></marker></defs>
+  <text x="360" y="26" font-size="14" fill="#24292f" text-anchor="middle" font-weight="700">탄력적 IP는 계속 바뀌는 public IP를 고정하기 위해 쓴다</text>
+  <rect x="30" y="50" width="320" height="160" rx="8" fill="#ffffff" stroke="#d0d7de" stroke-width="1.5"/>
+  <text x="190" y="74" font-size="11.5" fill="#cf222e" text-anchor="middle" font-weight="700">public IP — 상시 할당, 계속 바뀜</text>
+  <rect x="60" y="92" width="110" height="34" rx="6" fill="#ffffff" stroke="#57606a" stroke-width="1.6"/>
+  <text x="115.0" y="113.0" font-size="11.5" fill="#57606a" text-anchor="middle" font-weight="700">인스턴스</text>
+  <rect x="200" y="92" width="40" height="34" rx="6" fill="#fceceb" stroke="#cf222e" stroke-width="1.6"/>
+  <text x="220.0" y="113.0" font-size="9.5" fill="#cf222e" text-anchor="middle" font-weight="700">IP ①</text>
+  <rect x="246" y="92" width="40" height="34" rx="6" fill="#fceceb" stroke="#cf222e" stroke-width="1.6"/>
+  <text x="266.0" y="113.0" font-size="9.5" fill="#cf222e" text-anchor="middle" font-weight="700">IP ②</text>
+  <rect x="292" y="92" width="40" height="34" rx="6" fill="#fceceb" stroke="#cf222e" stroke-width="1.6"/>
+  <text x="312.0" y="113.0" font-size="9.5" fill="#cf222e" text-anchor="middle" font-weight="700">IP ③</text>
+  <line x1="174" y1="109" x2="196" y2="109" stroke="#cf222e" stroke-width="1.4" marker-end="url(#ar)"/>
+  <text x="190" y="152" font-size="10.5" fill="#57606a" text-anchor="middle">상시 할당되며 계속 바뀐다</text>
+  <text x="190" y="190" font-size="10.5" fill="#cf222e" text-anchor="middle" font-weight="700">그래서 IP를 고정할 필요가 있다</text>
+  <rect x="370" y="50" width="320" height="160" rx="8" fill="#ffffff" stroke="#d0d7de" stroke-width="1.5"/>
+  <text x="530" y="74" font-size="11.5" fill="#1a7f37" text-anchor="middle" font-weight="700">탄력적 IP — 고정</text>
+  <rect x="392" y="92" width="120" height="34" rx="6" fill="#eaf6ec" stroke="#1a7f37" stroke-width="1.6"/>
+  <text x="452.0" y="113.0" font-size="10" fill="#1a7f37" text-anchor="middle" font-weight="700">탄력적 IP 할당</text>
+  <line x1="516" y1="109" x2="546" y2="109" stroke="#1a7f37" stroke-width="1.4" marker-end="url(#a)"/>
+  <rect x="550" y="92" width="120" height="34" rx="6" fill="#eaf6ec" stroke="#1a7f37" stroke-width="1.6"/>
+  <text x="610.0" y="113.0" font-size="10" fill="#1a7f37" text-anchor="middle" font-weight="700">인스턴스에 연결</text>
+  <text x="530" y="152" font-size="10.5" fill="#57606a" text-anchor="middle">네트워크 및 보안 › 탄력적 IP 메뉴</text>
+  <text x="530" y="190" font-size="10.5" fill="#1a7f37" text-anchor="middle" font-weight="700">IP 주소 할당 후 대상 인스턴스에 연결</text>
+  <text x="360" y="236" font-size="10.5" fill="#57606a" text-anchor="middle">인스턴스를 쓰지 않을 때는 탄력적 IP도 함께 삭제한다</text>
+</svg>
