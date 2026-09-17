@@ -92,6 +92,10 @@
   - llm-model-understanding-order
   - llm-temperature-and-runtime-metrics
 
+"AI Service":
+  # 로컬 LLM 비교 프로젝트 — 문제 정의부터 최종 모델 선정까지
+  - local-llm-comparison-ecommerce-problem-definition
+
 "Python":
   - python-assert
 
