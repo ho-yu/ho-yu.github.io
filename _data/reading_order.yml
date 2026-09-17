@@ -95,6 +95,9 @@
 "AI Service":
   # 로컬 LLM 비교 프로젝트 — 문제 정의부터 최종 모델 선정까지
   - local-llm-comparison-ecommerce-problem-definition
+  - local-llm-comparison-evaluation-questions-and-criteria
+  - local-llm-comparison-six-models-narrowing-to-three
+  - local-llm-comparison-final-results-local-cloud-base
 
 "Python":
   - python-assert

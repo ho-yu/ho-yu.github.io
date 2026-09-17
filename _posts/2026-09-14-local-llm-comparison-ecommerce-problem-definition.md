@@ -116,3 +116,9 @@ flowchart LR
 - **어려웠던 점** : 모델 카드들이 서로 비슷해 보여 차이를 파악하기 어려웠음 — 익숙해지려면 자주 봐야 함을 느낌
 
 </details>
+
+---
+
+## 7. 🔗 관련 글
+
+- [로컬 LLM 비교 프로젝트 — 평가 질문과 채점 기준 설계](/posts/local-llm-comparison-evaluation-questions-and-criteria/)
