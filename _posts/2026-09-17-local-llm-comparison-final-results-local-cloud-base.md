@@ -88,3 +88,4 @@ STEP 8 선정을 끝낸 뒤, F(sam-1-base)의 한국어 실력이 파인튜닝 �
 ## 5. 🔗 관련 글
 
 - [로컬 LLM 비교 프로젝트 — 6개 모델 실행, 3개로 좁히기까지](/posts/local-llm-comparison-six-models-narrowing-to-three/)
+- [로컬 LLM 비교 프로젝트](/posts/local-llm-comparison-project-retrospective/)

@@ -99,6 +99,9 @@
   - local-llm-comparison-six-models-narrowing-to-three
   - local-llm-comparison-final-results-local-cloud-base
 
+"Learning":
+  - local-llm-comparison-project-retrospective
+
 "Python":
   - python-assert
 
