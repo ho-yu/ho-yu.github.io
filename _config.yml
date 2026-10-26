@@ -221,6 +221,7 @@ exclude:
   - workspace # synced drafts, visible in GitHub but never published to the site
   - README.md
   - CLAUDE.md
+  - AGENTS.override.md # GPT Work instructions, not site content
   - LICENSE
   - purgecss.js
   - "*.config.js"
