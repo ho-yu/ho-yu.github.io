@@ -362,6 +362,31 @@ Build:     정상
 않는다.** 발행한 슬롯을 비우거나 공통 템플릿으로 되돌리는 등 초고 내용에 손대는 작업과
 그 commit / push는 사용자가 그때그때 별도로 명시할 때만 한다.
 
+## Python 문제풀이 포스팅 워크플로 (`Python Practice`)
+
+사용자가 직접 푼 Python 연습문제를 게시물로 올리는 워크플로다. 사용자는 문제만 풀고,
+Claude는 **문제 소개 한 줄과 줄맞춤만** 담당한다.
+
+```text
+원본:      C:\Users\dbdnj\Downloads\학습자료\보강\python_basic\q*.py
+Category:  [Notes, Python Practice]
+Template:  templates/practice-template.md
+```
+
+- 게시물 하나 = 원본 파일 하나(`qN.py`). 제목은 원본의 통과 메시지 이름을 따른다
+  (`print("기초 1 통과")` → `Python 기초 1 — 문제 핵심`).
+- `## 1. 📝 문제`: 함수 시그니처와 `assert`를 근거로 어떤 문제인지 **50자 이내 한 줄**만 쓴다.
+  풀이 해설, 개념 설명, 배운 점은 넣지 않는다.
+- `## 2. 💻 풀이`: 사용자가 쓴 함수 코드를 그대로 옮긴다. 허용되는 수정은 들여쓰기,
+  빈 줄 정리(최상위 함수 사이 2줄, 앞뒤 불필요한 빈 줄 삭제), 줄 끝 공백 삭제,
+  `n:int` → `n: int` 같은 공백 정리뿐이다. 로직 · 변수명 · 주석 · 값은 바꾸지 않는다
+  (`max`, `sum`처럼 내장 이름을 가린 변수도 그대로 둔다).
+- `## 3. ✅ 테스트`: 원본 파일의 `assert` / `print`를 그대로 옮긴다.
+- 원본 `assert`가 통과하지 않는 파일은 게시하지 않고 사용자에게 알린다.
+- 파일명은 `YYYY-MM-DD-python-practice-<문제-핵심>.md`, 새 글은 `_data/reading_order.yml`의
+  `"Python Practice"` 목록 끝에 slug를 추가한다.
+- 검증 · Commit / Push 규칙은 `작성완료` 워크플로의 11 · 13번과 같다.
+
 ## TIL Final Review & Enhancement Workflow
 
 이미 존재하는 `_posts/*.md` 게시물 한 편을 기술적으로 검토·보완하는 별도 워크플로다.
@@ -565,6 +590,7 @@ templates/note-template.md
 templates/project-template.md
 templates/troubleshooting-template.md
 templates/retrospective-template.md
+templates/practice-template.md      # Python Practice 문제풀이
 ```
 
 - `templates/`는 게시물이 아니다. `_config.yml`의 `exclude`에 포함되어 사이트 빌드에서 제외된다.

@@ -107,6 +107,15 @@
 "Python":
   - python-assert
 
+"Python Practice":
+  # python_basic 문제풀이 — 기초 → 응용
+  - python-practice-grade-by-score
+  - python-practice-sum-and-multiples
+  - python-practice-max-with-index
+  - python-practice-collatz-steps
+  - python-practice-pyramid-and-pairs
+  - python-practice-first-exceeding-and-square
+
 "AWS":
   - aws-getting-started-checklist
   - aws-ec2-instance-setup

@@ -372,6 +372,14 @@ print(model.score(X_test, y_test))
 - 코드가 필요 없는 개념 글에 억지로 코드를 넣지 않는다. 해당 절을 지우면 된다.
 - 짧아도 괜찮다. 세 줄짜리 개념 정리도 충분히 글이 된다.
 
+### Python 문제풀이 (`Python Practice`)
+
+`python_basic` 폴더의 `qN.py`에서 문제를 풀고 Claude Code에게 올려달라고 하면 된다.
+
+- **카테고리:** `[Notes, Python Practice]` · **템플릿:** `templates/practice-template.md`{: .filepath }
+- 구성은 `문제 → 풀이 → 테스트` 세 절이다.
+- Claude는 50자 이내 문제 소개와 줄맞춤만 하고, 풀이 코드는 내가 쓴 그대로 둔다.
+
 ---
 
 ## 6. Projects 작성법
