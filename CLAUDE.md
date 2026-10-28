@@ -368,13 +368,13 @@ Build:     정상
 Claude는 **문제 소개 한 줄과 줄맞춤만** 담당한다.
 
 ```text
-원본:      C:\Users\dbdnj\Downloads\학습자료\보강\python_basic\q*.py
+원본:      C:\Users\dbdnj\Downloads\학습자료\보강\python_basic\dayNN\q*.py
 Category:  [Notes, Python Practice]
 Template:  templates/practice-template.md
 ```
 
-- 게시물 하나 = 원본 파일 하나(`qN.py`). 제목은 원본의 통과 메시지 이름을 따른다
-  (`print("기초 1 통과")` → `Python 기초 1 — 문제 핵심`).
+- 게시물 하나 = 원본 파일 하나(`dayNN/qN.py`). 제목은 Day 번호와 원본의 통과 메시지 이름을 따른다
+  (`day02/q1.py`의 `print("기초 1 통과")` → `Python Day 2 기초 1 — 문제 핵심`).
 - `## 1. 📝 문제`: 함수 시그니처와 `assert`를 근거로 어떤 문제인지 **50자 이내 한 줄**만 쓴다.
   풀이 해설, 개념 설명, 배운 점은 넣지 않는다.
 - `## 2. 💻 풀이`: 사용자가 쓴 함수 코드를 그대로 옮긴다. 허용되는 수정은 들여쓰기,
@@ -385,7 +385,11 @@ Template:  templates/practice-template.md
 - 원본 `assert`가 통과하지 않는 파일은 게시하지 않고 사용자에게 알린다.
 - 파일명은 `YYYY-MM-DD-python-practice-<문제-핵심>.md`, 새 글은 `_data/reading_order.yml`의
   `"Python Practice"` 목록 끝에 slug를 추가한다.
-- 검증 · Commit / Push 규칙은 `작성완료` 워크플로의 11 · 13번과 같다.
+- 검증 규칙은 `작성완료` 워크플로의 11번과 같다.
+- **사용자가 `푸시해`라고 하면 다시 묻지 않고 현재 기준으로 처리한다.** 원본 폴더에서 아직
+  게시하지 않은 풀이(assert 통과)를 위 규칙대로 글로 만들고, 빌드를 확인한 뒤
+  `git fetch` → commit → `git push`까지 한다. force push는 하지 않는다.
+  `workspace/` 초고처럼 이 워크플로와 무관한 변경은 함께 커밋하지 않는다.
 
 ## TIL Final Review & Enhancement Workflow
 
