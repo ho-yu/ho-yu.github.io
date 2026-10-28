@@ -108,13 +108,18 @@
   - python-assert
 
 "Python Practice":
-  # python_basic 문제풀이 — 기초 → 응용
+  # Day 1 — 기초 → 응용
   - python-practice-grade-by-score
   - python-practice-sum-and-multiples
   - python-practice-max-with-index
   - python-practice-collatz-steps
   - python-practice-pyramid-and-pairs
   - python-practice-first-exceeding-and-square
+  # Day 2 — 기초 → 응용
+  - python-practice-average-and-clamp
+  - python-practice-list-slicing
+  - python-practice-count-items
+  - python-practice-reverse-merge-running-sum
 
 "AWS":
   - aws-getting-started-checklist

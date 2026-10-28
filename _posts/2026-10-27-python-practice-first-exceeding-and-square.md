@@ -1,5 +1,5 @@
 ---
-title: "Python 응용 3 — 누적합이 처음 넘는 지점과 최대 제곱수"
+title: "Python Day 1 응용 3 — 누적합이 처음 넘는 지점과 최대 제곱수"
 date: 2026-10-27 14:05:00 +0900
 categories: [Notes, Python Practice]
 tags: [python, while-loop, square-number]

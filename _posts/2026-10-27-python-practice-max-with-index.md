@@ -1,5 +1,5 @@
 ---
-title: "Python 기초 3 — 리스트 최댓값과 위치 찾기"
+title: "Python Day 1 기초 3 — 리스트 최댓값과 위치 찾기"
 date: 2026-10-27 14:02:00 +0900
 categories: [Notes, Python Practice]
 tags: [python, list, tuple, for-loop]

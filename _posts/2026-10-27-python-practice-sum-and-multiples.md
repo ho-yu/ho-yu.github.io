@@ -1,5 +1,5 @@
 ---
-title: "Python 기초 2 — 1부터 n까지의 합과 배수 개수"
+title: "Python Day 1 기초 2 — 1부터 n까지의 합과 배수 개수"
 date: 2026-10-27 14:01:00 +0900
 categories: [Notes, Python Practice]
 tags: [python, for-loop, range, floor-division]

@@ -1,5 +1,5 @@
 ---
-title: "Python 기초 1 — 점수 구간별 학점 구하기"
+title: "Python Day 1 기초 1 — 점수 구간별 학점 구하기"
 date: 2026-10-27 14:00:00 +0900
 categories: [Notes, Python Practice]
 tags: [python, if-elif, assert]

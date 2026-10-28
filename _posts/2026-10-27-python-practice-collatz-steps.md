@@ -1,5 +1,5 @@
 ---
-title: "Python 응용 1 — 콜라츠 단계 수와 가장 긴 수"
+title: "Python Day 1 응용 1 — 콜라츠 단계 수와 가장 긴 수"
 date: 2026-10-27 14:03:00 +0900
 categories: [Notes, Python Practice]
 tags: [python, while-loop, collatz]

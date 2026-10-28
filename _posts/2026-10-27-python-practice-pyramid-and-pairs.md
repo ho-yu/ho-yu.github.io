@@ -1,5 +1,5 @@
 ---
-title: "Python 응용 2 — 별 피라미드와 두 수 쌍의 개수"
+title: "Python Day 1 응용 2 — 별 피라미드와 두 수 쌍의 개수"
 date: 2026-10-27 14:04:00 +0900
 categories: [Notes, Python Practice]
 tags: [python, nested-loop, string, list]
