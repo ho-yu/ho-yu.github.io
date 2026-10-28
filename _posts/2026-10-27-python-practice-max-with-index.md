@@ -27,7 +27,13 @@ def max_with_index(numbers: list[int]) -> tuple[int, int]:
     return max, index
 ```
 
-## 3. ✅ 테스트
+## 3. 🔍 풀이 설명
+
+- 첫 번째 값과 인덱스 0을 최댓값 후보로 잡는다.
+- 인덱스로 리스트를 돌며 현재 최댓값보다 큰 값이 나올 때만 값과 인덱스를 바꾼다.
+- `>`로 비교하므로 같은 값이 다시 나와도 처음 위치가 유지된다.
+
+## 4. ✅ 테스트
 
 ```python
 assert max_with_index([12, 7, 25, 3, 19]) == (25, 2)

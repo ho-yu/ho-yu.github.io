@@ -38,7 +38,12 @@ def largest_square_below(n: int) -> int:
     return i * i
 ```
 
-## 3. ✅ 테스트
+## 3. 🔍 풀이 설명
+
+- `first_exceeding`: `while True` 안에서 합이 limit 이하인 동안 count를 1 늘리고 합에 count를 더한다. 합이 limit를 넘으면 `break`하고 (count, 합)을 반환한다.
+- `largest_square_below`: i를 0부터 늘리며 다음 수의 제곱 `(i + 1) * (i + 1)`이 n 이하인 동안 반복하고, 멈춘 i의 제곱을 반환한다.
+
+## 4. ✅ 테스트
 
 ```python
 assert first_exceeding(1000) == (45, 1035)

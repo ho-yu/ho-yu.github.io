@@ -377,8 +377,8 @@ print(model.score(X_test, y_test))
 `python_basic` 폴더의 `qN.py`에서 문제를 풀고 Claude Code에게 올려달라고 하면 된다.
 
 - **카테고리:** `[Notes, Python Practice]` · **템플릿:** `templates/practice-template.md`{: .filepath }
-- 구성은 `문제 → 풀이 → 테스트` 세 절이다.
-- Claude는 50자 이내 문제 소개와 줄맞춤만 하고, 풀이 코드는 내가 쓴 그대로 둔다.
+- 구성은 `문제 → 풀이 → 풀이 설명 → 테스트` 네 절이다.
+- Claude는 50자 이내 문제 소개, 짧은 풀이 설명, 줄맞춤만 하고, 풀이 코드는 내가 쓴 그대로 둔다.
 
 ---
 

@@ -30,7 +30,12 @@ def clamp(x, low=0, high=100):
         return x
 ```
 
-## 3. ✅ 테스트
+## 3. 🔍 풀이 설명
+
+- `average`: `sum()`으로 합을 구해 `len()`으로 나눈다.
+- `clamp`: `low=0`, `high=100`을 기본값으로 두고, x가 low보다 작으면 low, high보다 크면 high, 그 사이면 x를 그대로 반환한다.
+
+## 4. ✅ 테스트
 
 ```python
 assert average([88, 92, 75]) == 85.0 and average([10]) == 10.0

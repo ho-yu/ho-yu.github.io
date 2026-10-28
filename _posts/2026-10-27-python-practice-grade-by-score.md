@@ -29,7 +29,13 @@ def grade(score: int) -> str:
     return grade
 ```
 
-## 3. ✅ 테스트
+## 3. 🔍 풀이 설명
+
+- `if` / `elif`로 점수 구간을 위에서부터 차례로 검사한다. 90~95점은 A, 80~89점은 B, 70~79점은 C.
+- 어느 구간에도 해당하지 않으면 `else`에서 F를 준다.
+- 정한 학점을 변수 `grade`에 담아 마지막에 한 번 반환한다.
+
+## 4. ✅ 테스트
 
 ```python
 assert grade(95) == "A" and grade(90) == "A"

@@ -45,7 +45,13 @@ def running_sum(numbers) -> list[int]:
     return result
 ```
 
-## 3. ✅ 테스트
+## 3. 🔍 풀이 설명
+
+- `reverse_list`: 빈 리스트면 바로 `[]`를 반환하고, 아니면 `range(len(items), 0, -1)`로 길이부터 1까지 거꾸로 돌며 그 숫자를 `result`에 담는다.
+- `interleave`: 두 리스트를 `+`로 이어 붙인 뒤 `sorted()`로 정렬한다.
+- `running_sum`: `total`에 값을 하나씩 더해 가며 그때마다의 합을 `result`에 추가한다.
+
+## 4. ✅ 테스트
 
 ```python
 assert reverse_list([1, 2, 3, 4]) == [4, 3, 2, 1] and reverse_list([]) == []

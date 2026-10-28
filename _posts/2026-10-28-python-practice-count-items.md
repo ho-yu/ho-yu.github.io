@@ -31,7 +31,12 @@ def most_common_item(items: list[str]) -> str:
     return result
 ```
 
-## 3. ✅ 테스트
+## 3. 🔍 풀이 설명
+
+- `count_items`: 빈 딕셔너리에서 시작해 `counts.get(i, 0) + 1`로 항목별 개수를 센다. 처음 나온 항목은 0에서 시작한다.
+- `most_common_item`: `count_items`로 센 뒤 `max(counts, key=counts.get)`로 개수가 가장 큰 키를 고른다.
+
+## 4. ✅ 테스트
 
 ```python
 fruits = ["사과", "배", "사과", "감", "배", "사과"]

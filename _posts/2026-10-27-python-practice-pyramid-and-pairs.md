@@ -33,7 +33,12 @@ def count_pairs(n: int) -> int:
     return result
 ```
 
-## 3. ✅ 테스트
+## 3. 🔍 풀이 설명
+
+- `pyramid`: i번째 줄(1부터)은 왼쪽 공백 `height-i`개와 별 `2*i-1`개를 이어 붙인 문자열로 만들어 리스트에 추가한다.
+- `count_pairs`: 이중 `for`문에서 j를 i+1부터 시작해 (i, j) 쌍을 중복 없이 하나씩 센다.
+
+## 4. ✅ 테스트
 
 ```python
 assert pyramid(1) == ["*"]

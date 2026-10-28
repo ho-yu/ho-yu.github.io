@@ -29,7 +29,12 @@ def sum_to(n: int) -> int:
     return result
 ```
 
-## 3. ✅ 테스트
+## 3. 🔍 풀이 설명
+
+- `count_multiples`: n 이하 k의 배수 개수는 몫 `n // k`로 바로 구한다.
+- `sum_to`: `range(1, n+1, 1)`로 1부터 n까지 돌며 `result`에 더한다. n이 0이면 반복이 없어 0이 반환된다.
+
+## 4. ✅ 테스트
 
 ```python
 assert sum_to(100) == 5050 and sum_to(1) == 1 and sum_to(0) == 0
