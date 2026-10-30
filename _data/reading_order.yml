@@ -120,6 +120,10 @@
   - python-practice-list-slicing
   - python-practice-count-items
   - python-practice-reverse-merge-running-sum
+  # Day 3 — 기초 → 응용 → 심화
+  - python-practice-linear-search
+  - python-practice-bubble-sort
+  - python-practice-binary-search
 
 "AWS":
   - aws-getting-started-checklist
