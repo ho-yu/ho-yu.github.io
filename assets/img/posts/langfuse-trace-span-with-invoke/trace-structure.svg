@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="680" height="660" viewBox="0 0 680 660" role="img" aria-labelledby="title desc" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Malgun Gothic, sans-serif">
+<title id="title">Trace와 observation의 포함 관계</title>
+<desc id="desc">Trace는 같은 trace_id로 연결한 작업 기록의 묶음이다. policy-qa span 안에 retrieve span과 generate-answer chain이 있고, chain 안에 실제 모델 호출인 ChatOpenAI generation이 있다. 각 작업 노드는 모두 observation이다. 프롬프트 중간 노드는 생략했다.</desc>
+<rect width="680" height="660" rx="16" fill="#f6f8fa"/>
+<text x="340" y="48" text-anchor="middle" font-size="30" font-weight="700" fill="#24292f">Trace = 요청 한 건의 기록 묶음</text>
+<rect x="20" y="80" width="640" height="486" rx="14" fill="#eaf2ff" stroke="#0969da" stroke-width="2"/>
+<text x="46" y="119" font-size="28" fill="#0969da">같은 trace_id</text>
+<rect x="44" y="145" width="592" height="395" rx="12" fill="#ffffff" stroke="#57606a" stroke-width="2"/>
+<text x="70" y="187" font-size="30" font-weight="700" fill="#24292f">policy-qa · span</text>
+<text x="70" y="226" font-size="28" fill="#57606a">질의응답 전체 구간</text>
+<rect x="72" y="251" width="536" height="88" rx="10" fill="#e9f5ed" stroke="#1a7f37" stroke-width="2"/>
+<text x="94" y="288" font-size="29" font-weight="700" fill="#1a7f37">retrieve · span</text>
+<text x="94" y="322" font-size="27" fill="#24292f">검색 질문 → 문서 ID</text>
+<rect x="72" y="363" width="536" height="152" rx="10" fill="#f2edff" stroke="#8250df" stroke-width="2"/>
+<text x="94" y="403" font-size="29" font-weight="700" fill="#6639ba">generate-answer · chain</text>
+<rect x="96" y="426" width="488" height="64" rx="9" fill="#ffffff" stroke="#8250df" stroke-width="2"/>
+<text x="340" y="467" text-anchor="middle" font-size="28" fill="#24292f">ChatOpenAI · generation</text>
+<text x="340" y="610" text-anchor="middle" font-size="28" font-weight="700" fill="#24292f">내부의 각 작업 = observation</text>
+<text x="340" y="645" text-anchor="middle" font-size="26" fill="#57606a">span · chain · generation은 작업의 유형</text>
+</svg>
