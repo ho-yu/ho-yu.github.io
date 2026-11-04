@@ -124,6 +124,13 @@
   - python-practice-linear-search
   - python-practice-bubble-sort
   - python-practice-binary-search
+  # Day 5 — 모듈 · 패키지 · 예외 · pytest
+  - python-practice-module-rect-area
+  - python-practice-safe-int
+  - python-practice-pytest-rect-area
+  - python-practice-package-is-prime
+  - python-practice-custom-exception-withdraw
+  - python-practice-parse-record
 
 "AWS":
   - aws-getting-started-checklist

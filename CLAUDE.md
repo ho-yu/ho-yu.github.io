@@ -385,6 +385,9 @@ Template:  templates/practice-template.md
   코드에 없는 동작이나 평가 · 개선안은 쓰지 않는다.
 - `## 4. ✅ 테스트`: 원본 파일의 `assert` / `print`를 그대로 옮긴다.
 - 원본 `assert`가 통과하지 않는 파일은 게시하지 않고 사용자에게 알린다.
+- 풀이가 모듈로 나뉜 Day(`day05/prac/`)는 모듈을 풀이에, `qN.py`를 테스트에 넣고 코드 블록에
+  `{: file="파일명" }`을 붙인다. 파일을 import하므로 그 폴더에서 실행해 확인하고, pytest 문제는
+  `pytest`로 확인한다. `practice/`는 빈 문제지이므로 게시하지 않는다.
 - 파일명은 `YYYY-MM-DD-python-practice-<문제-핵심>.md`, 새 글은 `_data/reading_order.yml`의
   `"Python Practice"` 목록 끝에 slug를 추가한다.
 - 검증 규칙은 `작성완료` 워크플로의 11번과 같다.
