@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="328" viewBox="0 0 640 328" role="img" aria-labelledby="title desc">
+  <title id="title">같은 응답의 형식과 의미</title>
+  <desc id="desc">반품 기한은 7일이다. 10일째 반품 가능이라고 한 응답은 JSON과 인용 요건을 만족했지만 정책과 다르다.</desc>
+  <defs>
+    <marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto">
+      <path d="M 0 0 L 8 4 L 0 8 Z" fill="#437572"/>
+    </marker>
+  </defs>
+  <rect width="640" height="328" rx="20" fill="#F5F4EF"/>
+  <g font-family="'Malgun Gothic', 'Apple SD Gothic Neo', 'Noto Sans KR', sans-serif">
+    <text x="34" y="51" fill="#233A3B" font-size="35" font-weight="700" text-anchor="start">예시 · 반품 기한 7일</text>
+    <rect x="34" y="75" width="572" height="67" rx="12" fill="#FFFFFF"/>
+    <text x="55" y="119" fill="#233A3B" font-size="29" font-weight="600" text-anchor="start">10일째 문의에 “가능합니다”</text>
+    <path d="M 320 147 V 167 H 170 V 187" fill="none" stroke="#437572" stroke-width="3.5" marker-end="url(#arrow)"/>
+    <path d="M 320 167 H 468 V 187" fill="none" stroke="#437572" stroke-width="3.5" marker-end="url(#arrow)"/>
+    <rect x="34" y="195" width="278" height="107" rx="12" fill="#E3F0EA"/>
+    <text x="173" y="239" fill="#13766B" font-size="32" font-weight="700" text-anchor="middle">형식 통과</text>
+    <text x="173" y="279" fill="#233A3B" font-size="26" font-weight="500" text-anchor="middle">JSON·인용 요건 충족</text>
+    <rect x="329" y="195" width="277" height="107" rx="12" fill="#FAEDE7"/>
+    <text x="468" y="239" fill="#9A442E" font-size="32" font-weight="700" text-anchor="middle">의미 오답</text>
+    <text x="468" y="279" fill="#233A3B" font-size="27" font-weight="500" text-anchor="middle">반품 기한 초과</text>
+  </g>
+</svg>

@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="358" viewBox="0 0 640 358" role="img" aria-labelledby="title desc">
+  <title id="title">SFT를 LoRA로 수행하는 구성</title>
+  <desc id="desc">지도 예제의 모범답안으로 손실을 계산하고, 기본 가중치는 고정해 추가된 저랭크 어댑터만 갱신한다.</desc>
+  <defs>
+    <marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto">
+      <path d="M 0 0 L 8 4 L 0 8 Z" fill="#437572"/>
+    </marker>
+  </defs>
+  <rect width="640" height="358" rx="20" fill="#F5F4EF"/>
+  <g font-family="'Malgun Gothic', 'Apple SD Gothic Neo', 'Noto Sans KR', sans-serif">
+    <text x="34" y="51" fill="#233A3B" font-size="34" font-weight="700" text-anchor="start">하나의 학습에 두 가지 결정</text>
+    <rect x="34" y="80" width="572" height="70" rx="12" fill="#E3F0EA"/>
+    <text x="55" y="125" fill="#13766B" font-size="33" font-weight="700" text-anchor="start">SFT</text>
+    <text x="176" y="125" fill="#233A3B" font-size="30" font-weight="500" text-anchor="start">모범답안으로 손실 계산</text>
+    <path d="M 319 158 V 179" fill="none" stroke="#437572" stroke-width="3.5" marker-end="url(#arrow)"/>
+    <text x="319" y="217" fill="#654882" font-size="30" font-weight="700" text-anchor="middle">LoRA 적용 시 갱신 대상</text>
+    <rect x="34" y="237" width="278" height="89" rx="12" fill="#E8EBEA"/>
+    <text x="173" y="291" fill="#233A3B" font-size="28" font-weight="600" text-anchor="middle">기본 가중치 고정</text>
+    <rect x="329" y="237" width="277" height="89" rx="12" fill="#EEE8F6"/>
+    <text x="468" y="291" fill="#654882" font-size="30" font-weight="700" text-anchor="middle">어댑터 갱신</text>
+  </g>
+</svg>

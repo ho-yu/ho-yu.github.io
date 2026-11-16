@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="358" viewBox="0 0 640 358" role="img" aria-labelledby="title desc">
+  <title id="title">세 방법이 바꾸는 곳</title>
+  <desc id="desc">프롬프트는 지시를 바꾸고 RAG는 근거를 입력에 추가하며 파인튜닝은 학습 가능한 파라미터를 갱신한다.</desc>
+  <rect width="640" height="358" rx="20" fill="#F5F4EF"/>
+  <g font-family="'Malgun Gothic', 'Apple SD Gothic Neo', 'Noto Sans KR', sans-serif">
+    <text x="34" y="55" fill="#233A3B" font-size="35" font-weight="700" text-anchor="start">무엇을 바꿀까?</text>
+    <rect x="32" y="82" width="576" height="77" rx="12" fill="#E3F0EA"/>
+    <text x="55" y="131" fill="#13766B" font-size="31" font-weight="700" text-anchor="start">프롬프트</text>
+    <text x="254" y="131" fill="#233A3B" font-size="30" font-weight="500" text-anchor="start">답변 지시</text>
+    <rect x="32" y="170" width="576" height="77" rx="12" fill="#E7EFFA"/>
+    <text x="55" y="219" fill="#315D92" font-size="31" font-weight="700" text-anchor="start">RAG</text>
+    <text x="254" y="219" fill="#233A3B" font-size="30" font-weight="500" text-anchor="start">검색한 근거 문서</text>
+    <rect x="32" y="258" width="576" height="77" rx="12" fill="#EEE8F6"/>
+    <text x="55" y="307" fill="#654882" font-size="31" font-weight="700" text-anchor="start">파인튜닝</text>
+    <text x="254" y="307" fill="#233A3B" font-size="30" font-weight="500" text-anchor="start">학습할 파라미터</text>
+  </g>
+</svg>

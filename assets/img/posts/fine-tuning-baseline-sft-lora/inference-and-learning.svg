@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="502" viewBox="0 0 640 502" role="img" aria-labelledby="title desc">
+  <title id="title">로짓을 사용하는 두 과정</title>
+  <desc id="desc">메시지와 토큰 ID를 거쳐 모델이 로짓을 계산한다. 추론은 다음 토큰을 고르고 학습은 정답과 비교해 손실을 계산하고 파라미터를 갱신한다.</desc>
+  <defs>
+    <marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto">
+      <path d="M 0 0 L 8 4 L 0 8 Z" fill="#437572"/>
+    </marker>
+  </defs>
+  <rect width="640" height="502" rx="20" fill="#F5F4EF"/>
+  <g font-family="'Malgun Gothic', 'Apple SD Gothic Neo', 'Noto Sans KR', sans-serif">
+    <rect x="150" y="25" width="340" height="58" rx="10" fill="#FFFFFF"/>
+    <text x="320" y="64" fill="#233A3B" font-size="31" font-weight="700" text-anchor="middle">채팅 메시지</text>
+    <path d="M 320 88 V 111" fill="none" stroke="#437572" stroke-width="3.5" marker-end="url(#arrow)"/>
+    <rect x="150" y="117" width="340" height="58" rx="10" fill="#FFFFFF"/>
+    <text x="320" y="156" fill="#233A3B" font-size="31" font-weight="700" text-anchor="middle">토큰 ID</text>
+    <path d="M 320 181 V 204" fill="none" stroke="#437572" stroke-width="3.5" marker-end="url(#arrow)"/>
+    <rect x="150" y="211" width="340" height="64" rx="10" fill="#E3F0EA"/>
+    <text x="320" y="253" fill="#13766B" font-size="32" font-weight="700" text-anchor="middle">모델이 계산한 로짓</text>
+    <path d="M 320 280 V 303 H 169 V 327" fill="none" stroke="#437572" stroke-width="3.5" marker-end="url(#arrow)"/>
+    <path d="M 320 303 H 470 V 327" fill="none" stroke="#437572" stroke-width="3.5" marker-end="url(#arrow)"/>
+    <rect x="34" y="335" width="277" height="135" rx="12" fill="#E7EFFA"/>
+    <text x="172" y="381" fill="#315D92" font-size="32" font-weight="700" text-anchor="middle">추론</text>
+    <text x="172" y="429" fill="#233A3B" font-size="29" font-weight="500" text-anchor="middle">다음 토큰 선택</text>
+    <rect x="329" y="335" width="277" height="135" rx="12" fill="#EEE8F6"/>
+    <text x="467" y="381" fill="#654882" font-size="32" font-weight="700" text-anchor="middle">학습</text>
+    <text x="467" y="421" fill="#233A3B" font-size="28" font-weight="500" text-anchor="middle">손실 → 기울기</text>
+    <text x="467" y="455" fill="#233A3B" font-size="28" font-weight="500" text-anchor="middle">→ 값 갱신</text>
+  </g>
+</svg>
