@@ -131,6 +131,21 @@
   - python-practice-package-is-prime
   - python-practice-custom-exception-withdraw
   - python-practice-parse-record
+  # Day 7 — NumPy 배열 · axis · 통계
+  - python-practice-numpy-to-celsius
+  - python-practice-numpy-subject-means
+  - python-practice-numpy-count-above
+  - python-practice-numpy-std-dev
+  - python-practice-numpy-normalize-rows
+  - python-practice-numpy-softmax
+  # Day 8 — 벡터 · 행렬 연산
+  - python-practice-numpy-dot-product
+  - python-practice-numpy-vector-norm
+  - python-practice-matmul-result-shape
+  - python-practice-numpy-cosine-similarity
+  - python-practice-numpy-matrix-vector-product
+  - python-practice-numpy-linear-predict
+  - python-practice-numpy-matrix-multiplication
 
 "AWS":
   - aws-getting-started-checklist
