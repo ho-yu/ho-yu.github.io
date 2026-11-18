@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="222" viewBox="0 0 640 222" role="img" aria-labelledby="title desc">
+  <title id="title">디코더 전용 모델이 새로 생성한 토큰</title>
+  <desc id="desc">반환 토큰열 10, 11, 20, 21, 99에서 앞의 두 입력 토큰을 건너뛰면 새 토큰 20, 21, 99가 남는다. 마지막 99는 이 예시의 EOS다.</desc>
+  <rect width="640" height="222" rx="20" fill="#F5F4EF"/>
+  <g font-family="'Malgun Gothic', 'Apple SD Gothic Neo', 'Noto Sans KR', sans-serif" font-size="28" font-weight="700" text-anchor="middle">
+    <text x="138" y="56" fill="#315D92">입력 토큰</text>
+    <text x="435" y="56" fill="#155F54">새로 생성한 토큰</text>
+  </g>
+  <g fill="#E7EFFA">
+    <rect x="26" y="76" width="108" height="62" rx="10"/>
+    <rect x="142" y="76" width="108" height="62" rx="10"/>
+  </g>
+  <g fill="#E3F0EA">
+    <rect x="274" y="76" width="108" height="62" rx="10"/>
+    <rect x="390" y="76" width="108" height="62" rx="10"/>
+  </g>
+  <rect x="506" y="76" width="108" height="62" rx="10" fill="#EEE8F6"/>
+  <path d="M262 71v75" fill="none" stroke="#71818F" stroke-width="2" stroke-dasharray="5 5"/>
+  <g fill="#233A3B" font-family="'Cascadia Mono', Consolas, 'Courier New', monospace" font-size="32" font-weight="700" text-anchor="middle">
+    <text y="118"><tspan x="80">10</tspan><tspan x="196">11</tspan><tspan x="328">20</tspan><tspan x="444">21</tspan><tspan x="560">99</tspan></text>
+  </g>
+  <path d="M26 148v11h224v-11" fill="none" stroke="#6383A6" stroke-width="2"/>
+  <path d="M560 147v14" fill="none" stroke="#745890" stroke-width="2"/>
+  <g font-family="'Malgun Gothic', 'Apple SD Gothic Neo', 'Noto Sans KR', sans-serif" font-size="26" font-weight="700" text-anchor="middle">
+    <text x="138" y="194" fill="#315D92">앞의 2개를 자름</text>
+    <text x="560" y="194" fill="#654882">EOS</text>
+  </g>
+</svg>
