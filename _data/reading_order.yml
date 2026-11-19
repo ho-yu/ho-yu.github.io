@@ -121,6 +121,8 @@
   - python-practice-list-slicing
   - python-practice-count-items
   - python-practice-reverse-merge-running-sum
+  - python-practice-remove-evens-and-grid
+  - python-practice-two-sum-dict
   # Day 3 — 기초 → 응용 → 심화
   - python-practice-linear-search
   - python-practice-bubble-sort
