@@ -18,9 +18,9 @@ DPO는 같은 질문에 대한 선호 답(`chosen`)과 비선호 답(`rejected`)
 
 ```mermaid
 flowchart TD
-    X["같은 질문과 두 응답"] --> P["policy: 학습하며 변화"]
-    X --> R["reference: 고정 기준"]
-    P --> M["각 응답의 점수 변화 비교"]
+    X["질문·두 답"] --> P["policy"]
+    X --> R["reference"]
+    P --> M["변화 비교"]
     R --> M
 ```
 

@@ -17,9 +17,9 @@ DPO(Direct Preference Optimization)는 **같은 입력**에 대한 두 응답 �
 
 ```mermaid
 flowchart TD
-    X["같은 질문과 근거"] --> C["chosen: 더 적절한 응답"]
-    X --> R["rejected: 덜 적절한 응답"]
-    C --> P["선호 비교"]
+    X["공통 입력"] --> C["선호 답"]
+    X --> R["비선호 답"]
+    C --> P["점수 비교"]
     R --> P
 ```
 
