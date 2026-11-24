@@ -33,14 +33,22 @@ flowchart TD
 각 응답의 변화량은 `policy의 logp − reference의 logp`이다. DPO는 선호 답의 변화량에서 비선호 답의 변화량을 뺀다.
 
 $$
-m=\beta\left[\bigl(\log\pi_\theta(y_c\mid x)-\log\pi_{\rm ref}(y_c\mid x)\bigr)-\bigl(\log\pi_\theta(y_r\mid x)-\log\pi_{\rm ref}(y_r\mid x)\bigr)\right]
+\Delta_c=\log\pi_\theta(y_c\mid x)-\log\pi_{\rm ref}(y_c\mid x)
+$$
+
+$$
+\Delta_r=\log\pi_\theta(y_r\mid x)-\log\pi_{\rm ref}(y_r\mid x)
+$$
+
+$$
+m=\beta(\Delta_c-\Delta_r)
 $$
 
 $$
 L_{\rm DPO}=-\log\sigma(m)
 $$
 
-여기서 $x$는 공통 입력, $y_c$와 $y_r$는 두 응답, $\beta>0$는 기준 모델 대비 상대 변화에 적용하는 계수다. **margin $m$이 클수록** 이 쌍의 손실은 작아진다. $\beta$는 손실식의 계수이고, 학습률은 optimizer가 가중치를 갱신하는 크기이므로 역할이 다르다.
+여기서 $x$는 공통 입력, $y_c$와 $y_r$는 두 응답, $\Delta_c$와 $\Delta_r$는 각 응답의 기준 대비 변화량이다. $\beta>0$는 상대 변화에 적용하는 계수다. **margin $m$이 클수록** 이 쌍의 손실은 작아진다. $\beta$는 손실식의 계수이고, 학습률은 optimizer가 가중치를 갱신하는 크기이므로 역할이 다르다.
 
 ```python
 chosen_change = chosen_policy_logp - chosen_reference_logp
